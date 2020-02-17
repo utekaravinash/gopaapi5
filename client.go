@@ -16,7 +16,7 @@ type Client struct {
 	region       string
 }
 
-func New(accessKey, secretKey, associateTag string, locale api.Locale) (*Client, error) {
+func NewClient(accessKey, secretKey, associateTag string, locale api.Locale) (*Client, error) {
 
 	if accessKey == "" {
 		return nil, errors.New("Empty access key")

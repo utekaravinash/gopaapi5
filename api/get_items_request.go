@@ -11,8 +11,16 @@ type GetItemsRequest struct {
 }
 
 func NewGetItemsRequest(itemIds []string) *GetItemsRequest {
+	uniqueItemIds := []string{}
+
+	for _, item := range itemIds {
+		if !existsInStrings(item, uniqueItemIds) {
+			uniqueItemIds = append(uniqueItemIds, item)
+		}
+	}
+
 	return &GetItemsRequest{
-		itemIds: itemIds,
+		itemIds: uniqueItemIds,
 	}
 }
 
@@ -25,7 +33,9 @@ func (r *GetItemsRequest) SetCurrencyOfPreference(currency Currency) {
 }
 
 func (r *GetItemsRequest) AddItemId(itemId string) {
-	r.itemIds = append(r.itemIds, itemId)
+	if !existsInStrings(itemId, r.itemIds) {
+		r.itemIds = append(r.itemIds, itemId)
+	}
 }
 
 func (r *GetItemsRequest) SetLanguagesOfPreference(language Language) {
