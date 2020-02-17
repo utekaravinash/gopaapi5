@@ -45,3 +45,12 @@ func NewClient(accessKey, secretKey, associateTag string, locale api.Locale) (*C
 
 	return client, nil
 }
+
+func (c *Client) SendRequest(payload map[string]interface{}, response interface{}) error {
+
+	payload["PartnerType"] = "Associates"
+	payload["PartnerTag"] = c.AssociateTag
+	// payload["Marketplace"] = c.
+
+	return nil
+}
