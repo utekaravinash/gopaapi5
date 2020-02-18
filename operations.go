@@ -21,7 +21,7 @@ func (c *Client) GetItems(params *api.GetItemsParams) (*api.GetItemsResponse, er
 		return nil, errors.New("Nil parameters")
 	}
 
-	response := &api.GetItemsResponse{}
+	response := api.GetItemsResponse{}
 
 	payload, err := params.Map()
 	if err != nil {
@@ -32,13 +32,13 @@ func (c *Client) GetItems(params *api.GetItemsParams) (*api.GetItemsResponse, er
 		Operation: GetItems,
 		Payload:   payload,
 		client:    c,
-		path:      "paapi5/getitems?say=hello&do=otherwise",
+		path:      "paapi5/getitems",
 	}
 
-	err = c.execute(req, response)
+	err = c.execute(req, &response)
 	if err != nil {
 		return nil, err
 	}
 
-	return response, nil
+	return &response, nil
 }

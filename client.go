@@ -1,8 +1,8 @@
 package gopaapi5
 
 import (
+	"encoding/json"
 	"errors"
-	"fmt"
 	"io/ioutil"
 	"net/http"
 
@@ -55,7 +55,7 @@ func NewClient(accessKey, secretKey, associateTag string, locale api.Locale) (*C
 	return client, nil
 }
 
-func (c *Client) execute(req *request, response interface{}) error {
+func (c *Client) execute(req *request, v interface{}) error {
 
 	req.build()
 	req.sign()
@@ -66,10 +66,15 @@ func (c *Client) execute(req *request, response interface{}) error {
 	}
 	defer resp.Body.Close()
 
-	fmt.Println("response Status:", resp.Status)
-	fmt.Println("response Headers:", resp.Header)
-	body, _ := ioutil.ReadAll(resp.Body)
-	fmt.Println("response Body:", string(body))
+	body, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		return err
+	}
+
+	err = json.Unmarshal(body, v)
+	if err != nil {
+		return err
+	}
 
 	return nil
 }

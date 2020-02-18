@@ -19,7 +19,7 @@ const (
 	dateFormat          = "20060102T150405Z"
 	shortDateFormat     = "20060102"
 	hashingAlgorithm    = "AWS4-HMAC-SHA256"
-	serviceName         = "webservices"
+	serviceName         = "ProductAdvertisingAPI"
 	terminationString   = "aws4_request"
 	authorizationHeader = "Authorization"
 )
@@ -116,8 +116,6 @@ func (r *request) sign() error {
 		bodyDigest,
 	}, "\n")
 
-	fmt.Println(canonicalString)
-
 	canonicalStringHash := hex.EncodeToString(hashSHA256([]byte(canonicalString)))
 
 	credentialScope := strings.Join([]string{
@@ -134,9 +132,6 @@ func (r *request) sign() error {
 		canonicalStringHash,
 	}, "\n")
 
-	fmt.Println("")
-	fmt.Println(stringToSign)
-
 	kDate := hmacSHA256([]byte("AWS4"+r.client.SecretKey), []byte(formatShortDate(r.dateTime)))
 	kRegion := hmacSHA256(kDate, []byte(r.client.region))
 	kService := hmacSHA256(kRegion, []byte(serviceName))
@@ -144,19 +139,13 @@ func (r *request) sign() error {
 
 	signature := hex.EncodeToString(hmacSHA256(signingKey, []byte(stringToSign)))
 
-	fmt.Println(string(signature))
-
 	parts := []string{
 		fmt.Sprintf("%s Credential=%s/%s", hashingAlgorithm, r.client.AccessKey, credentialScope),
 		fmt.Sprintf("SignedHeaders=%s", signedHeaders),
 		fmt.Sprintf("Signature=%s", signature),
 	}
 
-	r.httpReq.Header.Set(authorizationHeader, strings.Join(parts, ", "))
-
-	for k, _ := range r.httpReq.Header {
-		fmt.Println(k, r.httpReq.Header.Get(k))
-	}
+	r.httpReq.Header.Set(authorizationHeader, strings.Join(parts, " "))
 
 	return nil
 }
