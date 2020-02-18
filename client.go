@@ -2,6 +2,9 @@ package gopaapi5
 
 import (
 	"errors"
+	"fmt"
+	"io/ioutil"
+	"net/http"
 
 	"github.com/utekaravinash/gopaapi5/api"
 )
@@ -16,6 +19,7 @@ type Client struct {
 	host         string
 	region       string
 	marketplace  string
+	httpClient   *http.Client
 }
 
 func NewClient(accessKey, secretKey, associateTag string, locale api.Locale) (*Client, error) {
@@ -45,16 +49,27 @@ func NewClient(accessKey, secretKey, associateTag string, locale api.Locale) (*C
 		host:         locale.Host(),
 		region:       locale.Region(),
 		marketplace:  locale.Marketplace(),
+		httpClient:   &http.Client{},
 	}
 
 	return client, nil
 }
 
-func (c *Client) sendRequest(payload map[string]interface{}, response interface{}) error {
+func (c *Client) execute(req *request, response interface{}) error {
 
-	payload["PartnerType"] = c.partnerType
-	payload["PartnerTag"] = c.AssociateTag
-	payload["Marketplace"] = c.marketplace
+	req.build()
+	req.sign()
+
+	resp, err := c.httpClient.Do(req.httpReq)
+	if err != nil {
+		return err
+	}
+	defer resp.Body.Close()
+
+	fmt.Println("response Status:", resp.Status)
+	fmt.Println("response Headers:", resp.Header)
+	body, _ := ioutil.ReadAll(resp.Body)
+	fmt.Println("response Body:", string(body))
 
 	return nil
 }
