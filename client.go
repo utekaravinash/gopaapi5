@@ -11,9 +11,11 @@ type Client struct {
 	SecretKey    string
 	AssociateTag string
 	Locale       api.Locale
+	partnerType  string
 	service      string
 	host         string
 	region       string
+	marketplace  string
 }
 
 func NewClient(accessKey, secretKey, associateTag string, locale api.Locale) (*Client, error) {
@@ -38,19 +40,21 @@ func NewClient(accessKey, secretKey, associateTag string, locale api.Locale) (*C
 		AccessKey:    accessKey,
 		SecretKey:    secretKey,
 		AssociateTag: associateTag,
+		partnerType:  "Associates",
 		service:      "ProductAdvertisingAPIv1",
 		host:         locale.Host(),
 		region:       locale.Region(),
+		marketplace:  locale.Marketplace(),
 	}
 
 	return client, nil
 }
 
-func (c *Client) SendRequest(payload map[string]interface{}, response interface{}) error {
+func (c *Client) sendRequest(payload map[string]interface{}, response interface{}) error {
 
-	payload["PartnerType"] = "Associates"
+	payload["PartnerType"] = c.partnerType
 	payload["PartnerTag"] = c.AssociateTag
-	// payload["Marketplace"] = c.
+	payload["Marketplace"] = c.marketplace
 
 	return nil
 }
