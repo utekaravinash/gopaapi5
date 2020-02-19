@@ -1,8 +1,13 @@
 package api
 
-import "errors"
+import (
+	"errors"
+)
 
-type GetItemsResponse struct{}
+type GetItemsResponse struct {
+	Errors      []Error     `json:"Errors,omitempty"`
+	ItemsResult ItemsResult `json:"ItemsResult,omitempty"`
+}
 
 type GetItemsParams struct {
 	Condition             Condition

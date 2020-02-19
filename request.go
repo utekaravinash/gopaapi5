@@ -63,11 +63,6 @@ func (r *request) build() error {
 }
 
 func (r *request) sign() error {
-	// mac := hmac.New(sha256.New, []byte(c.SecretKey))
-
-	// authorization := "NewAuthorization"
-	// r.httpReq.Header.Set("Authorization", authorization)
-
 	headers := []string{}
 	canonicalHeaders := ""
 	signedHeaders := ""

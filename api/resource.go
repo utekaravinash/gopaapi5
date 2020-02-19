@@ -15,7 +15,7 @@ const (
 	ImagesVariantsSmall                              Resource = "Images.Variants.Small"
 	ImagesVariantsMedium                             Resource = "Images.Variants.Medium"
 	ImagesVariantsLarge                              Resource = "Images.Variants.Large"
-	ItemInfo                                         Resource = "ItemInfo"
+	ItemInfoResource                                 Resource = "ItemInfo"
 	OffersListingsAvailabilityMaxOrderQuantity       Resource = "Offers.Listings.Availability.MaxOrderQuantity"
 	OffersListingsAvailabilityMessage                Resource = "Offers.Listings.Availability.Message"
 	OffersListingsAvailabilityMinOrderQuantity       Resource = "Offers.Listings.Availability.MinOrderQuantity"
