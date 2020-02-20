@@ -1,7 +1,9 @@
 package gopaapi5
 
 import (
+	"encoding/json"
 	"errors"
+	"io/ioutil"
 
 	"github.com/utekaravinash/gopaapi5/api"
 )
@@ -78,6 +80,30 @@ func (c *Client) executeRequest(operation api.Operation, params MapResourceGette
 	}
 
 	err = c.execute(req, v)
+	if err != nil {
+		return err
+	}
+
+	return nil
+}
+
+func (c *Client) execute(req *request, v interface{}) error {
+
+	req.build()
+	req.sign()
+
+	resp, err := c.httpClient.Do(req.httpReq)
+	if err != nil {
+		return err
+	}
+	defer resp.Body.Close()
+
+	body, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		return err
+	}
+
+	err = json.Unmarshal(body, v)
 	if err != nil {
 		return err
 	}
