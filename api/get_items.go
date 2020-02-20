@@ -19,11 +19,11 @@ type GetItemsParams struct {
 	Resources             []Resource
 }
 
-func (p GetItemsParams) GetResources() []Resource {
+func (p GetItemsParams) ResourceList() []Resource {
 	return p.Resources
 }
 
-func (p GetItemsParams) Map() (map[string]interface{}, error) {
+func (p GetItemsParams) Payload() (map[string]interface{}, error) {
 	kv := map[string]interface{}{}
 	kv["ItemIdType"] = "ASIN"
 

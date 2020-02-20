@@ -15,11 +15,11 @@ type GetBrowseNodesParams struct {
 	Resources             []Resource
 }
 
-func (p GetBrowseNodesParams) GetResources() []Resource {
+func (p GetBrowseNodesParams) ResourceList() []Resource {
 	return p.Resources
 }
 
-func (p GetBrowseNodesParams) Map() (map[string]interface{}, error) {
+func (p GetBrowseNodesParams) Payload() (map[string]interface{}, error) {
 	kv := map[string]interface{}{}
 
 	if len(p.BrowseNodeIds) > 0 {

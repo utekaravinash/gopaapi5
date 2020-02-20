@@ -32,11 +32,11 @@ type SearchItemsParams struct {
 	Title                 string
 }
 
-func (p SearchItemsParams) GetResources() []Resource {
+func (p SearchItemsParams) ResourceList() []Resource {
 	return p.Resources
 }
 
-func (p SearchItemsParams) Map() (map[string]interface{}, error) {
+func (p SearchItemsParams) Payload() (map[string]interface{}, error) {
 	kv := map[string]interface{}{}
 
 	if p.Actor != "" {

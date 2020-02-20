@@ -8,9 +8,9 @@ import (
 	"github.com/utekaravinash/gopaapi5/api"
 )
 
-type mapResourceGetter interface {
-	Map() (map[string]interface{}, error)
-	GetResources() []api.Resource
+type payloadResourceListGetter interface {
+	Payload() (map[string]interface{}, error)
+	ResourceList() []api.Resource
 }
 
 func (c *Client) GetBrowseNodes(params *api.GetBrowseNodesParams) (*api.GetBrowseNodesResponse, error) {
@@ -56,18 +56,18 @@ func (c *Client) SearchItems(params *api.SearchItemsParams) (*api.SearchItemsRes
 	return &response, nil
 }
 
-func (c *Client) executeRequest(operation api.Operation, params mapResourceGetter, v interface{}) error {
+func (c *Client) executeRequest(operation api.Operation, params payloadResourceListGetter, v interface{}) error {
 
 	if params == nil {
 		return errors.New("Nil parameters")
 	}
 
-	err := operation.Validate(params.GetResources())
+	err := operation.Validate(params.ResourceList())
 	if err != nil {
 		return err
 	}
 
-	payload, err := params.Map()
+	payload, err := params.Payload()
 	if err != nil {
 		return err
 	}

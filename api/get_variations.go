@@ -17,11 +17,11 @@ type GetVariationsParams struct {
 	VariationPage         int
 }
 
-func (p GetVariationsParams) GetResources() []Resource {
+func (p GetVariationsParams) ResourceList() []Resource {
 	return p.Resources
 }
 
-func (p GetVariationsParams) Map() (map[string]interface{}, error) {
+func (p GetVariationsParams) Payload() (map[string]interface{}, error) {
 	kv := map[string]interface{}{}
 	kv["ASIN"] = p.ASIN
 
