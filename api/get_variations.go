@@ -17,49 +17,6 @@ type GetVariationsParams struct {
 	VariationPage         int
 }
 
-func NewGetVariationsParams(asin string) *GetVariationsParams {
-
-	return &GetVariationsParams{
-		ASIN: asin,
-	}
-}
-
-func (p *GetVariationsParams) SetASIN(asin string) {
-	p.ASIN = asin
-}
-
-func (p *GetVariationsParams) SetCondition(condition Condition) {
-	p.Condition = condition
-}
-
-func (p *GetVariationsParams) SetCurrencyOfPreference(currency Currency) {
-	p.CurrencyOfPreference = currency
-}
-
-func (p *GetVariationsParams) AddLanguagesOfPreference(language Language) {
-	p.LanguagesOfPreference = append(p.LanguagesOfPreference, language)
-}
-
-func (p *GetVariationsParams) SetMerchant(merchant Merchant) {
-	p.Merchant = merchant
-}
-
-func (p *GetVariationsParams) SetOfferCount(offerCount int) {
-	p.OfferCount = offerCount
-}
-
-func (p *GetVariationsParams) AddResources(resource Resource) {
-	p.Resources = append(p.Resources, resource)
-}
-
-func (p *GetVariationsParams) SetVariationCount(variationCount int) {
-	p.VariationCount = variationCount
-}
-
-func (p *GetVariationsParams) SetVariationPage(variationPage int) {
-	p.VariationPage = variationPage
-}
-
 func (p GetVariationsParams) GetResources() []Resource {
 	return p.Resources
 }

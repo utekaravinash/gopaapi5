@@ -15,34 +15,6 @@ type GetBrowseNodesParams struct {
 	Resources             []Resource
 }
 
-func NewGetBrowseNodesParams(browseNodeIds []string) *GetBrowseNodesParams {
-	uniqueBrowseNodeIds := []string{}
-
-	for _, browseNodeId := range browseNodeIds {
-		if !existsInStrings(browseNodeId, uniqueBrowseNodeIds) {
-			uniqueBrowseNodeIds = append(uniqueBrowseNodeIds, browseNodeId)
-		}
-	}
-
-	return &GetBrowseNodesParams{
-		BrowseNodeIds: uniqueBrowseNodeIds,
-	}
-}
-
-func (p *GetBrowseNodesParams) AddBrowseNodeId(browseNodeId string) {
-	if !existsInStrings(browseNodeId, p.BrowseNodeIds) {
-		p.BrowseNodeIds = append(p.BrowseNodeIds, browseNodeId)
-	}
-}
-
-func (p *GetBrowseNodesParams) AddLanguagesOfPreference(language Language) {
-	p.LanguagesOfPreference = append(p.LanguagesOfPreference, language)
-}
-
-func (p *GetBrowseNodesParams) AddResources(resource Resource) {
-	p.Resources = append(p.Resources, resource)
-}
-
 func (p GetBrowseNodesParams) GetResources() []Resource {
 	return p.Resources
 }
