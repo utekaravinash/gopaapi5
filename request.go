@@ -12,6 +12,8 @@ import (
 	"sort"
 	"strings"
 	"time"
+
+	"github.com/utekaravinash/gopaapi5/api"
 )
 
 const (
@@ -25,7 +27,7 @@ const (
 )
 
 type request struct {
-	Operation Operation
+	Operation api.Operation
 	Payload   map[string]interface{}
 	client    *Client
 	httpReq   *http.Request

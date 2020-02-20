@@ -6,19 +6,16 @@ import (
 	"github.com/utekaravinash/gopaapi5/api"
 )
 
-type Operation string
-
-const (
-	GetBrowseNodes Operation = "GetBrowseNodes"
-	GetItems       Operation = "GetItems"
-	GetVariations  Operation = "GetVariations"
-	SearchItems    Operation = "SearchItems"
-)
-
 func (c *Client) GetItems(params *api.GetItemsParams) (*api.GetItemsResponse, error) {
 
 	if params == nil {
 		return nil, errors.New("Nil parameters")
+	}
+
+	operation := api.GetItems
+	err := operation.Validate(params.Resources)
+	if err != nil {
+		return nil, err
 	}
 
 	response := api.GetItemsResponse{}
@@ -29,7 +26,7 @@ func (c *Client) GetItems(params *api.GetItemsParams) (*api.GetItemsResponse, er
 	}
 
 	req := &request{
-		Operation: GetItems,
+		Operation: operation,
 		Payload:   payload,
 		client:    c,
 		path:      "paapi5/getitems",

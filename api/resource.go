@@ -3,6 +3,8 @@ package api
 type Resource string
 
 const (
+	BrowseNodesAncestor                                    Resource = "BrowseNodes.Ancestor"
+	BrowseNodesChildren                                    Resource = "BrowseNodes.Children"
 	BrowseNodeInfoBrowseNodes                              Resource = "BrowseNodeInfo.BrowseNodes"
 	BrowseNodeInfoBrowseNodesAncestor                      Resource = "BrowseNodeInfo.BrowseNodes.Ancestor"
 	BrowseNodeInfoBrowseNodesSalesRank                     Resource = "BrowseNodeInfo.BrowseNodes.SalesRank"
@@ -60,4 +62,8 @@ const (
 	RentalOffersListingsDeliveryInfoIsPrimeEligible        Resource = "RentalOffers.Listings.DeliveryInfo.IsPrimeEligible"
 	RentalOffersListingsDeliveryInfoShippingCharges        Resource = "RentalOffers.Listings.DeliveryInfo.ShippingCharges"
 	RentalOffersListingsMerchantInfo                       Resource = "RentalOffers.Listings.MerchantInfo"
+	VariationSummaryPriceHighestPrice                      Resource = "VariationSummary.Price.HighestPrice"
+	VariationSummaryPriceLowestPrice                       Resource = "VariationSummary.Price.LowestPrice"
+	VariationSummaryVariationDimension                     Resource = "VariationSummary.VariationDimension"
+	SearchRefinements                                      Resource = "SearchRefinements"
 )
