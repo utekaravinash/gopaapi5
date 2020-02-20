@@ -8,11 +8,6 @@ import (
 	"github.com/utekaravinash/gopaapi5/api"
 )
 
-type payloadResourceListGetter interface {
-	Payload() (map[string]interface{}, error)
-	ResourceList() []api.Resource
-}
-
 func (c *Client) GetBrowseNodes(params *api.GetBrowseNodesParams) (*api.GetBrowseNodesResponse, error) {
 	response := api.GetBrowseNodesResponse{}
 	err := c.executeRequest(api.GetBrowseNodes, params, &response)
@@ -54,6 +49,11 @@ func (c *Client) SearchItems(params *api.SearchItemsParams) (*api.SearchItemsRes
 	}
 
 	return &response, nil
+}
+
+type payloadResourceListGetter interface {
+	Payload() (map[string]interface{}, error)
+	ResourceList() []api.Resource
 }
 
 func (c *Client) executeRequest(operation api.Operation, params payloadResourceListGetter, v interface{}) error {
