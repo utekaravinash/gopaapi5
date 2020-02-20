@@ -132,6 +132,10 @@ func (p *SearchItemsParams) SetTitle(title string) {
 	p.Title = title
 }
 
+func (p SearchItemsParams) GetResources() []Resource {
+	return p.Resources
+}
+
 func (p SearchItemsParams) Map() (map[string]interface{}, error) {
 	kv := map[string]interface{}{}
 

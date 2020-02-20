@@ -60,6 +60,10 @@ func (p *GetVariationsParams) SetVariationPage(variationPage int) {
 	p.VariationPage = variationPage
 }
 
+func (p GetVariationsParams) GetResources() []Resource {
+	return p.Resources
+}
+
 func (p GetVariationsParams) Map() (map[string]interface{}, error) {
 	kv := map[string]interface{}{}
 	kv["ASIN"] = p.ASIN

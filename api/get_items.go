@@ -63,6 +63,10 @@ func (p *GetItemsParams) AddResources(resource Resource) {
 	p.Resources = append(p.Resources, resource)
 }
 
+func (p GetItemsParams) GetResources() []Resource {
+	return p.Resources
+}
+
 func (p GetItemsParams) Map() (map[string]interface{}, error) {
 	kv := map[string]interface{}{}
 	kv["ItemIdType"] = "ASIN"

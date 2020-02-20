@@ -43,6 +43,10 @@ func (p *GetBrowseNodesParams) AddResources(resource Resource) {
 	p.Resources = append(p.Resources, resource)
 }
 
+func (p GetBrowseNodesParams) GetResources() []Resource {
+	return p.Resources
+}
+
 func (p GetBrowseNodesParams) Map() (map[string]interface{}, error) {
 	kv := map[string]interface{}{}
 

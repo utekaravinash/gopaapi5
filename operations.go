@@ -6,33 +6,14 @@ import (
 	"github.com/utekaravinash/gopaapi5/api"
 )
 
+type MapResourceGetter interface {
+	Map() (map[string]interface{}, error)
+	GetResources() []api.Resource
+}
+
 func (c *Client) GetBrowseNodes(params *api.GetBrowseNodesParams) (*api.GetBrowseNodesResponse, error) {
-
-	if params == nil {
-		return nil, errors.New("Nil parameters")
-	}
-
-	operation := api.GetBrowseNodes
-	err := operation.Validate(params.Resources)
-	if err != nil {
-		return nil, err
-	}
-
 	response := api.GetBrowseNodesResponse{}
-
-	payload, err := params.Map()
-	if err != nil {
-		return nil, err
-	}
-
-	req := &request{
-		Operation: operation,
-		Payload:   payload,
-		client:    c,
-		path:      "paapi5/getitems",
-	}
-
-	err = c.execute(req, &response)
+	err := c.executeRequest(api.GetBrowseNodes, params, &response)
 	if err != nil {
 		return nil, err
 	}
@@ -41,32 +22,9 @@ func (c *Client) GetBrowseNodes(params *api.GetBrowseNodesParams) (*api.GetBrows
 }
 
 func (c *Client) GetItems(params *api.GetItemsParams) (*api.GetItemsResponse, error) {
-
-	if params == nil {
-		return nil, errors.New("Nil parameters")
-	}
-
-	operation := api.GetItems
-	err := operation.Validate(params.Resources)
-	if err != nil {
-		return nil, err
-	}
-
 	response := api.GetItemsResponse{}
 
-	payload, err := params.Map()
-	if err != nil {
-		return nil, err
-	}
-
-	req := &request{
-		Operation: operation,
-		Payload:   payload,
-		client:    c,
-		path:      "paapi5/getitems",
-	}
-
-	err = c.execute(req, &response)
+	err := c.executeRequest(api.GetItems, params, &response)
 	if err != nil {
 		return nil, err
 	}
@@ -75,32 +33,9 @@ func (c *Client) GetItems(params *api.GetItemsParams) (*api.GetItemsResponse, er
 }
 
 func (c *Client) GetVariations(params *api.GetVariationsParams) (*api.GetVariationsResponse, error) {
-
-	if params == nil {
-		return nil, errors.New("Nil parameters")
-	}
-
-	operation := api.GetVariations
-	err := operation.Validate(params.Resources)
-	if err != nil {
-		return nil, err
-	}
-
 	response := api.GetVariationsResponse{}
 
-	payload, err := params.Map()
-	if err != nil {
-		return nil, err
-	}
-
-	req := &request{
-		Operation: operation,
-		Payload:   payload,
-		client:    c,
-		path:      "paapi5/getitems",
-	}
-
-	err = c.execute(req, &response)
+	err := c.executeRequest(api.GetVariations, params, &response)
 	if err != nil {
 		return nil, err
 	}
@@ -109,22 +44,30 @@ func (c *Client) GetVariations(params *api.GetVariationsParams) (*api.GetVariati
 }
 
 func (c *Client) SearchItems(params *api.SearchItemsParams) (*api.SearchItemsResponse, error) {
+	response := api.SearchItemsResponse{}
 
-	if params == nil {
-		return nil, errors.New("Nil parameters")
-	}
-
-	operation := api.SearchItems
-	err := operation.Validate(params.Resources)
+	err := c.executeRequest(api.SearchItems, params, &response)
 	if err != nil {
 		return nil, err
 	}
 
-	response := api.SearchItemsResponse{}
+	return &response, nil
+}
+
+func (c *Client) executeRequest(operation api.Operation, params MapResourceGetter, v interface{}) error {
+
+	if params == nil {
+		return errors.New("Nil parameters")
+	}
+
+	err := operation.Validate(params.GetResources())
+	if err != nil {
+		return err
+	}
 
 	payload, err := params.Map()
 	if err != nil {
-		return nil, err
+		return err
 	}
 
 	req := &request{
@@ -134,10 +77,10 @@ func (c *Client) SearchItems(params *api.SearchItemsParams) (*api.SearchItemsRes
 		path:      "paapi5/getitems",
 	}
 
-	err = c.execute(req, &response)
+	err = c.execute(req, v)
 	if err != nil {
-		return nil, err
+		return err
 	}
 
-	return &response, nil
+	return nil
 }
