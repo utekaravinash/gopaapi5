@@ -8,7 +8,7 @@ import (
 	"github.com/utekaravinash/gopaapi5/api"
 )
 
-type MapResourceGetter interface {
+type mapResourceGetter interface {
 	Map() (map[string]interface{}, error)
 	GetResources() []api.Resource
 }
@@ -56,7 +56,7 @@ func (c *Client) SearchItems(params *api.SearchItemsParams) (*api.SearchItemsRes
 	return &response, nil
 }
 
-func (c *Client) executeRequest(operation api.Operation, params MapResourceGetter, v interface{}) error {
+func (c *Client) executeRequest(operation api.Operation, params mapResourceGetter, v interface{}) error {
 
 	if params == nil {
 		return errors.New("Nil parameters")
