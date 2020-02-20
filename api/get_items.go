@@ -14,7 +14,7 @@ type GetItemsParams struct {
 	CurrencyOfPreference  Currency
 	ItemIds               []string
 	LanguagesOfPreference []Language
-	Merchant              string
+	Merchant              Merchant
 	OfferCount            int
 	Resources             []Resource
 }
@@ -51,7 +51,7 @@ func (p *GetItemsParams) AddLanguagesOfPreference(language Language) {
 	p.LanguagesOfPreference = append(p.LanguagesOfPreference, language)
 }
 
-func (p *GetItemsParams) SetMerchant(merchant string) {
+func (p *GetItemsParams) SetMerchant(merchant Merchant) {
 	p.Merchant = merchant
 }
 

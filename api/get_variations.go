@@ -10,7 +10,7 @@ type GetVariationsParams struct {
 	Condition             Condition
 	CurrencyOfPreference  Currency
 	LanguagesOfPreference []Language
-	Merchant              string
+	Merchant              Merchant
 	OfferCount            int
 	Resources             []Resource
 	VariationCount        int
@@ -40,7 +40,7 @@ func (p *GetVariationsParams) AddLanguagesOfPreference(language Language) {
 	p.LanguagesOfPreference = append(p.LanguagesOfPreference, language)
 }
 
-func (p *GetVariationsParams) SetMerchant(merchant string) {
+func (p *GetVariationsParams) SetMerchant(merchant Merchant) {
 	p.Merchant = merchant
 }
 

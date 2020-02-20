@@ -107,3 +107,37 @@ func (c *Client) GetVariations(params *api.GetVariationsParams) (*api.GetVariati
 
 	return &response, nil
 }
+
+func (c *Client) SearchItems(params *api.SearchItemsParams) (*api.SearchItemsResponse, error) {
+
+	if params == nil {
+		return nil, errors.New("Nil parameters")
+	}
+
+	operation := api.SearchItems
+	err := operation.Validate(params.Resources)
+	if err != nil {
+		return nil, err
+	}
+
+	response := api.SearchItemsResponse{}
+
+	payload, err := params.Map()
+	if err != nil {
+		return nil, err
+	}
+
+	req := &request{
+		Operation: operation,
+		Payload:   payload,
+		client:    c,
+		path:      "paapi5/getitems",
+	}
+
+	err = c.execute(req, &response)
+	if err != nil {
+		return nil, err
+	}
+
+	return &response, nil
+}
