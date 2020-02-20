@@ -27,8 +27,8 @@ const (
 )
 
 type request struct {
-	Operation api.Operation
-	Payload   map[string]interface{}
+	operation api.Operation
+	payload   map[string]interface{}
 	client    *Client
 	httpReq   *http.Request
 	path      string
@@ -40,11 +40,11 @@ func (r *request) build() error {
 	r.dateTime = time.Now().UTC()
 	amzDate := formatDate(r.dateTime)
 
-	r.Payload["PartnerType"] = r.client.partnerType
-	r.Payload["PartnerTag"] = r.client.AssociateTag
-	r.Payload["Marketplace"] = r.client.marketplace
+	r.payload["PartnerType"] = r.client.partnerType
+	r.payload["PartnerTag"] = r.client.AssociateTag
+	r.payload["Marketplace"] = r.client.marketplace
 
-	jsonBody, err := json.Marshal(r.Payload)
+	jsonBody, err := json.Marshal(r.payload)
 	if err != nil {
 		return err
 	}
@@ -58,7 +58,7 @@ func (r *request) build() error {
 	r.httpReq.Header.Set("content-type", "application/json; charset=utf-8")
 	r.httpReq.Header.Set("content-encoding", "amz-1.0")
 	r.httpReq.Header.Set("x-amz-date", amzDate)
-	r.httpReq.Header.Set("x-amz-target", fmt.Sprintf("com.amazon.paapi5.v1.ProductAdvertisingAPIv1.%s", r.Operation))
+	r.httpReq.Header.Set("x-amz-target", fmt.Sprintf("com.amazon.paapi5.v1.ProductAdvertisingAPIv1.%s", r.operation))
 
 	return nil
 
@@ -97,7 +97,7 @@ func (r *request) sign() error {
 
 	uri := getURIPath(r.httpReq.URL)
 
-	body, err := json.Marshal(r.Payload)
+	body, err := json.Marshal(r.payload)
 	if err != nil {
 		return err
 	}

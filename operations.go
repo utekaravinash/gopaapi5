@@ -73,8 +73,8 @@ func (c *Client) executeRequest(operation api.Operation, params payloadResourceL
 	}
 
 	req := &request{
-		Operation: operation,
-		Payload:   payload,
+		operation: operation,
+		payload:   payload,
 		client:    c,
 		path:      "paapi5/getitems",
 	}
