@@ -20,13 +20,13 @@ const (
 	UnitedStates       Locale = "US"
 )
 
-type hostRegion struct {
+type hostRegionMarketplace struct {
 	host        string
 	region      string
 	marketplace string
 }
 
-var localeHostRegionMarketplaceMap = map[Locale]hostRegion{
+var localeHostRegionMarketplaceMap = map[Locale]hostRegionMarketplace{
 	Australia:          {"webservices.amazon.com.au", "us-west-2", "www.amazon.com.au"},
 	Brazil:             {"webservices.amazon.com.br", "us-east-1", "www.amazon.com.br"},
 	Canada:             {"webservices.amazon.ca", "us-east-1", "www.amazon.ca"},
