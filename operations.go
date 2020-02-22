@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"errors"
 	"io/ioutil"
+	"time"
 
 	"github.com/utekaravinash/gopaapi5/api"
 )
@@ -77,6 +78,7 @@ func (c *Client) executeRequest(operation api.Operation, params payloadResourceL
 		payload:   payload,
 		client:    c,
 		path:      "paapi5/getitems",
+		dateTime:  time.Now().UTC(),
 	}
 
 	err = c.execute(req, v)
