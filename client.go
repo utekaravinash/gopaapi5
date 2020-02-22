@@ -18,6 +18,7 @@ type Client struct {
 	region       string
 	marketplace  string
 	httpClient   *http.Client
+	testing      bool
 }
 
 func NewClient(accessKey, secretKey, associateTag string, locale api.Locale) (*Client, error) {
@@ -48,6 +49,7 @@ func NewClient(accessKey, secretKey, associateTag string, locale api.Locale) (*C
 		region:       locale.Region(),
 		marketplace:  locale.Marketplace(),
 		httpClient:   &http.Client{},
+		testing:      false,
 	}
 
 	return client, nil

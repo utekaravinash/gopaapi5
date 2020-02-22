@@ -1,0 +1,68 @@
+{
+  "BrowseNodesResult": {
+    "BrowseNodes": [
+      {
+        "Ancestor": {
+          "Ancestor": {
+            "Ancestor": {
+              "Ancestor": {
+                "Ancestor": {
+                  "ContextFreeName": "Video Games",
+                  "DisplayName": "Video Games",
+                  "Id": "468642"
+                },
+                "ContextFreeName": "Videogames",
+                "DisplayName": "Categories",
+                "Id": "11846801"
+              },
+              "ContextFreeName": "PlayStation 4 Games, Consoles & Accessories",
+              "DisplayName": "PlayStation 4",
+              "Id": "6427814011"
+            },
+            "ContextFreeName": "PlayStation 4 Accessories",
+            "DisplayName": "Accessories",
+            "Id": "6427815011"
+          },
+          "ContextFreeName": "PlayStation 4 Controllers",
+          "DisplayName": "Controllers",
+          "Id": "6427824011"
+        },
+        "ContextFreeName": "PlayStation 4 Gamepads & Standard Controllers",
+        "DisplayName": "Gamepads & Standard Controllers",
+        "Id": "10111036011",
+        "IsRoot": false
+      },
+      {
+        "Ancestor": {
+          "Ancestor": {
+            "Ancestor": {
+              "Ancestor": {
+                "Ancestor": {
+                  "ContextFreeName": "Clothing, Shoes & Jewelry",
+                  "DisplayName": "Clothing, Shoes & Jewelry",
+                  "Id": "7141123011"
+                },
+                "ContextFreeName": "Clothing, Shoes & Jewelry",
+                "DisplayName": "Departments",
+                "Id": "7141124011"
+              },
+              "ContextFreeName": "Men's Fashion",
+              "DisplayName": "Men",
+              "Id": "7147441011"
+            },
+            "ContextFreeName": "Men's Clothing",
+            "DisplayName": "Clothing",
+            "Id": "1040658"
+          },
+          "ContextFreeName": "Men's Activewear",
+          "DisplayName": "Active",
+          "Id": "3455821"
+        },
+        "ContextFreeName": "Men's Athletic Socks",
+        "DisplayName": "Athletic Socks",
+        "Id": "1045724",
+        "IsRoot": false
+      }
+    ]
+  }
+}

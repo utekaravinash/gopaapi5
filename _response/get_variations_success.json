@@ -1,0 +1,244 @@
+{
+  "VariationsResult": {
+    "Items": [
+      {
+        "ASIN": "B01MTKXP31",
+        "DetailPageURL": "https://www.amazon.com/dp/B01MTKXP31?tag=trickatrout-20&linkCode=ogv&th=1&psc=1",
+        "Images": {
+          "Primary": {
+            "Large": {
+              "Height": 319,
+              "URL": "https://m.media-amazon.com/images/I/41Z31ucxNSL.jpg",
+              "Width": 500
+            }
+          }
+        },
+        "ItemInfo": {
+          "Title": {
+            "DisplayValue": "DualShock 4 Wireless Controller for PlayStation 4 -  Green Camouflage",
+            "Label": "Title",
+            "Locale": "en_US"
+          }
+        },
+        "VariationAttributes": [
+          {
+            "Name": "color_name",
+            "Value": "Green Camouflage"
+          }
+        ]
+      },
+      {
+        "ASIN": "B07FQ74V4Z",
+        "DetailPageURL": "https://www.amazon.com/dp/B07FQ74V4Z?tag=trickatrout-20&linkCode=ogv&th=1&psc=1",
+        "Images": {
+          "Primary": {
+            "Large": {
+              "Height": 319,
+              "URL": "https://m.media-amazon.com/images/I/413Dci2WKsL.jpg",
+              "Width": 500
+            }
+          }
+        },
+        "ItemInfo": {
+          "Title": {
+            "DisplayValue": "DualShock 4 Wireless Controller for PlayStation 4 - Crystal",
+            "Label": "Title",
+            "Locale": "en_US"
+          }
+        },
+        "VariationAttributes": [
+          {
+            "Name": "color_name",
+            "Value": "Crystal"
+          }
+        ]
+      },
+      {
+        "ASIN": "B01MD19OI2",
+        "DetailPageURL": "https://www.amazon.com/dp/B01MD19OI2?tag=trickatrout-20&linkCode=ogv&th=1&psc=1",
+        "Images": {
+          "Primary": {
+            "Large": {
+              "Height": 319,
+              "URL": "https://m.media-amazon.com/images/I/41kaOFDXzSL.jpg",
+              "Width": 500
+            }
+          }
+        },
+        "ItemInfo": {
+          "Title": {
+            "DisplayValue": "DualShock 4 Wireless Controller for PlayStation 4 - Magma Red",
+            "Label": "Title",
+            "Locale": "en_US"
+          }
+        },
+        "VariationAttributes": [
+          {
+            "Name": "color_name",
+            "Value": "Magma Red"
+          }
+        ]
+      },
+      {
+        "ASIN": "B07GQ61M42",
+        "DetailPageURL": "https://www.amazon.com/dp/B07GQ61M42?tag=trickatrout-20&linkCode=ogv&th=1&psc=1",
+        "Images": {
+          "Primary": {
+            "Large": {
+              "Height": 319,
+              "URL": "https://m.media-amazon.com/images/I/41LUWLoojOL.jpg",
+              "Width": 500
+            }
+          }
+        },
+        "ItemInfo": {
+          "Title": {
+            "DisplayValue": "DualShock 4 Wireless Controller for PlayStation 4 - Blue Camouflage",
+            "Label": "Title",
+            "Locale": "en_US"
+          }
+        },
+        "VariationAttributes": [
+          {
+            "Name": "color_name",
+            "Value": "Blue Camouflage"
+          }
+        ]
+      },
+      {
+        "ASIN": "B0799CLFYQ",
+        "DetailPageURL": "https://www.amazon.com/dp/B0799CLFYQ?tag=trickatrout-20&linkCode=ogv&th=1&psc=1",
+        "Images": {
+          "Primary": {
+            "Large": {
+              "Height": 321,
+              "URL": "https://m.media-amazon.com/images/I/41rJye82jNL.jpg",
+              "Width": 500
+            }
+          }
+        },
+        "ItemInfo": {
+          "Title": {
+            "DisplayValue": "DualShock 4 Wireless Controller for PlayStation 4 - Steel Black",
+            "Label": "Title",
+            "Locale": "en_US"
+          }
+        },
+        "VariationAttributes": [
+          {
+            "Name": "color_name",
+            "Value": "Steel Black"
+          }
+        ]
+      },
+      {
+        "ASIN": "B0799976M1",
+        "DetailPageURL": "https://www.amazon.com/dp/B0799976M1?tag=trickatrout-20&linkCode=ogv&th=1&psc=1",
+        "Images": {
+          "Primary": {
+            "Large": {
+              "Height": 319,
+              "URL": "https://m.media-amazon.com/images/I/415-s5FkXIL.jpg",
+              "Width": 500
+            }
+          }
+        },
+        "ItemInfo": {
+          "Title": {
+            "DisplayValue": "DualShock 4 Wireless Controller for PlayStation 4 - Midnight Blue",
+            "Label": "Title",
+            "Locale": "en_US"
+          }
+        },
+        "VariationAttributes": [
+          {
+            "Name": "color_name",
+            "Value": "Midnight Blue"
+          }
+        ]
+      },
+      {
+        "ASIN": "B071RSSMLL",
+        "DetailPageURL": "https://www.amazon.com/dp/B071RSSMLL?tag=trickatrout-20&linkCode=ogv&th=1&psc=1",
+        "Images": {
+          "Primary": {
+            "Large": {
+              "Height": 319,
+              "URL": "https://m.media-amazon.com/images/I/41voOGgESoL.jpg",
+              "Width": 500
+            }
+          }
+        },
+        "ItemInfo": {
+          "Title": {
+            "DisplayValue": "DualShock 4 Wireless Controller for PlayStation 4 - Gold",
+            "Label": "Title",
+            "Locale": "en_US"
+          }
+        },
+        "VariationAttributes": [
+          {
+            "Name": "color_name",
+            "Value": "Gold"
+          }
+        ]
+      },
+      {
+        "ASIN": "B07GQ6R2LR",
+        "DetailPageURL": "https://www.amazon.com/dp/B07GQ6R2LR?tag=trickatrout-20&linkCode=ogv&th=1&psc=1",
+        "Images": {
+          "Primary": {
+            "Large": {
+              "Height": 321,
+              "URL": "https://m.media-amazon.com/images/I/41HLFDcZo3L.jpg",
+              "Width": 500
+            }
+          }
+        },
+        "ItemInfo": {
+          "Title": {
+            "DisplayValue": "DualShock 4 Wireless Controller for PlayStation 4 - Berry Blue",
+            "Label": "Title",
+            "Locale": "en_US"
+          }
+        },
+        "VariationAttributes": [
+          {
+            "Name": "color_name",
+            "Value": "Berry Blue"
+          }
+        ]
+      },
+      {
+        "ASIN": "B07GQ6NN9M",
+        "DetailPageURL": "https://www.amazon.com/dp/B07GQ6NN9M?tag=trickatrout-20&linkCode=ogv&th=1&psc=1",
+        "Images": {
+          "Primary": {
+            "Large": {
+              "Height": 319,
+              "URL": "https://m.media-amazon.com/images/I/41MDo0XJIJL.jpg",
+              "Width": 500
+            }
+          }
+        },
+        "ItemInfo": {
+          "Title": {
+            "DisplayValue": "DualShock 4 Wireless Controller for PlayStation 4 - Sunset Orange",
+            "Label": "Title",
+            "Locale": "en_US"
+          }
+        },
+        "VariationAttributes": [
+          {
+            "Name": "color_name",
+            "Value": "Sunset Orange"
+          }
+        ]
+      }
+    ],
+    "VariationSummary": {
+      "PageCount": 2,
+      "VariationCount": 18
+    }
+  }
+}

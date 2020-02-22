@@ -1,0 +1,9 @@
+{
+  "__type": "com.amazon.paapi5#ValidationException",
+  "Errors": [
+    {
+      "Code": "InvalidParameterValue",
+      "Message": "The value en provided in the request for LanguagesOfPreference is invalid. Refer https://webservices.amazon.com/paapi5/documentation/locale-reference/united-states.html#valid-languages for valid values."
+    }
+  ]
+}

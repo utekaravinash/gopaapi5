@@ -1,0 +1,46 @@
+{
+  "ItemsResult": {
+    "Items": [
+      {
+        "ASIN": "0805210318",
+        "DetailPageURL": "https://www.amazon.com/dp/0805210318?tag=trickatrout-20&linkCode=ogi&th=1&psc=1",
+        "Images": {
+          "Primary": {
+            "Large": {
+              "Height": 500,
+              "URL": "https://m.media-amazon.com/images/I/41CnWolqViL.jpg",
+              "Width": 324
+            }
+          }
+        },
+        "ItemInfo": {
+          "Title": {
+            "DisplayValue": "Light on Yoga: The Bible of Modern Yoga",
+            "Label": "Title",
+            "Locale": "en_US"
+          }
+        }
+      },
+      {
+        "ASIN": "0892131349",
+        "DetailPageURL": "https://www.amazon.com/dp/0892131349?tag=trickatrout-20&linkCode=ogi&th=1&psc=1",
+        "Images": {
+          "Primary": {
+            "Large": {
+              "Height": 500,
+              "URL": "https://m.media-amazon.com/images/I/51iixzFhJDL.jpg",
+              "Width": 287
+            }
+          }
+        },
+        "ItemInfo": {
+          "Title": {
+            "DisplayValue": "Bhagavad-Gita As It Is (Paperback)",
+            "Label": "Title",
+            "Locale": "en_US"
+          }
+        }
+      }
+    ]
+  }
+}

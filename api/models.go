@@ -10,6 +10,15 @@ type ItemsResult struct {
 	Items []Item `json:"Items,omitempty"`
 }
 
+type BrowseNodesResult struct {
+	BrowseNodes []BrowseNode `json:"BrowseNodes,omitempty"`
+}
+
+// type VariationsResult struct {
+// 	VariationsResult []Item           `json:"VariationsResult,omitempty"`
+// 	VariationSummary VariationSummary `json:"VariationSummary,omitempty"`
+// }
+
 type Item struct {
 	ASIN                string               `json:"ASIN,omitempty"`
 	BrowseNodeInfo      BrowseNodeInfo       `json:"BrowseNodeInfo,omitempty"`

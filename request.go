@@ -36,7 +36,7 @@ type request struct {
 }
 
 func (r *request) build() error {
-	endpoint := fmt.Sprintf("https://%s/%s", r.client.host, r.path)
+	endpoint := fmt.Sprintf("%s://%s/%s", r.scheme(), r.client.host, r.path)
 	amzDate := formatDate(r.dateTime)
 
 	r.payload["PartnerType"] = r.client.partnerType
@@ -160,6 +160,14 @@ func getURIPath(u *url.URL) string {
 	}
 
 	return uri
+}
+
+func (r *request) scheme() string {
+	if !r.client.testing {
+		return "https"
+	}
+
+	return "http"
 }
 
 func stripExcessSpaces(vals []string) {

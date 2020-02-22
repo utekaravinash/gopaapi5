@@ -5,8 +5,8 @@ import (
 )
 
 type GetBrowseNodesResponse struct {
-	Errors      []Error     `json:"Errors,omitempty"`
-	ItemsResult ItemsResult `json:"ItemsResult,omitempty"`
+	Errors            []Error           `json:"Errors,omitempty"`
+	BrowseNodesResult BrowseNodesResult `json:"BrowseNodesResult,omitempty"`
 }
 
 type GetBrowseNodesParams struct {
