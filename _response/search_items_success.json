@@ -61,7 +61,7 @@
             "SalesRank": 11005
           }
         },
-        "DetailPageURL": "https://www.amazon.com/dp/0134190440?tag=trickatrout-20&linkCode=osi&th=1&psc=1",
+        "DetailPageURL": "https://www.amazon.com/dp/0134190440?tag=associateTag-20&linkCode=osi&th=1&psc=1",
         "Images": {
           "Primary": {
             "Large": {
@@ -482,7 +482,7 @@
             "SalesRank": 151024
           }
         },
-        "DetailPageURL": "https://www.amazon.com/dp/1838559337?tag=trickatrout-20&linkCode=osi&th=1&psc=1",
+        "DetailPageURL": "https://www.amazon.com/dp/1838559337?tag=associateTag-20&linkCode=osi&th=1&psc=1",
         "Images": {
           "Primary": {
             "Large": {
@@ -840,7 +840,7 @@
             "SalesRank": 10424
           }
         },
-        "DetailPageURL": "https://www.amazon.com/dp/1593278659?tag=trickatrout-20&linkCode=osi&th=1&psc=1",
+        "DetailPageURL": "https://www.amazon.com/dp/1593278659?tag=associateTag-20&linkCode=osi&th=1&psc=1",
         "Images": {
           "Primary": {
             "Large": {
@@ -1185,7 +1185,7 @@
         "Id": "SearchIndex"
       }
     },
-    "SearchURL": "https://www.amazon.com/s?k=golang&rh=p_n_availability%3A-1&tag=trickatrout-20&linkCode=osi",
+    "SearchURL": "https://www.amazon.com/s?k=golang&rh=p_n_availability%3A-1&tag=associateTag-20&linkCode=osi",
     "TotalResultCount": 146
   }
 }

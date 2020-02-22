@@ -3,7 +3,7 @@
     "Items": [
       {
         "ASIN": "0805210318",
-        "DetailPageURL": "https://www.amazon.com/dp/0805210318?tag=trickatrout-20&linkCode=ogi&th=1&psc=1",
+        "DetailPageURL": "https://www.amazon.com/dp/0805210318?tag=associateTag-20&linkCode=ogi&th=1&psc=1",
         "Images": {
           "Primary": {
             "Large": {
@@ -23,7 +23,7 @@
       },
       {
         "ASIN": "0892131349",
-        "DetailPageURL": "https://www.amazon.com/dp/0892131349?tag=trickatrout-20&linkCode=ogi&th=1&psc=1",
+        "DetailPageURL": "https://www.amazon.com/dp/0892131349?tag=associateTag-20&linkCode=ogi&th=1&psc=1",
         "Images": {
           "Primary": {
             "Large": {
