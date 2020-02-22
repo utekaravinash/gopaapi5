@@ -1,8 +1,8 @@
 package api
 
 type SearchItemsResponse struct {
-	Errors      []Error     `json:"Errors,omitempty"`
-	ItemsResult ItemsResult `json:"ItemsResult,omitempty"`
+	Errors       []Error      `json:"Errors,omitempty"`
+	SearchResult SearchResult `json:"SearchResult,omitempty"`
 }
 
 type SearchItemsParams struct {

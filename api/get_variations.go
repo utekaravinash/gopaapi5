@@ -1,8 +1,8 @@
 package api
 
 type GetVariationsResponse struct {
-	Errors      []Error     `json:"Errors,omitempty"`
-	ItemsResult ItemsResult `json:"ItemsResult,omitempty"`
+	Errors           []Error          `json:"Errors,omitempty"`
+	VariationsResult VariationsResult `json:"VariationsResult,omitempty"`
 }
 
 type GetVariationsParams struct {

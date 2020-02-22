@@ -14,10 +14,34 @@ type BrowseNodesResult struct {
 	BrowseNodes []BrowseNode `json:"BrowseNodes,omitempty"`
 }
 
-// type VariationsResult struct {
-// 	VariationsResult []Item           `json:"VariationsResult,omitempty"`
-// 	VariationSummary VariationSummary `json:"VariationSummary,omitempty"`
-// }
+type VariationsResult struct {
+	Items            []Item           `json:"Items,omitempty"`
+	VariationSummary VariationSummary `json:"VariationSummary,omitempty"`
+}
+
+type SearchResult struct {
+	TotalResultCount  int
+	SearchURL         string
+	Items             []Item
+	SearchRefinements SearchRefinementsModel
+}
+
+type SearchRefinementsModel struct {
+	BrowseNode       Refinement
+	OtherRefinements []Refinement
+	SearchIndex      Refinement
+}
+
+type Refinement struct {
+	Bins        []RefinementBin
+	DisplayName string
+	Id          string
+}
+
+type RefinementBin struct {
+	DisplayName string
+	Id          string
+}
 
 type Item struct {
 	ASIN                string               `json:"ASIN,omitempty"`
@@ -30,6 +54,25 @@ type Item struct {
 	RentalOffers        RentalOffers         `json:"RentalOffers,omitempty"`
 	Score               float32              `json:"Score,omitempty"`
 	VariationAttributes []VariationAttribute `json:"VariationAttributes,omitempty"`
+}
+
+type VariationSummary struct {
+	PageCount           int
+	Price               Price
+	VariationCount      int
+	VariationDimensions []VariationDimension
+}
+
+type Price struct {
+	HighestPrice OfferPrice
+	LowestPrice  OfferPrice
+}
+
+type VariationDimension struct {
+	DisplayName string
+	Locale      string
+	Name        string
+	Values      []string
 }
 
 type BrowseNodeInfo struct {
