@@ -1,10 +1,12 @@
 package api
 
+// SearchItemsResponse holds response from SearchItems operation
 type SearchItemsResponse struct {
 	Errors       []Error      `json:"Errors,omitempty"`
 	SearchResult SearchResult `json:"SearchResult,omitempty"`
 }
 
+// SearchItemsParams holds parameters to be passed to SearchItems operation
 type SearchItemsParams struct {
 	Actor                 string
 	Artist                string
@@ -32,10 +34,12 @@ type SearchItemsParams struct {
 	Title                 string
 }
 
+// ResourceList returns the list of resources in SearchItemsParams
 func (p SearchItemsParams) ResourceList() []Resource {
 	return p.Resources
 }
 
+// Payload constructs payload to be sent along with the API request
 func (p SearchItemsParams) Payload() (map[string]interface{}, error) {
 	kv := map[string]interface{}{}
 

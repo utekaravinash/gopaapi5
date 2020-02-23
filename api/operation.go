@@ -4,15 +4,21 @@ import (
 	"fmt"
 )
 
+// Operation custom type for PA API operations
 type Operation string
 
 const (
+	// GetBrowseNodes constant for GetBrowseNodes operation
 	GetBrowseNodes Operation = "GetBrowseNodes"
-	GetItems       Operation = "GetItems"
-	GetVariations  Operation = "GetVariations"
-	SearchItems    Operation = "SearchItems"
+	// GetItems constant for GetItems operation
+	GetItems Operation = "GetItems"
+	// GetVariations constant for GetVariations operation
+	GetVariations Operation = "GetVariations"
+	// SearchItems constant for SearchItems operation
+	SearchItems Operation = "SearchItems"
 )
 
+// resourceOperationsMap maps resources to their valid operations
 var resourceOperationsMap = map[Resource][]Operation{
 	BrowseNodesAncestor:                                    []Operation{GetBrowseNodes},
 	BrowseNodesChildren:                                    []Operation{GetBrowseNodes},
@@ -79,6 +85,7 @@ var resourceOperationsMap = map[Resource][]Operation{
 	SearchRefinements:                                      []Operation{SearchItems},
 }
 
+// Validate validates resources for an operation
 func (o Operation) Validate(resources []Resource) error {
 	for _, r := range resources {
 		validOperations := resourceOperationsMap[r]
@@ -90,6 +97,7 @@ func (o Operation) Validate(resources []Resource) error {
 	return nil
 }
 
+// existsInOperations checks if an Operation exists in a slice of Operations
 func existsInOperations(operation Operation, operations []Operation) bool {
 	for _, o := range operations {
 		if o == operation {

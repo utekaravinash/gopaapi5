@@ -1,17 +1,16 @@
 package gopaapi5
 
 import (
-	"encoding/json"
 	"errors"
-	"io/ioutil"
 	"time"
 
 	"github.com/utekaravinash/gopaapi5/api"
 )
 
+// GetBrowseNodes gets information for Browse Nodes
 func (c *Client) GetBrowseNodes(params *api.GetBrowseNodesParams) (*api.GetBrowseNodesResponse, error) {
 	response := api.GetBrowseNodesResponse{}
-	err := c.executeRequest(api.GetBrowseNodes, params, &response)
+	err := c.executeOperation(api.GetBrowseNodes, params, &response)
 	if err != nil {
 		return nil, err
 	}
@@ -19,10 +18,11 @@ func (c *Client) GetBrowseNodes(params *api.GetBrowseNodesParams) (*api.GetBrows
 	return &response, nil
 }
 
+// GetBrowseNodes gets item information for items
 func (c *Client) GetItems(params *api.GetItemsParams) (*api.GetItemsResponse, error) {
 	response := api.GetItemsResponse{}
 
-	err := c.executeRequest(api.GetItems, params, &response)
+	err := c.executeOperation(api.GetItems, params, &response)
 	if err != nil {
 		return nil, err
 	}
@@ -30,10 +30,11 @@ func (c *Client) GetItems(params *api.GetItemsParams) (*api.GetItemsResponse, er
 	return &response, nil
 }
 
+// GetVariations gets information for variations
 func (c *Client) GetVariations(params *api.GetVariationsParams) (*api.GetVariationsResponse, error) {
 	response := api.GetVariationsResponse{}
 
-	err := c.executeRequest(api.GetVariations, params, &response)
+	err := c.executeOperation(api.GetVariations, params, &response)
 	if err != nil {
 		return nil, err
 	}
@@ -41,10 +42,11 @@ func (c *Client) GetVariations(params *api.GetVariationsParams) (*api.GetVariati
 	return &response, nil
 }
 
+// SearchItems searches for items on Amazon
 func (c *Client) SearchItems(params *api.SearchItemsParams) (*api.SearchItemsResponse, error) {
 	response := api.SearchItemsResponse{}
 
-	err := c.executeRequest(api.SearchItems, params, &response)
+	err := c.executeOperation(api.SearchItems, params, &response)
 	if err != nil {
 		return nil, err
 	}
@@ -52,12 +54,14 @@ func (c *Client) SearchItems(params *api.SearchItemsParams) (*api.SearchItemsRes
 	return &response, nil
 }
 
+// payloadResourceListGetter is an interface for getting Payload and Resources
 type payloadResourceListGetter interface {
 	Payload() (map[string]interface{}, error)
 	ResourceList() []api.Resource
 }
 
-func (c *Client) executeRequest(operation api.Operation, params payloadResourceListGetter, v interface{}) error {
+// executeOperation validates request parameters and builds request payload
+func (c *Client) executeOperation(operation api.Operation, params payloadResourceListGetter, v interface{}) error {
 
 	if params == nil {
 		return errors.New("Nil parameters")
@@ -81,31 +85,7 @@ func (c *Client) executeRequest(operation api.Operation, params payloadResourceL
 		dateTime:  time.Now().UTC(),
 	}
 
-	err = c.execute(req, v)
-	if err != nil {
-		return err
-	}
-
-	return nil
-}
-
-func (c *Client) execute(req *request, v interface{}) error {
-
-	req.build()
-	req.sign()
-
-	resp, err := c.httpClient.Do(req.httpReq)
-	if err != nil {
-		return err
-	}
-	defer resp.Body.Close()
-
-	body, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		return err
-	}
-
-	err = json.Unmarshal(body, v)
+	err = c.send(req, v)
 	if err != nil {
 		return err
 	}

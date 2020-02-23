@@ -1,31 +1,49 @@
 package api
 
+// Locale custom type for locales
 type Locale string
 
 const (
-	Australia          Locale = "AU"
-	Brazil             Locale = "BR"
-	Canada             Locale = "CA"
-	France             Locale = "FR"
-	Germany            Locale = "DE"
-	India              Locale = "IN"
-	Italy              Locale = "IT"
-	Japan              Locale = "JP"
-	Mexico             Locale = "MX"
-	Singapore          Locale = "SG"
-	Spain              Locale = "ES"
-	Turkey             Locale = "TR"
+	// Australia Locale for Australia
+	Australia Locale = "AU"
+	// Brazil Locale for Brazil
+	Brazil Locale = "BR"
+	// Canada Locale for Canada
+	Canada Locale = "CA"
+	// France Locale for France
+	France Locale = "FR"
+	// Germany Locale for Germany
+	Germany Locale = "DE"
+	// India Locale for India
+	India Locale = "IN"
+	// Italy Locale for Italy
+	Italy Locale = "IT"
+	// Japan Locale for Japan
+	Japan Locale = "JP"
+	// Mexico Locale for Mexico
+	Mexico Locale = "MX"
+	// Singapore Locale for Singapore
+	Singapore Locale = "SG"
+	// Spain Locale for Spain
+	Spain Locale = "ES"
+	// Turkey Locale for Turkey
+	Turkey Locale = "TR"
+	// UnitedArabEmirates Locale for United Arab Emirates
 	UnitedArabEmirates Locale = "AE"
-	UnitedKingdom      Locale = "UK"
-	UnitedStates       Locale = "US"
+	// UnitedKingdom Locale for United Kingdom
+	UnitedKingdom Locale = "UK"
+	// UnitedStates Locale for United States
+	UnitedStates Locale = "US"
 )
 
+// hostRegionMarketplace holds host, region and marketplace
 type hostRegionMarketplace struct {
 	host        string
 	region      string
 	marketplace string
 }
 
+// localeHostRegionMarketplaceMap maps a locale to its host, region and marketplace
 var localeHostRegionMarketplaceMap = map[Locale]hostRegionMarketplace{
 	Australia:          {"webservices.amazon.com.au", "us-west-2", "www.amazon.com.au"},
 	Brazil:             {"webservices.amazon.com.br", "us-east-1", "www.amazon.com.br"},
@@ -44,6 +62,7 @@ var localeHostRegionMarketplaceMap = map[Locale]hostRegionMarketplace{
 	UnitedStates:       {"webservices.amazon.com", "us-east-1", "www.amazon.com"},
 }
 
+// Host returns host for a locale
 func (l Locale) Host() string {
 	if hrm, ok := localeHostRegionMarketplaceMap[l]; ok {
 		return hrm.host
@@ -52,6 +71,7 @@ func (l Locale) Host() string {
 	return ""
 }
 
+// Region returns a region for a locale
 func (l Locale) Region() string {
 	if hrm, ok := localeHostRegionMarketplaceMap[l]; ok {
 		return hrm.region
@@ -60,6 +80,7 @@ func (l Locale) Region() string {
 	return ""
 }
 
+// Marketplace returns a marketplace for a locale
 func (l Locale) Marketplace() string {
 	if hrm, ok := localeHostRegionMarketplaceMap[l]; ok {
 		return hrm.marketplace
@@ -68,6 +89,7 @@ func (l Locale) Marketplace() string {
 	return ""
 }
 
+// IsValid checks if a locale is valie or not
 func (l Locale) IsValid() bool {
 	_, valid := localeHostRegionMarketplaceMap[l]
 	return valid

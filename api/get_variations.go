@@ -1,10 +1,12 @@
 package api
 
+// GetVariationsResponse holds response from GetVariations operation
 type GetVariationsResponse struct {
 	Errors           []Error          `json:"Errors,omitempty"`
 	VariationsResult VariationsResult `json:"VariationsResult,omitempty"`
 }
 
+// GetVariationsParams holds parameters to be passed to GetVariations operation
 type GetVariationsParams struct {
 	ASIN                  string
 	Condition             Condition
@@ -17,10 +19,12 @@ type GetVariationsParams struct {
 	VariationPage         int
 }
 
+// ResourceList returns the list of resources in GetVariationsParams
 func (p GetVariationsParams) ResourceList() []Resource {
 	return p.Resources
 }
 
+// Payload constructs payload to be sent along with the API request
 func (p GetVariationsParams) Payload() (map[string]interface{}, error) {
 	kv := map[string]interface{}{}
 	kv["ASIN"] = p.ASIN

@@ -4,11 +4,13 @@ import (
 	"errors"
 )
 
+// GetItemsResponse holds response from GetItems operation
 type GetItemsResponse struct {
 	Errors      []Error     `json:"Errors,omitempty"`
 	ItemsResult ItemsResult `json:"ItemsResult,omitempty"`
 }
 
+// GetItemsParams holds parameters to be passed to GetItems operation
 type GetItemsParams struct {
 	Condition             Condition
 	CurrencyOfPreference  Currency
@@ -19,10 +21,12 @@ type GetItemsParams struct {
 	Resources             []Resource
 }
 
+// ResourceList returns the list of resources in GetItemsParams
 func (p GetItemsParams) ResourceList() []Resource {
 	return p.Resources
 }
 
+// Payload constructs payload to be sent along with the API request
 func (p GetItemsParams) Payload() (map[string]interface{}, error) {
 	kv := map[string]interface{}{}
 	kv["ItemIdType"] = "ASIN"

@@ -26,6 +26,7 @@ const (
 	authorizationHeader = "Authorization"
 )
 
+// request holds information specific to the operation and http request
 type request struct {
 	operation api.Operation
 	payload   map[string]interface{}
@@ -35,24 +36,30 @@ type request struct {
 	dateTime  time.Time
 }
 
+// build builds http request and returns error if any
 func (r *request) build() error {
+	// Construct API endpoint
 	endpoint := fmt.Sprintf("%s://%s/%s", r.scheme(), r.client.host, r.path)
 	amzDate := formatDate(r.dateTime)
 
+	// Set common payload values
 	r.payload["PartnerType"] = r.client.partnerType
 	r.payload["PartnerTag"] = r.client.AssociateTag
 	r.payload["Marketplace"] = r.client.marketplace
 
+	// Convert payload to json format
 	jsonBody, err := json.Marshal(r.payload)
 	if err != nil {
 		return err
 	}
 
+	// Construct HTTP request
 	r.httpReq, err = http.NewRequest("POST", endpoint, bytes.NewBuffer(jsonBody))
 	if err != nil {
 		return err
 	}
 
+	// Set HTTP request headers
 	r.httpReq.Header.Set("host", r.client.host)
 	r.httpReq.Header.Set("content-type", "application/json; charset=utf-8")
 	r.httpReq.Header.Set("content-encoding", "amz-1.0")
@@ -63,12 +70,14 @@ func (r *request) build() error {
 
 }
 
+// sign calculates the request signature and sets Authorization header value
 func (r *request) sign() error {
 	headers := []string{}
 	canonicalHeaders := ""
 	signedHeaders := ""
 	signedHeaderVals := http.Header{}
 
+	// Set signed header values
 	for k, v := range r.httpReq.Header {
 		lowerCaseKey := strings.ToLower(k)
 
@@ -89,6 +98,7 @@ func (r *request) sign() error {
 		headerValues[i] = k + ":" + strings.Join(signedHeaderVals[k], ",")
 	}
 
+	// strip excess space from header values
 	stripExcessSpaces(headerValues)
 	canonicalHeaders = strings.Join(headerValues, "\n")
 
@@ -101,8 +111,10 @@ func (r *request) sign() error {
 		return err
 	}
 
+	// Calculate hash of the request body
 	bodyDigest := hex.EncodeToString(hashSHA256(body))
 
+	// Construct canonical string
 	canonicalString := strings.Join([]string{
 		r.httpReq.Method,
 		uri,
@@ -112,8 +124,10 @@ func (r *request) sign() error {
 		bodyDigest,
 	}, "\n")
 
+	// Calculate hash of canonical string
 	canonicalStringHash := hex.EncodeToString(hashSHA256([]byte(canonicalString)))
 
+	// Build credential scope
 	credentialScope := strings.Join([]string{
 		formatShortDate(r.dateTime),
 		r.client.region,
@@ -121,6 +135,7 @@ func (r *request) sign() error {
 		terminationString,
 	}, "/")
 
+	// Build string to sign
 	stringToSign := strings.Join([]string{
 		hashingAlgorithm,
 		formatDate(r.dateTime),
@@ -133,6 +148,7 @@ func (r *request) sign() error {
 	kService := hmacSHA256(kRegion, []byte(serviceName))
 	signingKey := hmacSHA256(kService, []byte(terminationString))
 
+	// Calculate request signature
 	signature := hex.EncodeToString(hmacSHA256(signingKey, []byte(stringToSign)))
 
 	parts := []string{
@@ -141,11 +157,13 @@ func (r *request) sign() error {
 		fmt.Sprintf("Signature=%s", signature),
 	}
 
+	// Set Authorization header
 	r.httpReq.Header.Set(authorizationHeader, strings.Join(parts, " "))
 
 	return nil
 }
 
+// getURIPath gets URI path from the URL
 func getURIPath(u *url.URL) string {
 	var uri string
 
@@ -162,6 +180,7 @@ func getURIPath(u *url.URL) string {
 	return uri
 }
 
+// scheme returns the request's scheme
 func (r *request) scheme() string {
 	if !r.client.testing {
 		return "https"
@@ -170,28 +189,33 @@ func (r *request) scheme() string {
 	return "http"
 }
 
+// stripExcessSpaces stips excess space at both ends of each value in a slice
 func stripExcessSpaces(vals []string) {
 	for i, str := range vals {
 		vals[i] = strings.TrimSpace(str)
 	}
 }
 
+// hmacSHA256 returns SHA256 hash of data using a key
 func hmacSHA256(key []byte, data []byte) []byte {
 	hash := hmac.New(sha256.New, key)
 	hash.Write(data)
 	return hash.Sum(nil)
 }
 
+// hashSHA256 return SHA25 hash of data without a key
 func hashSHA256(data []byte) []byte {
 	hash := sha256.New()
 	hash.Write(data)
 	return hash.Sum(nil)
 }
 
+// formatShortDate returns short form of a date
 func formatShortDate(dt time.Time) string {
 	return dt.UTC().Format(shortDateFormat)
 }
 
+// formatDate returns long form of a date
 func formatDate(dt time.Time) string {
 	return dt.UTC().Format(dateFormat)
 }
