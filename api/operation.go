@@ -7,6 +7,15 @@ import (
 // Operation custom type for PA API operations
 type Operation string
 
+type ErrInvalidResource struct {
+	resource  Resource
+	operation Operation
+}
+
+func (e ErrInvalidResource) Error() string {
+	return fmt.Sprintf(`Invalid resource "%s" for operation "%s"`, e.resource, e.operation)
+}
+
 const (
 	// GetBrowseNodes constant for GetBrowseNodes operation
 	GetBrowseNodes Operation = "GetBrowseNodes"
@@ -90,7 +99,7 @@ func (o Operation) Validate(resources []Resource) error {
 	for _, r := range resources {
 		validOperations := resourceOperationsMap[r]
 		if !existsInOperations(o, validOperations) {
-			return fmt.Errorf(`Invalid resource "%s" for operation "%s"`, r, o)
+			return ErrInvalidResource{r, o}
 		}
 	}
 

@@ -9,6 +9,13 @@ import (
 	"github.com/utekaravinash/gopaapi5/api"
 )
 
+var (
+	ErrEmptyAccessKey    = errors.New("Empty access key")
+	ErrEmptySecretKey    = errors.New("Empty secret key")
+	ErrEmptyAssociateTag = errors.New("Empty associate tag")
+	ErrInvalidLocale     = errors.New("Invalid locale")
+)
+
 // Client stores AccessKey, SecretKey, and, AssociateTag; and exposes GetBrowseNodes, GetItems, GetVariations, and SearchItems operations.
 type Client struct {
 	AccessKey    string
@@ -28,19 +35,19 @@ type Client struct {
 func NewClient(accessKey, secretKey, associateTag string, locale api.Locale) (*Client, error) {
 
 	if accessKey == "" {
-		return nil, errors.New("Empty access key")
+		return nil, ErrEmptyAccessKey
 	}
 
 	if secretKey == "" {
-		return nil, errors.New("Empty secret key")
+		return nil, ErrEmptySecretKey
 	}
 
 	if associateTag == "" {
-		return nil, errors.New("Empty associate tag")
+		return nil, ErrEmptyAssociateTag
 	}
 
 	if !locale.IsValid() {
-		return nil, errors.New("Invalid locale")
+		return nil, ErrInvalidLocale
 	}
 
 	client := &Client{
