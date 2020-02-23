@@ -24,14 +24,14 @@ func TestGetBrowseNodes(t *testing.T) {
 	client.testing = true
 
 	h := http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		file, err := os.Open("_response/get_browse_nodes_success.json")
+		file, err := os.Open("_response/get_browse_nodes.json")
 		if err != nil {
-			t.Errorf("Cannot open _response/get_browse_nodes_success.json")
+			t.Errorf("Cannot open _response/get_browse_nodes.json")
 		}
 
 		jo, err := ioutil.ReadAll(file)
 		if err != nil {
-			t.Errorf("Cannot read _response/get_browse_nodes_success.json")
+			t.Errorf("Cannot read _response/get_browse_nodes.json")
 		}
 
 		w.Write(jo)
@@ -76,14 +76,14 @@ func TestGetItems(t *testing.T) {
 	client.testing = true
 
 	h := http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		file, err := os.Open("_response/get_items_success.json")
+		file, err := os.Open("_response/get_items.json")
 		if err != nil {
-			t.Errorf("Cannot open _response/get_items_success.json")
+			t.Errorf("Cannot open _response/get_items.json")
 		}
 
 		jo, err := ioutil.ReadAll(file)
 		if err != nil {
-			t.Errorf("Cannot read _response/get_items_success.json")
+			t.Errorf("Cannot read _response/get_items.json")
 		}
 
 		w.Write(jo)
@@ -126,14 +126,14 @@ func TestGetVariations(t *testing.T) {
 	client.testing = true
 
 	h := http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		file, err := os.Open("_response/get_variations_success.json")
+		file, err := os.Open("_response/get_variations.json")
 		if err != nil {
-			t.Errorf("Cannot open _response/get_variations_success.json")
+			t.Errorf("Cannot open _response/get_variations.json")
 		}
 
 		jo, err := ioutil.ReadAll(file)
 		if err != nil {
-			t.Errorf("Cannot read _response/get_variations_success.json")
+			t.Errorf("Cannot read _response/get_variations.json")
 		}
 
 		w.Write(jo)
@@ -176,14 +176,14 @@ func TestSearchItems(t *testing.T) {
 	client.testing = true
 
 	h := http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		file, err := os.Open("_response/search_items_success.json")
+		file, err := os.Open("_response/search_items.json")
 		if err != nil {
-			t.Errorf("Cannot open _response/search_items_success.json")
+			t.Errorf("Cannot open _response/search_items.json")
 		}
 
 		jo, err := ioutil.ReadAll(file)
 		if err != nil {
-			t.Errorf("Cannot read _response/search_items_success.json")
+			t.Errorf("Cannot read _response/search_items.json")
 		}
 
 		w.Write(jo)
