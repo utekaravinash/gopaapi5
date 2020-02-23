@@ -2,6 +2,8 @@ package gopaapi5
 
 import (
 	"errors"
+	"fmt"
+	"strings"
 	"time"
 
 	"github.com/utekaravinash/gopaapi5/api"
@@ -77,11 +79,13 @@ func (c *Client) executeOperation(operation api.Operation, params payloadResourc
 		return err
 	}
 
+	path := fmt.Sprintf("paapi5/%s", strings.ToLower(string(operation)))
+
 	req := &request{
 		operation: operation,
 		payload:   payload,
 		client:    c,
-		path:      "paapi5/getitems",
+		path:      path,
 		dateTime:  time.Now().UTC(),
 	}
 
