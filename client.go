@@ -62,20 +62,32 @@ func NewClient(accessKey, secretKey, associateTag string, locale api.Locale) (*C
 // send sends a http request to Amazon Product Advertising service and returns response or error
 func (c *Client) send(req *request, v interface{}) error {
 
-	req.build()
-	req.sign()
+	// Construct http request
+	err := req.build()
+	if err != nil {
+		return err
+	}
 
+	// Sign http request by adding Authorization header
+	err = req.sign()
+	if err != nil {
+		return err
+	}
+
+	// Send http request and receive response or return error if any
 	resp, err := c.httpClient.Do(req.httpReq)
 	if err != nil {
 		return err
 	}
 	defer resp.Body.Close()
 
+	// Read response body
 	body, err := ioutil.ReadAll(resp.Body)
 	if err != nil {
 		return err
 	}
 
+	// Unmarshal response body to operation specific response struct
 	err = json.Unmarshal(body, v)
 	if err != nil {
 		return err
