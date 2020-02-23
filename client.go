@@ -10,10 +10,14 @@ import (
 )
 
 var (
-	ErrEmptyAccessKey    = errors.New("Empty access key")
-	ErrEmptySecretKey    = errors.New("Empty secret key")
+	// ErrEmptyAccessKey is thrown when access key is empty
+	ErrEmptyAccessKey = errors.New("Empty access key")
+	// ErrEmptySecretKey is thrown when secret key is empty
+	ErrEmptySecretKey = errors.New("Empty secret key")
+	// ErrEmptyAssociateTag is thrown when associate tag is empty
 	ErrEmptyAssociateTag = errors.New("Empty associate tag")
-	ErrInvalidLocale     = errors.New("Invalid locale")
+	// ErrInvalidLocale is thrown when locale is invalid
+	ErrInvalidLocale = errors.New("Invalid locale")
 )
 
 // Client stores AccessKey, SecretKey, and, AssociateTag; and exposes GetBrowseNodes, GetItems, GetVariations, and SearchItems operations.

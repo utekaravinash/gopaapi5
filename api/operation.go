@@ -7,6 +7,7 @@ import (
 // Operation custom type for PA API operations
 type Operation string
 
+// ErrInvalidResource is thrown when a resource is not compatible with an operation
 type ErrInvalidResource struct {
 	resource  Resource
 	operation Operation
