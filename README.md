@@ -67,7 +67,7 @@ func main() {
 }
 ```
 
-This client library exposes these operation for Amazon Product Advertising API 5.0:
+This client library exposes these operations for Amazon Product Advertising API 5.0 _(click on links for their examples)_:
 
 - [GetBrowseNodes](https://github.com/utekaravinash/gopaapi5/blob/master/_examples/get_browse_nodes/main.go)
 - [GetItems](https://github.com/utekaravinash/gopaapi5/blob/master/_examples/get_items/main.go)
