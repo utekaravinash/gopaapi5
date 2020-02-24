@@ -10,7 +10,7 @@ Install package:
 go get -u github.com/utekaravinash/gopaapi5
 ```
 
-Here's an example of GetBrowseNodes operation:
+Here's an example for GetBrowseNodes operation:
 
 ```go
 package main
