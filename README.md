@@ -1,12 +1,9 @@
 # gopaapi5 #
 
-[![Coverage Status](https://coveralls.io/repos/github/utekaravinash/gopaapi5/badge.svg?branch=master)](https://coveralls.io/github/utekaravinash/gopaapi5?branch=master)
-
 [![Build Status](https://travis-ci.org/utekaravinash/gopaapi5.svg?branch=master)](https://travis-ci.org/utekaravinash/gopaapi5)
-
 [![Go Report Card](https://goreportcard.com/badge/github.com/utekaravinash/gopaapi5)](https://goreportcard.com/report/github.com/utekaravinash/gopaapi5)
-
 [![GoDoc](https://godoc.org/github.com/utekaravinash/gopaapi5?status.svg)](https://godoc.org/github.com/utekaravinash/gopaapi5)
+[![Coverage Status](https://coveralls.io/repos/github/utekaravinash/gopaapi5/badge.svg?branch=master)](https://coveralls.io/github/utekaravinash/gopaapi5?branch=master)
 
 gopaapi5 is a Go client library for accessing the [Amazon Product Advertising API 5.0](https://webservices.amazon.com/paapi5/documentation/).
 
