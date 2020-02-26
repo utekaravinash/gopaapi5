@@ -72,6 +72,9 @@ func TestLocale(t *testing.T) {
 		{"US Marketplace", "www.amazon.com", usLocale.Marketplace()},
 		{"Valid Locale", true, usLocale.IsValid()},
 		{"Invalid Locale", false, fakeLocale.IsValid()},
+		{"Invalid Locale Host", "", fakeLocale.Host()},
+		{"Invalid Locale Region", "", fakeLocale.Region()},
+		{"Invalid Locale Marketplace", "", fakeLocale.Marketplace()},
 	}
 
 	for _, test := range tests {
