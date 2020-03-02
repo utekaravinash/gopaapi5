@@ -2,137 +2,59 @@
   "VariationsResult": {
     "Items": [
       {
-        "ASIN": "B01MTKXP31",
-        "DetailPageURL": "https://www.amazon.com/dp/B01MTKXP31?tag=associateTag-20&linkCode=ogv&th=1&psc=1",
-        "Images": {
-          "Primary": {
-            "Large": {
-              "Height": 319,
-              "URL": "https://m.media-amazon.com/images/I/41Z31ucxNSL.jpg",
-              "Width": 500
-            }
-          }
-        },
-        "ItemInfo": {
-          "Title": {
-            "DisplayValue": "DualShock 4 Wireless Controller for PlayStation 4 -  Green Camouflage",
-            "Label": "Title",
-            "Locale": "en_US"
-          }
-        },
-        "VariationAttributes": [
-          {
-            "Name": "color_name",
-            "Value": "Green Camouflage"
-          }
-        ]
-      },
-      {
-        "ASIN": "B07FQ74V4Z",
-        "DetailPageURL": "https://www.amazon.com/dp/B07FQ74V4Z?tag=associateTag-20&linkCode=ogv&th=1&psc=1",
-        "Images": {
-          "Primary": {
-            "Large": {
-              "Height": 319,
-              "URL": "https://m.media-amazon.com/images/I/413Dci2WKsL.jpg",
-              "Width": 500
-            }
-          }
-        },
-        "ItemInfo": {
-          "Title": {
-            "DisplayValue": "DualShock 4 Wireless Controller for PlayStation 4 - Crystal",
-            "Label": "Title",
-            "Locale": "en_US"
-          }
-        },
-        "VariationAttributes": [
-          {
-            "Name": "color_name",
-            "Value": "Crystal"
-          }
-        ]
-      },
-      {
-        "ASIN": "B01MD19OI2",
-        "DetailPageURL": "https://www.amazon.com/dp/B01MD19OI2?tag=associateTag-20&linkCode=ogv&th=1&psc=1",
-        "Images": {
-          "Primary": {
-            "Large": {
-              "Height": 319,
-              "URL": "https://m.media-amazon.com/images/I/41kaOFDXzSL.jpg",
-              "Width": 500
-            }
-          }
-        },
-        "ItemInfo": {
-          "Title": {
-            "DisplayValue": "DualShock 4 Wireless Controller for PlayStation 4 - Magma Red",
-            "Label": "Title",
-            "Locale": "en_US"
-          }
-        },
-        "VariationAttributes": [
-          {
-            "Name": "color_name",
-            "Value": "Magma Red"
-          }
-        ]
-      },
-      {
-        "ASIN": "B07GQ61M42",
-        "DetailPageURL": "https://www.amazon.com/dp/B07GQ61M42?tag=associateTag-20&linkCode=ogv&th=1&psc=1",
-        "Images": {
-          "Primary": {
-            "Large": {
-              "Height": 319,
-              "URL": "https://m.media-amazon.com/images/I/41LUWLoojOL.jpg",
-              "Width": 500
-            }
-          }
-        },
-        "ItemInfo": {
-          "Title": {
-            "DisplayValue": "DualShock 4 Wireless Controller for PlayStation 4 - Blue Camouflage",
-            "Label": "Title",
-            "Locale": "en_US"
-          }
-        },
-        "VariationAttributes": [
-          {
-            "Name": "color_name",
-            "Value": "Blue Camouflage"
-          }
-        ]
-      },
-      {
-        "ASIN": "B0799CLFYQ",
-        "DetailPageURL": "https://www.amazon.com/dp/B0799CLFYQ?tag=associateTag-20&linkCode=ogv&th=1&psc=1",
-        "Images": {
-          "Primary": {
-            "Large": {
-              "Height": 321,
-              "URL": "https://m.media-amazon.com/images/I/41rJye82jNL.jpg",
-              "Width": 500
-            }
-          }
-        },
-        "ItemInfo": {
-          "Title": {
-            "DisplayValue": "DualShock 4 Wireless Controller for PlayStation 4 - Steel Black",
-            "Label": "Title",
-            "Locale": "en_US"
-          }
-        },
-        "VariationAttributes": [
-          {
-            "Name": "color_name",
-            "Value": "Steel Black"
-          }
-        ]
-      },
-      {
         "ASIN": "B0799976M1",
+        "BrowseNodeInfo": {
+          "BrowseNodes": [
+            {
+              "Ancestor": {
+                "ContextFreeName": "Electronics",
+                "DisplayName": "Electronics",
+                "Id": "172282"
+              },
+              "ContextFreeName": "Electronics Features",
+              "DisplayName": "Electronics Features",
+              "Id": "13900851",
+              "IsRoot": false
+            },
+            {
+              "Ancestor": {
+                "Ancestor": {
+                  "Ancestor": {
+                    "Ancestor": {
+                      "Ancestor": {
+                        "ContextFreeName": "Video Games",
+                        "DisplayName": "Video Games",
+                        "Id": "468642"
+                      },
+                      "ContextFreeName": "Videogames",
+                      "DisplayName": "Categories",
+                      "Id": "11846801"
+                    },
+                    "ContextFreeName": "PlayStation 4 Games, Consoles & Accessories",
+                    "DisplayName": "PlayStation 4",
+                    "Id": "6427814011"
+                  },
+                  "ContextFreeName": "PlayStation 4 Accessories",
+                  "DisplayName": "Accessories",
+                  "Id": "6427815011"
+                },
+                "ContextFreeName": "PlayStation 4 Controllers",
+                "DisplayName": "Controllers",
+                "Id": "6427824011"
+              },
+              "ContextFreeName": "PlayStation 4 Gamepads & Standard Controllers",
+              "DisplayName": "Gamepads & Standard Controllers",
+              "Id": "10111036011",
+              "IsRoot": false,
+              "SalesRank": 1
+            }
+          ],
+          "WebsiteSalesRank": {
+            "ContextFreeName": "Video Games",
+            "DisplayName": "Video Games",
+            "SalesRank": 17
+          }
+        },
         "DetailPageURL": "https://www.amazon.com/dp/B0799976M1?tag=associateTag-20&linkCode=ogv&th=1&psc=1",
         "Images": {
           "Primary": {
@@ -140,16 +62,307 @@
               "Height": 319,
               "URL": "https://m.media-amazon.com/images/I/415-s5FkXIL.jpg",
               "Width": 500
+            },
+            "Medium": {
+              "Height": 102,
+              "URL": "https://m.media-amazon.com/images/I/415-s5FkXIL._SL160_.jpg",
+              "Width": 160
+            },
+            "Small": {
+              "Height": 48,
+              "URL": "https://m.media-amazon.com/images/I/415-s5FkXIL._SL75_.jpg",
+              "Width": 75
             }
-          }
+          },
+          "Variants": [
+            {
+              "Large": {
+                "Height": 217,
+                "URL": "https://m.media-amazon.com/images/I/31Sral+YBEL.jpg",
+                "Width": 500
+              },
+              "Medium": {
+                "Height": 69,
+                "URL": "https://m.media-amazon.com/images/I/31Sral+YBEL._SL160_.jpg",
+                "Width": 160
+              },
+              "Small": {
+                "Height": 33,
+                "URL": "https://m.media-amazon.com/images/I/31Sral+YBEL._SL75_.jpg",
+                "Width": 75
+              }
+            },
+            {
+              "Large": {
+                "Height": 194,
+                "URL": "https://m.media-amazon.com/images/I/31vCfuscOzL.jpg",
+                "Width": 500
+              },
+              "Medium": {
+                "Height": 62,
+                "URL": "https://m.media-amazon.com/images/I/31vCfuscOzL._SL160_.jpg",
+                "Width": 160
+              },
+              "Small": {
+                "Height": 29,
+                "URL": "https://m.media-amazon.com/images/I/31vCfuscOzL._SL75_.jpg",
+                "Width": 75
+              }
+            },
+            {
+              "Large": {
+                "Height": 500,
+                "URL": "https://m.media-amazon.com/images/I/41x7SH+9dIL.jpg",
+                "Width": 443
+              },
+              "Medium": {
+                "Height": 160,
+                "URL": "https://m.media-amazon.com/images/I/41x7SH+9dIL._SL160_.jpg",
+                "Width": 142
+              },
+              "Small": {
+                "Height": 75,
+                "URL": "https://m.media-amazon.com/images/I/41x7SH+9dIL._SL75_.jpg",
+                "Width": 66
+              }
+            }
+          ]
         },
         "ItemInfo": {
+          "ByLineInfo": {
+            "Brand": {
+              "DisplayValue": "Playstation",
+              "Label": "Brand",
+              "Locale": "en_US"
+            },
+            "Manufacturer": {
+              "DisplayValue": "Sony Computer Entertainment",
+              "Label": "Manufacturer",
+              "Locale": "en_US"
+            }
+          },
+          "Classifications": {
+            "Binding": {
+              "DisplayValue": "Video Game",
+              "Label": "Binding",
+              "Locale": "en_US"
+            },
+            "ProductGroup": {
+              "DisplayValue": "Video Games",
+              "Label": "ProductGroup",
+              "Locale": "en_US"
+            }
+          },
+          "ContentInfo": {
+            "Languages": {
+              "DisplayValues": [
+                {
+                  "DisplayValue": "English",
+                  "Type": "Unknown"
+                }
+              ],
+              "Label": "Language",
+              "Locale": "en_US"
+            }
+          },
+          "ExternalIds": {
+            "EANs": {
+              "DisplayValues": [
+                "0711719516972",
+                "4548736068438",
+                "4948872414562"
+              ],
+              "Label": "EAN",
+              "Locale": "en_US"
+            },
+            "UPCs": {
+              "DisplayValues": [
+                "711719516972"
+              ],
+              "Label": "UPC",
+              "Locale": "en_US"
+            }
+          },
+          "Features": {
+            "DisplayValues": [
+              "Precision control: The feel, shape, and sensitivity of the Dualshock 4's analog sticks and trigger buttons have been enhanced to offer players absolute control for all games on PlayStation 4",
+              "Sharing at your fingertips: The addition of the share button makes sharing your greatest gaming moments as easy as a push of a button",
+              "New ways to play: Revolutionary features like the touch pad, integrated light bar, and built in speaker offer exciting new ways to experience and interact with your games",
+              "Charge Efficiently: The Dualshock 4 wireless controller can be easily be recharged by plugging it into your PS4 system, even when on standby, or with any standard charger with a micro USB port",
+              "Note: Kindly refer to the user manual provided as a PDF manual in the product description section"
+            ],
+            "Label": "Features",
+            "Locale": "en_US"
+          },
+          "ManufactureInfo": {
+            "ItemPartNumber": {
+              "DisplayValue": "3002840",
+              "Label": "PartNumber",
+              "Locale": "en_US"
+            },
+            "Model": {
+              "DisplayValue": "3002840",
+              "Label": "Model",
+              "Locale": "en_US"
+            },
+            "Warranty": {
+              "DisplayValue": "Limited Warranty",
+              "Label": "Warranty",
+              "Locale": "en_US"
+            }
+          },
+          "ProductInfo": {
+            "Color": {
+              "DisplayValue": "Midnight Blue",
+              "Label": "Color",
+              "Locale": "en_US"
+            },
+            "IsAdultProduct": {
+              "DisplayValue": false,
+              "Label": "IsAdultProduct",
+              "Locale": "en_US"
+            },
+            "ItemDimensions": {
+              "Height": {
+                "DisplayValue": 3,
+                "Label": "Height",
+                "Locale": "en_US",
+                "Unit": "Inches"
+              },
+              "Length": {
+                "DisplayValue": 10,
+                "Label": "Length",
+                "Locale": "en_US",
+                "Unit": "Inches"
+              },
+              "Weight": {
+                "DisplayValue": 0.75,
+                "Label": "Weight",
+                "Locale": "en_US",
+                "Unit": "Pounds"
+              },
+              "Width": {
+                "DisplayValue": 2,
+                "Label": "Width",
+                "Locale": "en_US",
+                "Unit": "Inches"
+              }
+            },
+            "ReleaseDate": {
+              "DisplayValue": "2018-02-26T00:00:01Z",
+              "Label": "ReleaseDate",
+              "Locale": "en_US"
+            },
+            "Size": {
+              "DisplayValue": "8x7x3",
+              "Label": "Size",
+              "Locale": "en_US"
+            },
+            "UnitCount": {
+              "DisplayValue": 1,
+              "Label": "NumberOfItems",
+              "Locale": "en_US"
+            }
+          },
           "Title": {
             "DisplayValue": "DualShock 4 Wireless Controller for PlayStation 4 - Midnight Blue",
             "Label": "Title",
             "Locale": "en_US"
+          },
+          "TradeInInfo": {
+            "IsEligibleForTradeIn": true,
+            "Price": {
+              "Amount": 16.29,
+              "Currency": "USD",
+              "DisplayAmount": "$16.29"
+            }
           }
         },
+        "Offers": {
+          "Listings": [
+            {
+              "Availability": {
+                "MaxOrderQuantity": 3,
+                "Message": "In Stock.",
+                "MinOrderQuantity": 1,
+                "Type": "Now"
+              },
+              "Condition": {
+                "SubCondition": {
+                  "Value": "New"
+                },
+                "Value": "New"
+              },
+              "DeliveryInfo": {
+                "IsAmazonFulfilled": true,
+                "IsFreeShippingEligible": true,
+                "IsPrimeEligible": true
+              },
+              "Id": "UoKpqMH5FRDcrKV3fuU7l%2FpbI8CoLDNqILpPFnRbI%2BRCTCqKL2s22rlbgcn1y3q%2FohoxLr9Z0y7%2BB61vKqAEG60Qz93JcT6otiv4XZdN%2FfX%2Bmo%2BG7otdFw%3D%3D",
+              "IsBuyBoxWinner": true,
+              "MerchantInfo": {
+                "Id": "ATVPDKIKX0DER",
+                "Name": "Amazon.com"
+              },
+              "Price": {
+                "Amount": 46.96,
+                "Currency": "USD",
+                "DisplayAmount": "$46.96",
+                "Savings": {
+                  "Amount": 18.03,
+                  "Currency": "USD",
+                  "DisplayAmount": "$18.03 (28%)",
+                  "Percentage": 28
+                }
+              },
+              "ProgramEligibility": {
+                "IsPrimeExclusive": false,
+                "IsPrimePantry": false
+              },
+              "SavingBasis": {
+                "Amount": 64.99,
+                "Currency": "USD",
+                "DisplayAmount": "$64.99"
+              },
+              "ViolatesMAP": false
+            }
+          ],
+          "Summaries": [
+            {
+              "Condition": {
+                "Value": "New"
+              },
+              "HighestPrice": {
+                "Amount": 109.26,
+                "Currency": "USD",
+                "DisplayAmount": "$109.26"
+              },
+              "LowestPrice": {
+                "Amount": 42.51,
+                "Currency": "USD",
+                "DisplayAmount": "$42.51"
+              },
+              "OfferCount": 57
+            },
+            {
+              "Condition": {
+                "Value": "Used"
+              },
+              "HighestPrice": {
+                "Amount": 65.85,
+                "Currency": "USD",
+                "DisplayAmount": "$65.85"
+              },
+              "LowestPrice": {
+                "Amount": 38.55,
+                "Currency": "USD",
+                "DisplayAmount": "$38.55"
+              },
+              "OfferCount": 22
+            }
+          ]
+        },
+        "ParentASIN": "B077GG9D5D",
         "VariationAttributes": [
           {
             "Name": "color_name",
@@ -158,7 +371,790 @@
         ]
       },
       {
+        "ASIN": "B01MD19OI2",
+        "BrowseNodeInfo": {
+          "BrowseNodes": [
+            {
+              "Ancestor": {
+                "Ancestor": {
+                  "Ancestor": {
+                    "Ancestor": {
+                      "Ancestor": {
+                        "ContextFreeName": "Video Games",
+                        "DisplayName": "Video Games",
+                        "Id": "468642"
+                      },
+                      "ContextFreeName": "Videogames",
+                      "DisplayName": "Categories",
+                      "Id": "11846801"
+                    },
+                    "ContextFreeName": "PlayStation 4 Games, Consoles & Accessories",
+                    "DisplayName": "PlayStation 4",
+                    "Id": "6427814011"
+                  },
+                  "ContextFreeName": "PlayStation 4 Accessories",
+                  "DisplayName": "Accessories",
+                  "Id": "6427815011"
+                },
+                "ContextFreeName": "PlayStation 4 Controllers",
+                "DisplayName": "Controllers",
+                "Id": "6427824011"
+              },
+              "ContextFreeName": "PlayStation 4 Gamepads & Standard Controllers",
+              "DisplayName": "Gamepads & Standard Controllers",
+              "Id": "10111036011",
+              "IsRoot": false,
+              "SalesRank": 3
+            }
+          ],
+          "WebsiteSalesRank": {
+            "ContextFreeName": "Video Games",
+            "DisplayName": "Video Games",
+            "SalesRank": 25
+          }
+        },
+        "DetailPageURL": "https://www.amazon.com/dp/B01MD19OI2?tag=associateTag-20&linkCode=ogv&th=1&psc=1",
+        "Images": {
+          "Primary": {
+            "Large": {
+              "Height": 319,
+              "URL": "https://m.media-amazon.com/images/I/41kaOFDXzSL.jpg",
+              "Width": 500
+            },
+            "Medium": {
+              "Height": 102,
+              "URL": "https://m.media-amazon.com/images/I/41kaOFDXzSL._SL160_.jpg",
+              "Width": 160
+            },
+            "Small": {
+              "Height": 48,
+              "URL": "https://m.media-amazon.com/images/I/41kaOFDXzSL._SL75_.jpg",
+              "Width": 75
+            }
+          },
+          "Variants": [
+            {
+              "Large": {
+                "Height": 217,
+                "URL": "https://m.media-amazon.com/images/I/315aNx837UL.jpg",
+                "Width": 500
+              },
+              "Medium": {
+                "Height": 69,
+                "URL": "https://m.media-amazon.com/images/I/315aNx837UL._SL160_.jpg",
+                "Width": 160
+              },
+              "Small": {
+                "Height": 33,
+                "URL": "https://m.media-amazon.com/images/I/315aNx837UL._SL75_.jpg",
+                "Width": 75
+              }
+            },
+            {
+              "Large": {
+                "Height": 194,
+                "URL": "https://m.media-amazon.com/images/I/31PlrGEfruL.jpg",
+                "Width": 500
+              },
+              "Medium": {
+                "Height": 62,
+                "URL": "https://m.media-amazon.com/images/I/31PlrGEfruL._SL160_.jpg",
+                "Width": 160
+              },
+              "Small": {
+                "Height": 29,
+                "URL": "https://m.media-amazon.com/images/I/31PlrGEfruL._SL75_.jpg",
+                "Width": 75
+              }
+            },
+            {
+              "Large": {
+                "Height": 500,
+                "URL": "https://m.media-amazon.com/images/I/41igPj4sG1L.jpg",
+                "Width": 443
+              },
+              "Medium": {
+                "Height": 160,
+                "URL": "https://m.media-amazon.com/images/I/41igPj4sG1L._SL160_.jpg",
+                "Width": 142
+              },
+              "Small": {
+                "Height": 75,
+                "URL": "https://m.media-amazon.com/images/I/41igPj4sG1L._SL75_.jpg",
+                "Width": 66
+              }
+            }
+          ]
+        },
+        "ItemInfo": {
+          "ByLineInfo": {
+            "Brand": {
+              "DisplayValue": "Playstation",
+              "Label": "Brand",
+              "Locale": "en_US"
+            },
+            "Manufacturer": {
+              "DisplayValue": "Sony Computer Entertainment",
+              "Label": "Manufacturer",
+              "Locale": "en_US"
+            }
+          },
+          "Classifications": {
+            "Binding": {
+              "DisplayValue": "Video Game",
+              "Label": "Binding",
+              "Locale": "en_US"
+            },
+            "ProductGroup": {
+              "DisplayValue": "Video Games",
+              "Label": "ProductGroup",
+              "Locale": "en_US"
+            }
+          },
+          "ContentInfo": {
+            "Edition": {
+              "DisplayValue": "Magma Red",
+              "Label": "Edition",
+              "Locale": "en_US"
+            },
+            "Languages": {
+              "DisplayValues": [
+                {
+                  "DisplayValue": "English",
+                  "Type": "Unknown"
+                }
+              ],
+              "Label": "Language",
+              "Locale": "en_US"
+            }
+          },
+          "ExternalIds": {
+            "EANs": {
+              "DisplayValues": [
+                "0711719504405"
+              ],
+              "Label": "EAN",
+              "Locale": "en_US"
+            },
+            "UPCs": {
+              "DisplayValues": [
+                "711719504405"
+              ],
+              "Label": "UPC",
+              "Locale": "en_US"
+            }
+          },
+          "Features": {
+            "DisplayValues": [
+              "The feel, shape, and sensitivity of the dual analog sticks and trigger buttons have been improved to provide a greater sense of control, no matter what you play",
+              "The new multi touch and clickable touch pad on the face of the DualShock 4 Wireless Controller opens up worlds of new gameplay possibilities for both newcomers and veteran gamers",
+              "The DualShock 4 Wireless Controller features a built in speaker and stereo headset jack, putting several new audio options in the player's hands",
+              "The Dualshock 4 wireless controller can be easily recharged by plugging it into your PlayStation 4 system, even when in rest mode, or with any standard charger using a USB cable (type A to micro B sold separately)"
+            ],
+            "Label": "Features",
+            "Locale": "en_US"
+          },
+          "ManufactureInfo": {
+            "ItemPartNumber": {
+              "DisplayValue": "3001549",
+              "Label": "PartNumber",
+              "Locale": "en_US"
+            },
+            "Model": {
+              "DisplayValue": "3001549",
+              "Label": "Model",
+              "Locale": "en_US"
+            }
+          },
+          "ProductInfo": {
+            "Color": {
+              "DisplayValue": "Magma Red",
+              "Label": "Color",
+              "Locale": "en_US"
+            },
+            "IsAdultProduct": {
+              "DisplayValue": false,
+              "Label": "IsAdultProduct",
+              "Locale": "en_US"
+            },
+            "ItemDimensions": {
+              "Height": {
+                "DisplayValue": 2,
+                "Label": "Height",
+                "Locale": "en_US",
+                "Unit": "Inches"
+              },
+              "Length": {
+                "DisplayValue": 2,
+                "Label": "Length",
+                "Locale": "en_US",
+                "Unit": "Inches"
+              },
+              "Weight": {
+                "DisplayValue": 0.75,
+                "Label": "Weight",
+                "Locale": "en_US",
+                "Unit": "Pounds"
+              },
+              "Width": {
+                "DisplayValue": 2,
+                "Label": "Width",
+                "Locale": "en_US",
+                "Unit": "Inches"
+              }
+            },
+            "ReleaseDate": {
+              "DisplayValue": "2016-11-21T00:00:01Z",
+              "Label": "ReleaseDate",
+              "Locale": "en_US"
+            },
+            "Size": {
+              "DisplayValue": "8x7x3",
+              "Label": "Size",
+              "Locale": "en_US"
+            },
+            "UnitCount": {
+              "DisplayValue": 1,
+              "Label": "NumberOfItems",
+              "Locale": "en_US"
+            }
+          },
+          "Title": {
+            "DisplayValue": "DualShock 4 Wireless Controller for PlayStation 4 - Magma Red",
+            "Label": "Title",
+            "Locale": "en_US"
+          },
+          "TradeInInfo": {
+            "IsEligibleForTradeIn": true,
+            "Price": {
+              "Amount": 9.26,
+              "Currency": "USD",
+              "DisplayAmount": "$9.26"
+            }
+          }
+        },
+        "Offers": {
+          "Listings": [
+            {
+              "Availability": {
+                "MaxOrderQuantity": 3,
+                "Message": "In Stock.",
+                "MinOrderQuantity": 1,
+                "Type": "Now"
+              },
+              "Condition": {
+                "SubCondition": {
+                  "Value": "New"
+                },
+                "Value": "New"
+              },
+              "DeliveryInfo": {
+                "IsAmazonFulfilled": true,
+                "IsFreeShippingEligible": true,
+                "IsPrimeEligible": true
+              },
+              "Id": "UoKpqMH5FRAbmHItqcCT0CkLU8%2BF7vJQ3EtjbjfMbIOAOc7JTIWYIv%2BS6c4CgvRh60Ezf1D199zfh4AeftIm4Cl2yAcDxqyn66PdlqIidzJh%2FWfylHWnwQ%3D%3D",
+              "IsBuyBoxWinner": true,
+              "MerchantInfo": {
+                "Id": "ATVPDKIKX0DER",
+                "Name": "Amazon.com"
+              },
+              "Price": {
+                "Amount": 46.96,
+                "Currency": "USD",
+                "DisplayAmount": "$46.96",
+                "Savings": {
+                  "Amount": 18.03,
+                  "Currency": "USD",
+                  "DisplayAmount": "$18.03 (28%)",
+                  "Percentage": 28
+                }
+              },
+              "ProgramEligibility": {
+                "IsPrimeExclusive": false,
+                "IsPrimePantry": false
+              },
+              "SavingBasis": {
+                "Amount": 64.99,
+                "Currency": "USD",
+                "DisplayAmount": "$64.99"
+              },
+              "ViolatesMAP": false
+            }
+          ],
+          "Summaries": [
+            {
+              "Condition": {
+                "Value": "New"
+              },
+              "HighestPrice": {
+                "Amount": 112,
+                "Currency": "USD",
+                "DisplayAmount": "$112.00"
+              },
+              "LowestPrice": {
+                "Amount": 44.99,
+                "Currency": "USD",
+                "DisplayAmount": "$44.99"
+              },
+              "OfferCount": 61
+            },
+            {
+              "Condition": {
+                "Value": "Used"
+              },
+              "HighestPrice": {
+                "Amount": 89.99,
+                "Currency": "USD",
+                "DisplayAmount": "$89.99"
+              },
+              "LowestPrice": {
+                "Amount": 39.49,
+                "Currency": "USD",
+                "DisplayAmount": "$39.49"
+              },
+              "OfferCount": 27
+            },
+            {
+              "Condition": {
+                "Value": "Collectible"
+              },
+              "HighestPrice": {
+                "Amount": 72,
+                "Currency": "USD",
+                "DisplayAmount": "$72.00"
+              },
+              "LowestPrice": {
+                "Amount": 72,
+                "Currency": "USD",
+                "DisplayAmount": "$72.00"
+              },
+              "OfferCount": 1
+            }
+          ]
+        },
+        "ParentASIN": "B077GG9D5D",
+        "VariationAttributes": [
+          {
+            "Name": "color_name",
+            "Value": "Magma Red"
+          }
+        ]
+      },
+      {
+        "ASIN": "B07FQ74V4Z",
+        "BrowseNodeInfo": {
+          "BrowseNodes": [
+            {
+              "Ancestor": {
+                "Ancestor": {
+                  "Ancestor": {
+                    "Ancestor": {
+                      "Ancestor": {
+                        "ContextFreeName": "Video Games",
+                        "DisplayName": "Video Games",
+                        "Id": "468642"
+                      },
+                      "ContextFreeName": "Videogames",
+                      "DisplayName": "Categories",
+                      "Id": "11846801"
+                    },
+                    "ContextFreeName": "PlayStation 4 Games, Consoles & Accessories",
+                    "DisplayName": "PlayStation 4",
+                    "Id": "6427814011"
+                  },
+                  "ContextFreeName": "PlayStation 4 Accessories",
+                  "DisplayName": "Accessories",
+                  "Id": "6427815011"
+                },
+                "ContextFreeName": "PlayStation 4 Controllers",
+                "DisplayName": "Controllers",
+                "Id": "6427824011"
+              },
+              "ContextFreeName": "PlayStation 4 Gamepads & Standard Controllers",
+              "DisplayName": "Gamepads & Standard Controllers",
+              "Id": "10111036011",
+              "IsRoot": false,
+              "SalesRank": 14
+            }
+          ],
+          "WebsiteSalesRank": {
+            "ContextFreeName": "Video Games",
+            "DisplayName": "Video Games",
+            "SalesRank": 377
+          }
+        },
+        "DetailPageURL": "https://www.amazon.com/dp/B07FQ74V4Z?tag=associateTag-20&linkCode=ogv&th=1&psc=1",
+        "Images": {
+          "Primary": {
+            "Large": {
+              "Height": 319,
+              "URL": "https://m.media-amazon.com/images/I/413Dci2WKsL.jpg",
+              "Width": 500
+            },
+            "Medium": {
+              "Height": 102,
+              "URL": "https://m.media-amazon.com/images/I/413Dci2WKsL._SL160_.jpg",
+              "Width": 160
+            },
+            "Small": {
+              "Height": 48,
+              "URL": "https://m.media-amazon.com/images/I/413Dci2WKsL._SL75_.jpg",
+              "Width": 75
+            }
+          },
+          "Variants": [
+            {
+              "Large": {
+                "Height": 217,
+                "URL": "https://m.media-amazon.com/images/I/31ryZn78QCL.jpg",
+                "Width": 500
+              },
+              "Medium": {
+                "Height": 69,
+                "URL": "https://m.media-amazon.com/images/I/31ryZn78QCL._SL160_.jpg",
+                "Width": 160
+              },
+              "Small": {
+                "Height": 33,
+                "URL": "https://m.media-amazon.com/images/I/31ryZn78QCL._SL75_.jpg",
+                "Width": 75
+              }
+            },
+            {
+              "Large": {
+                "Height": 194,
+                "URL": "https://m.media-amazon.com/images/I/31k-fpgQMlL.jpg",
+                "Width": 500
+              },
+              "Medium": {
+                "Height": 62,
+                "URL": "https://m.media-amazon.com/images/I/31k-fpgQMlL._SL160_.jpg",
+                "Width": 160
+              },
+              "Small": {
+                "Height": 29,
+                "URL": "https://m.media-amazon.com/images/I/31k-fpgQMlL._SL75_.jpg",
+                "Width": 75
+              }
+            },
+            {
+              "Large": {
+                "Height": 500,
+                "URL": "https://m.media-amazon.com/images/I/41u9Ksi2zzL.jpg",
+                "Width": 443
+              },
+              "Medium": {
+                "Height": 160,
+                "URL": "https://m.media-amazon.com/images/I/41u9Ksi2zzL._SL160_.jpg",
+                "Width": 142
+              },
+              "Small": {
+                "Height": 75,
+                "URL": "https://m.media-amazon.com/images/I/41u9Ksi2zzL._SL75_.jpg",
+                "Width": 66
+              }
+            }
+          ]
+        },
+        "ItemInfo": {
+          "ByLineInfo": {
+            "Brand": {
+              "DisplayValue": "Playstation",
+              "Label": "Brand",
+              "Locale": "en_US"
+            },
+            "Manufacturer": {
+              "DisplayValue": "Sony Interactive Entertainment LLC",
+              "Label": "Manufacturer",
+              "Locale": "en_US"
+            }
+          },
+          "Classifications": {
+            "Binding": {
+              "DisplayValue": "Video Game",
+              "Label": "Binding",
+              "Locale": "en_US"
+            },
+            "ProductGroup": {
+              "DisplayValue": "Video Games",
+              "Label": "ProductGroup",
+              "Locale": "en_US"
+            }
+          },
+          "ContentInfo": {
+            "Languages": {
+              "DisplayValues": [
+                {
+                  "DisplayValue": "English",
+                  "Type": "Unknown"
+                }
+              ],
+              "Label": "Language",
+              "Locale": "en_US"
+            }
+          },
+          "ExternalIds": {
+            "EANs": {
+              "DisplayValues": [
+                "0711719511823"
+              ],
+              "Label": "EAN",
+              "Locale": "en_US"
+            },
+            "UPCs": {
+              "DisplayValues": [
+                "711719511823"
+              ],
+              "Label": "UPC",
+              "Locale": "en_US"
+            }
+          },
+          "Features": {
+            "DisplayValues": [
+              "Precision control   The enhanced feel, shape, and sensitivity of the Dualshock 4 wireless Controller offers players absolute control over all games on the PlayStation 4 system",
+              "Sharing at your fingertips   The addition of the share button makes sharing your greatest gaming moments as Easy as a press of a button. Upload gameplay videos and screenshots directly from your system",
+              "New ways to play   Revolutionary features like the touch pad, integrated light bar, and built in speaker offer exciting new ways to experience and interact with your games",
+              "Charge Efficiently   The DUALSHOCK 4 wireless controller can be easily recharged by plugging it into your PlayStation 4 system, even when in rest mode, or with any standard charger using a USB cable (type A to Micro B Sold Separately)"
+            ],
+            "Label": "Features",
+            "Locale": "en_US"
+          },
+          "ManufactureInfo": {
+            "ItemPartNumber": {
+              "DisplayValue": "3002339",
+              "Label": "PartNumber",
+              "Locale": "en_US"
+            },
+            "Model": {
+              "DisplayValue": "3002339",
+              "Label": "Model",
+              "Locale": "en_US"
+            },
+            "Warranty": {
+              "DisplayValue": "Limited Warranty",
+              "Label": "Warranty",
+              "Locale": "en_US"
+            }
+          },
+          "ProductInfo": {
+            "Color": {
+              "DisplayValue": "Crystal",
+              "Label": "Color",
+              "Locale": "en_US"
+            },
+            "IsAdultProduct": {
+              "DisplayValue": false,
+              "Label": "IsAdultProduct",
+              "Locale": "en_US"
+            },
+            "ItemDimensions": {
+              "Height": {
+                "DisplayValue": 2.6,
+                "Label": "Height",
+                "Locale": "en_US",
+                "Unit": "Inches"
+              },
+              "Length": {
+                "DisplayValue": 7.4,
+                "Label": "Length",
+                "Locale": "en_US",
+                "Unit": "Inches"
+              },
+              "Weight": {
+                "DisplayValue": 0.75,
+                "Label": "Weight",
+                "Locale": "en_US",
+                "Unit": "Pounds"
+              },
+              "Width": {
+                "DisplayValue": 6.7,
+                "Label": "Width",
+                "Locale": "en_US",
+                "Unit": "Inches"
+              }
+            },
+            "ReleaseDate": {
+              "DisplayValue": "2018-08-05T00:00:01Z",
+              "Label": "ReleaseDate",
+              "Locale": "en_US"
+            },
+            "Size": {
+              "DisplayValue": "8x7x3",
+              "Label": "Size",
+              "Locale": "en_US"
+            },
+            "UnitCount": {
+              "DisplayValue": 1,
+              "Label": "NumberOfItems",
+              "Locale": "en_US"
+            }
+          },
+          "Title": {
+            "DisplayValue": "DualShock 4 Wireless Controller for PlayStation 4 - Crystal",
+            "Label": "Title",
+            "Locale": "en_US"
+          },
+          "TradeInInfo": {
+            "IsEligibleForTradeIn": true,
+            "Price": {
+              "Amount": 11.49,
+              "Currency": "USD",
+              "DisplayAmount": "$11.49"
+            }
+          }
+        },
+        "Offers": {
+          "Listings": [
+            {
+              "Availability": {
+                "Message": "In stock on March 5, 2020. Order it now.",
+                "MinOrderQuantity": 1,
+                "Type": "Backorderable"
+              },
+              "Condition": {
+                "SubCondition": {
+                  "Value": "VeryGood"
+                },
+                "Value": "Used"
+              },
+              "DeliveryInfo": {
+                "IsAmazonFulfilled": true,
+                "IsFreeShippingEligible": true,
+                "IsPrimeEligible": true
+              },
+              "Id": "UoKpqMH5FRDcrKV3fuU7lxnWv9cgGkYtJIC47uWJAJXZUPMB40ZVQkqMetIA1uMIsTNZheWs048yOZdK2hV%2FXprs6tLNjKcAslVO5LRkJpI1VvunoFgJh0Lbg4kgOmWIxolt0m8pjGHzYkp0hBvWKL5LzTh8iSUF",
+              "IsBuyBoxWinner": false,
+              "MerchantInfo": {
+                "DefaultShippingCountry": "US",
+                "Id": "ARJ9CR5IBXBH3",
+                "Name": "Goldstar Tech"
+              },
+              "Price": {
+                "Amount": 41.99,
+                "Currency": "USD",
+                "DisplayAmount": "$41.99",
+                "Savings": {
+                  "Amount": 23,
+                  "Currency": "USD",
+                  "DisplayAmount": "$23.00 (35%)",
+                  "Percentage": 35
+                }
+              },
+              "ProgramEligibility": {
+                "IsPrimeExclusive": false,
+                "IsPrimePantry": false
+              },
+              "SavingBasis": {
+                "Amount": 64.99,
+                "Currency": "USD",
+                "DisplayAmount": "$64.99"
+              },
+              "ViolatesMAP": false
+            }
+          ],
+          "Summaries": [
+            {
+              "Condition": {
+                "Value": "New"
+              },
+              "HighestPrice": {
+                "Amount": 104.87,
+                "Currency": "USD",
+                "DisplayAmount": "$104.87"
+              },
+              "LowestPrice": {
+                "Amount": 46.9,
+                "Currency": "USD",
+                "DisplayAmount": "$46.90"
+              },
+              "OfferCount": 49
+            },
+            {
+              "Condition": {
+                "Value": "Used"
+              },
+              "HighestPrice": {
+                "Amount": 59.5,
+                "Currency": "USD",
+                "DisplayAmount": "$59.50"
+              },
+              "LowestPrice": {
+                "Amount": 39.99,
+                "Currency": "USD",
+                "DisplayAmount": "$39.99"
+              },
+              "OfferCount": 4
+            },
+            {
+              "Condition": {
+                "Value": "Collectible"
+              },
+              "HighestPrice": {
+                "Amount": 79.95,
+                "Currency": "USD",
+                "DisplayAmount": "$79.95"
+              },
+              "LowestPrice": {
+                "Amount": 69.95,
+                "Currency": "USD",
+                "DisplayAmount": "$69.95"
+              },
+              "OfferCount": 3
+            }
+          ]
+        },
+        "ParentASIN": "B077GG9D5D",
+        "VariationAttributes": [
+          {
+            "Name": "color_name",
+            "Value": "Crystal"
+          }
+        ]
+      },
+      {
         "ASIN": "B071RSSMLL",
+        "BrowseNodeInfo": {
+          "BrowseNodes": [
+            {
+              "Ancestor": {
+                "Ancestor": {
+                  "Ancestor": {
+                    "Ancestor": {
+                      "Ancestor": {
+                        "ContextFreeName": "Video Games",
+                        "DisplayName": "Video Games",
+                        "Id": "468642"
+                      },
+                      "ContextFreeName": "Videogames",
+                      "DisplayName": "Categories",
+                      "Id": "11846801"
+                    },
+                    "ContextFreeName": "PlayStation 4 Games, Consoles & Accessories",
+                    "DisplayName": "PlayStation 4",
+                    "Id": "6427814011"
+                  },
+                  "ContextFreeName": "PlayStation 4 Accessories",
+                  "DisplayName": "Accessories",
+                  "Id": "6427815011"
+                },
+                "ContextFreeName": "PlayStation 4 Controllers",
+                "DisplayName": "Controllers",
+                "Id": "6427824011"
+              },
+              "ContextFreeName": "PlayStation 4 Gamepads & Standard Controllers",
+              "DisplayName": "Gamepads & Standard Controllers",
+              "Id": "10111036011",
+              "IsRoot": false,
+              "SalesRank": 4
+            }
+          ],
+          "WebsiteSalesRank": {
+            "ContextFreeName": "Video Games",
+            "DisplayName": "Video Games",
+            "SalesRank": 50
+          }
+        },
         "DetailPageURL": "https://www.amazon.com/dp/B071RSSMLL?tag=associateTag-20&linkCode=ogv&th=1&psc=1",
         "Images": {
           "Primary": {
@@ -166,16 +1162,304 @@
               "Height": 319,
               "URL": "https://m.media-amazon.com/images/I/41voOGgESoL.jpg",
               "Width": 500
+            },
+            "Medium": {
+              "Height": 102,
+              "URL": "https://m.media-amazon.com/images/I/41voOGgESoL._SL160_.jpg",
+              "Width": 160
+            },
+            "Small": {
+              "Height": 48,
+              "URL": "https://m.media-amazon.com/images/I/41voOGgESoL._SL75_.jpg",
+              "Width": 75
             }
-          }
+          },
+          "Variants": [
+            {
+              "Large": {
+                "Height": 217,
+                "URL": "https://m.media-amazon.com/images/I/31Ly19VYXpL.jpg",
+                "Width": 500
+              },
+              "Medium": {
+                "Height": 69,
+                "URL": "https://m.media-amazon.com/images/I/31Ly19VYXpL._SL160_.jpg",
+                "Width": 160
+              },
+              "Small": {
+                "Height": 33,
+                "URL": "https://m.media-amazon.com/images/I/31Ly19VYXpL._SL75_.jpg",
+                "Width": 75
+              }
+            },
+            {
+              "Large": {
+                "Height": 194,
+                "URL": "https://m.media-amazon.com/images/I/31QTMXS9wLL.jpg",
+                "Width": 500
+              },
+              "Medium": {
+                "Height": 62,
+                "URL": "https://m.media-amazon.com/images/I/31QTMXS9wLL._SL160_.jpg",
+                "Width": 160
+              },
+              "Small": {
+                "Height": 29,
+                "URL": "https://m.media-amazon.com/images/I/31QTMXS9wLL._SL75_.jpg",
+                "Width": 75
+              }
+            },
+            {
+              "Large": {
+                "Height": 500,
+                "URL": "https://m.media-amazon.com/images/I/419uoVIooUL.jpg",
+                "Width": 443
+              },
+              "Medium": {
+                "Height": 160,
+                "URL": "https://m.media-amazon.com/images/I/419uoVIooUL._SL160_.jpg",
+                "Width": 142
+              },
+              "Small": {
+                "Height": 75,
+                "URL": "https://m.media-amazon.com/images/I/419uoVIooUL._SL75_.jpg",
+                "Width": 66
+              }
+            }
+          ]
         },
         "ItemInfo": {
+          "ByLineInfo": {
+            "Brand": {
+              "DisplayValue": "Playstation",
+              "Label": "Brand",
+              "Locale": "en_US"
+            },
+            "Manufacturer": {
+              "DisplayValue": "Sony Computer Entertainment",
+              "Label": "Manufacturer",
+              "Locale": "en_US"
+            }
+          },
+          "Classifications": {
+            "Binding": {
+              "DisplayValue": "Video Game",
+              "Label": "Binding",
+              "Locale": "en_US"
+            },
+            "ProductGroup": {
+              "DisplayValue": "Video Games",
+              "Label": "ProductGroup",
+              "Locale": "en_US"
+            }
+          },
+          "ContentInfo": {
+            "Edition": {
+              "DisplayValue": "Gold",
+              "Label": "Edition",
+              "Locale": "en_US"
+            },
+            "Languages": {
+              "DisplayValues": [
+                {
+                  "DisplayValue": "English",
+                  "Type": "Unknown"
+                }
+              ],
+              "Label": "Language",
+              "Locale": "en_US"
+            }
+          },
+          "ExternalIds": {
+            "EANs": {
+              "DisplayValues": [
+                "0711719505952"
+              ],
+              "Label": "EAN",
+              "Locale": "en_US"
+            },
+            "UPCs": {
+              "DisplayValues": [
+                "711719505952"
+              ],
+              "Label": "UPC",
+              "Locale": "en_US"
+            }
+          },
+          "Features": {
+            "DisplayValues": [
+              "The DualShock 4 Wireless Controller for PlayStation 4 defines this generation of play, combining revolutionary features and comfort with intuitive, precision controls",
+              "Enhanced analog sticks and trigger buttons offer unrivaled control across all titles",
+              "Innovative features like the touch pad, integrated light bar, built in speaker enable exciting ways to experience your games",
+              "Note: Kindly refer to the user manual provided as a PDF manual in the product description section"
+            ],
+            "Label": "Features",
+            "Locale": "en_US"
+          },
+          "ManufactureInfo": {
+            "ItemPartNumber": {
+              "DisplayValue": "3001818",
+              "Label": "PartNumber",
+              "Locale": "en_US"
+            },
+            "Model": {
+              "DisplayValue": "3001818",
+              "Label": "Model",
+              "Locale": "en_US"
+            },
+            "Warranty": {
+              "DisplayValue": "Limited Warranty",
+              "Label": "Warranty",
+              "Locale": "en_US"
+            }
+          },
+          "ProductInfo": {
+            "Color": {
+              "DisplayValue": "Gold",
+              "Label": "Color",
+              "Locale": "en_US"
+            },
+            "IsAdultProduct": {
+              "DisplayValue": false,
+              "Label": "IsAdultProduct",
+              "Locale": "en_US"
+            },
+            "ItemDimensions": {
+              "Height": {
+                "DisplayValue": 3,
+                "Label": "Height",
+                "Locale": "en_US",
+                "Unit": "Inches"
+              },
+              "Length": {
+                "DisplayValue": 10,
+                "Label": "Length",
+                "Locale": "en_US",
+                "Unit": "Inches"
+              },
+              "Weight": {
+                "DisplayValue": 0.75,
+                "Label": "Weight",
+                "Locale": "en_US",
+                "Unit": "Pounds"
+              },
+              "Width": {
+                "DisplayValue": 2,
+                "Label": "Width",
+                "Locale": "en_US",
+                "Unit": "Inches"
+              }
+            },
+            "ReleaseDate": {
+              "DisplayValue": "2017-06-01T00:00:01Z",
+              "Label": "ReleaseDate",
+              "Locale": "en_US"
+            },
+            "UnitCount": {
+              "DisplayValue": 1,
+              "Label": "NumberOfItems",
+              "Locale": "en_US"
+            }
+          },
           "Title": {
             "DisplayValue": "DualShock 4 Wireless Controller for PlayStation 4 - Gold",
             "Label": "Title",
             "Locale": "en_US"
+          },
+          "TradeInInfo": {
+            "IsEligibleForTradeIn": true,
+            "Price": {
+              "Amount": 11.24,
+              "Currency": "USD",
+              "DisplayAmount": "$11.24"
+            }
           }
         },
+        "Offers": {
+          "Listings": [
+            {
+              "Availability": {
+                "MaxOrderQuantity": 3,
+                "Message": "In Stock.",
+                "MinOrderQuantity": 1,
+                "Type": "Now"
+              },
+              "Condition": {
+                "SubCondition": {
+                  "Value": "New"
+                },
+                "Value": "New"
+              },
+              "DeliveryInfo": {
+                "IsAmazonFulfilled": true,
+                "IsFreeShippingEligible": true,
+                "IsPrimeEligible": true
+              },
+              "Id": "UoKpqMH5FRDcrKV3fuU7l%2B%2FnswUyAp4D0ZBdSGZbP6E%2BUnly7wlkAmidf6sURvJNWz3Jj0XLCz4oADFqKiB%2BMtHhIW5bE3FSSBdUpxlBvMqj3X3%2B1laiog%3D%3D",
+              "IsBuyBoxWinner": true,
+              "MerchantInfo": {
+                "Id": "ATVPDKIKX0DER",
+                "Name": "Amazon.com"
+              },
+              "Price": {
+                "Amount": 46.96,
+                "Currency": "USD",
+                "DisplayAmount": "$46.96",
+                "Savings": {
+                  "Amount": 18.03,
+                  "Currency": "USD",
+                  "DisplayAmount": "$18.03 (28%)",
+                  "Percentage": 28
+                }
+              },
+              "ProgramEligibility": {
+                "IsPrimeExclusive": false,
+                "IsPrimePantry": false
+              },
+              "SavingBasis": {
+                "Amount": 64.99,
+                "Currency": "USD",
+                "DisplayAmount": "$64.99"
+              },
+              "ViolatesMAP": false
+            }
+          ],
+          "Summaries": [
+            {
+              "Condition": {
+                "Value": "New"
+              },
+              "HighestPrice": {
+                "Amount": 94.62,
+                "Currency": "USD",
+                "DisplayAmount": "$94.62"
+              },
+              "LowestPrice": {
+                "Amount": 44.99,
+                "Currency": "USD",
+                "DisplayAmount": "$44.99"
+              },
+              "OfferCount": 59
+            },
+            {
+              "Condition": {
+                "Value": "Used"
+              },
+              "HighestPrice": {
+                "Amount": 89.99,
+                "Currency": "USD",
+                "DisplayAmount": "$89.99"
+              },
+              "LowestPrice": {
+                "Amount": 32.99,
+                "Currency": "USD",
+                "DisplayAmount": "$32.99"
+              },
+              "OfferCount": 26
+            }
+          ]
+        },
+        "ParentASIN": "B077GG9D5D",
         "VariationAttributes": [
           {
             "Name": "color_name",
@@ -184,33 +1468,444 @@
         ]
       },
       {
-        "ASIN": "B07GQ6R2LR",
-        "DetailPageURL": "https://www.amazon.com/dp/B07GQ6R2LR?tag=associateTag-20&linkCode=ogv&th=1&psc=1",
+        "ASIN": "B01MTKXP31",
+        "BrowseNodeInfo": {
+          "BrowseNodes": [
+            {
+              "Ancestor": {
+                "Ancestor": {
+                  "Ancestor": {
+                    "Ancestor": {
+                      "Ancestor": {
+                        "ContextFreeName": "Video Games",
+                        "DisplayName": "Video Games",
+                        "Id": "468642"
+                      },
+                      "ContextFreeName": "Videogames",
+                      "DisplayName": "Categories",
+                      "Id": "11846801"
+                    },
+                    "ContextFreeName": "PlayStation 4 Games, Consoles & Accessories",
+                    "DisplayName": "PlayStation 4",
+                    "Id": "6427814011"
+                  },
+                  "ContextFreeName": "PlayStation 4 Accessories",
+                  "DisplayName": "Accessories",
+                  "Id": "6427815011"
+                },
+                "ContextFreeName": "PlayStation 4 Controllers",
+                "DisplayName": "Controllers",
+                "Id": "6427824011"
+              },
+              "ContextFreeName": "PlayStation 4 Gamepads & Standard Controllers",
+              "DisplayName": "Gamepads & Standard Controllers",
+              "Id": "10111036011",
+              "IsRoot": false,
+              "SalesRank": 9
+            }
+          ],
+          "WebsiteSalesRank": {
+            "ContextFreeName": "Video Games",
+            "DisplayName": "Video Games",
+            "SalesRank": 237
+          }
+        },
+        "DetailPageURL": "https://www.amazon.com/dp/B01MTKXP31?tag=associateTag-20&linkCode=ogv&th=1&psc=1",
         "Images": {
           "Primary": {
             "Large": {
-              "Height": 321,
-              "URL": "https://m.media-amazon.com/images/I/41HLFDcZo3L.jpg",
+              "Height": 319,
+              "URL": "https://m.media-amazon.com/images/I/41Z31ucxNSL.jpg",
               "Width": 500
+            },
+            "Medium": {
+              "Height": 102,
+              "URL": "https://m.media-amazon.com/images/I/41Z31ucxNSL._SL160_.jpg",
+              "Width": 160
+            },
+            "Small": {
+              "Height": 48,
+              "URL": "https://m.media-amazon.com/images/I/41Z31ucxNSL._SL75_.jpg",
+              "Width": 75
+            }
+          },
+          "Variants": [
+            {
+              "Large": {
+                "Height": 217,
+                "URL": "https://m.media-amazon.com/images/I/31D5X4W9cPL.jpg",
+                "Width": 500
+              },
+              "Medium": {
+                "Height": 69,
+                "URL": "https://m.media-amazon.com/images/I/31D5X4W9cPL._SL160_.jpg",
+                "Width": 160
+              },
+              "Small": {
+                "Height": 33,
+                "URL": "https://m.media-amazon.com/images/I/31D5X4W9cPL._SL75_.jpg",
+                "Width": 75
+              }
+            },
+            {
+              "Large": {
+                "Height": 194,
+                "URL": "https://m.media-amazon.com/images/I/31YGeP6A5kL.jpg",
+                "Width": 500
+              },
+              "Medium": {
+                "Height": 62,
+                "URL": "https://m.media-amazon.com/images/I/31YGeP6A5kL._SL160_.jpg",
+                "Width": 160
+              },
+              "Small": {
+                "Height": 29,
+                "URL": "https://m.media-amazon.com/images/I/31YGeP6A5kL._SL75_.jpg",
+                "Width": 75
+              }
+            },
+            {
+              "Large": {
+                "Height": 500,
+                "URL": "https://m.media-amazon.com/images/I/41MGMvfVRjL.jpg",
+                "Width": 443
+              },
+              "Medium": {
+                "Height": 160,
+                "URL": "https://m.media-amazon.com/images/I/41MGMvfVRjL._SL160_.jpg",
+                "Width": 142
+              },
+              "Small": {
+                "Height": 75,
+                "URL": "https://m.media-amazon.com/images/I/41MGMvfVRjL._SL75_.jpg",
+                "Width": 66
+              }
+            }
+          ]
+        },
+        "ItemInfo": {
+          "ByLineInfo": {
+            "Brand": {
+              "DisplayValue": "Playstation",
+              "Label": "Brand",
+              "Locale": "en_US"
+            },
+            "Manufacturer": {
+              "DisplayValue": "Sony Computer Entertainment",
+              "Label": "Manufacturer",
+              "Locale": "en_US"
+            }
+          },
+          "Classifications": {
+            "Binding": {
+              "DisplayValue": "Video Game",
+              "Label": "Binding",
+              "Locale": "en_US"
+            },
+            "ProductGroup": {
+              "DisplayValue": "Video Games",
+              "Label": "ProductGroup",
+              "Locale": "en_US"
+            }
+          },
+          "ContentInfo": {
+            "Edition": {
+              "DisplayValue": "Green Camouflage",
+              "Label": "Edition",
+              "Locale": "en_US"
+            },
+            "Languages": {
+              "DisplayValues": [
+                {
+                  "DisplayValue": "Italian",
+                  "Type": "Manual"
+                },
+                {
+                  "DisplayValue": "German",
+                  "Type": "Manual"
+                },
+                {
+                  "DisplayValue": "French",
+                  "Type": "Manual"
+                },
+                {
+                  "DisplayValue": "English",
+                  "Type": "Manual"
+                },
+                {
+                  "DisplayValue": "Spanish",
+                  "Type": "Manual"
+                },
+                {
+                  "DisplayValue": "English",
+                  "Type": "Unknown"
+                }
+              ],
+              "Label": "Language",
+              "Locale": "en_US"
+            }
+          },
+          "ExternalIds": {
+            "EANs": {
+              "DisplayValues": [
+                "0711719504351"
+              ],
+              "Label": "EAN",
+              "Locale": "en_US"
+            },
+            "UPCs": {
+              "DisplayValues": [
+                "711719504351"
+              ],
+              "Label": "UPC",
+              "Locale": "en_US"
+            }
+          },
+          "Features": {
+            "DisplayValues": [
+              "The feel, shape, and sensitivity of the dual analog sticks and trigger buttons have been improved to provide a greater sense of control, no matter what you play",
+              "The new multi touch and clickable touch pad on the face of the DualShock 4 Wireless Controller opens up worlds of new gameplay possibilities for both newcomers and veteran gamers",
+              "The DualShock 4 Wireless Controller features a built in speaker and stereo headset jack, putting several new audio options in the player's hands",
+              "The Dualshock 4 wireless controller can be easily recharged by plugging it into your PlayStation 4 system, even when in rest mode, or with any standard charger using a USB cable (type A to micro B sold separately)"
+            ],
+            "Label": "Features",
+            "Locale": "en_US"
+          },
+          "ManufactureInfo": {
+            "ItemPartNumber": {
+              "DisplayValue": "3001544",
+              "Label": "PartNumber",
+              "Locale": "en_US"
+            },
+            "Model": {
+              "DisplayValue": "3001544",
+              "Label": "Model",
+              "Locale": "en_US"
+            },
+            "Warranty": {
+              "DisplayValue": "Limited Warranty",
+              "Label": "Warranty",
+              "Locale": "en_US"
+            }
+          },
+          "ProductInfo": {
+            "Color": {
+              "DisplayValue": "Green Camouflage",
+              "Label": "Color",
+              "Locale": "en_US"
+            },
+            "IsAdultProduct": {
+              "DisplayValue": false,
+              "Label": "IsAdultProduct",
+              "Locale": "en_US"
+            },
+            "ItemDimensions": {
+              "Height": {
+                "DisplayValue": 2,
+                "Label": "Height",
+                "Locale": "en_US",
+                "Unit": "Inches"
+              },
+              "Length": {
+                "DisplayValue": 6,
+                "Label": "Length",
+                "Locale": "en_US",
+                "Unit": "Inches"
+              },
+              "Weight": {
+                "DisplayValue": 0.75,
+                "Label": "Weight",
+                "Locale": "en_US",
+                "Unit": "Pounds"
+              },
+              "Width": {
+                "DisplayValue": 8,
+                "Label": "Width",
+                "Locale": "en_US",
+                "Unit": "Inches"
+              }
+            },
+            "ReleaseDate": {
+              "DisplayValue": "2016-12-30T00:00:01Z",
+              "Label": "ReleaseDate",
+              "Locale": "en_US"
+            },
+            "Size": {
+              "DisplayValue": "8x7x3",
+              "Label": "Size",
+              "Locale": "en_US"
+            },
+            "UnitCount": {
+              "DisplayValue": 1,
+              "Label": "NumberOfItems",
+              "Locale": "en_US"
+            }
+          },
+          "Title": {
+            "DisplayValue": "DualShock 4 Wireless Controller for PlayStation 4 -  Green Camouflage",
+            "Label": "Title",
+            "Locale": "en_US"
+          },
+          "TradeInInfo": {
+            "IsEligibleForTradeIn": true,
+            "Price": {
+              "Amount": 12.56,
+              "Currency": "USD",
+              "DisplayAmount": "$12.56"
             }
           }
         },
-        "ItemInfo": {
-          "Title": {
-            "DisplayValue": "DualShock 4 Wireless Controller for PlayStation 4 - Berry Blue",
-            "Label": "Title",
-            "Locale": "en_US"
-          }
+        "Offers": {
+          "Listings": [
+            {
+              "Availability": {
+                "Message": "In Stock.",
+                "MinOrderQuantity": 1,
+                "Type": "Now"
+              },
+              "Condition": {
+                "SubCondition": {
+                  "Value": "VeryGood"
+                },
+                "Value": "Used"
+              },
+              "DeliveryInfo": {
+                "IsAmazonFulfilled": true,
+                "IsFreeShippingEligible": true,
+                "IsPrimeEligible": true
+              },
+              "Id": "UoKpqMH5FRAbmHItqcCT0AzGe29rBStbeJ7h2axTA%2B9YRpIfyO1og5pwLCiIucMvJ03Qz%2Baf3BPvVa2C7ilK1bu7hJ4nLZuEgIy27yMeCaEL3aAjiLmZCUo37VxnLrUgix1ifq0fHME32nll07ERWAW6EHj%2BnkOK",
+              "IsBuyBoxWinner": false,
+              "MerchantInfo": {
+                "DefaultShippingCountry": "US",
+                "Id": "ARJ9CR5IBXBH3",
+                "Name": "Goldstar Tech"
+              },
+              "Price": {
+                "Amount": 38.84,
+                "Currency": "USD",
+                "DisplayAmount": "$38.84",
+                "Savings": {
+                  "Amount": 26.15,
+                  "Currency": "USD",
+                  "DisplayAmount": "$26.15 (40%)",
+                  "Percentage": 40
+                }
+              },
+              "ProgramEligibility": {
+                "IsPrimeExclusive": false,
+                "IsPrimePantry": false
+              },
+              "SavingBasis": {
+                "Amount": 64.99,
+                "Currency": "USD",
+                "DisplayAmount": "$64.99"
+              },
+              "ViolatesMAP": false
+            }
+          ],
+          "Summaries": [
+            {
+              "Condition": {
+                "Value": "New"
+              },
+              "HighestPrice": {
+                "Amount": 104.87,
+                "Currency": "USD",
+                "DisplayAmount": "$104.87"
+              },
+              "LowestPrice": {
+                "Amount": 51.95,
+                "Currency": "USD",
+                "DisplayAmount": "$51.95"
+              },
+              "OfferCount": 32
+            },
+            {
+              "Condition": {
+                "Value": "Used"
+              },
+              "HighestPrice": {
+                "Amount": 59.5,
+                "Currency": "USD",
+                "DisplayAmount": "$59.50"
+              },
+              "LowestPrice": {
+                "Amount": 38.84,
+                "Currency": "USD",
+                "DisplayAmount": "$38.84"
+              },
+              "OfferCount": 21
+            },
+            {
+              "Condition": {
+                "Value": "Collectible"
+              },
+              "HighestPrice": {
+                "Amount": 61,
+                "Currency": "USD",
+                "DisplayAmount": "$61.00"
+              },
+              "LowestPrice": {
+                "Amount": 61,
+                "Currency": "USD",
+                "DisplayAmount": "$61.00"
+              },
+              "OfferCount": 1
+            }
+          ]
         },
+        "ParentASIN": "B077GG9D5D",
         "VariationAttributes": [
           {
             "Name": "color_name",
-            "Value": "Berry Blue"
+            "Value": "Green Camouflage"
           }
         ]
       },
       {
         "ASIN": "B07GQ6NN9M",
+        "BrowseNodeInfo": {
+          "BrowseNodes": [
+            {
+              "Ancestor": {
+                "Ancestor": {
+                  "Ancestor": {
+                    "Ancestor": {
+                      "Ancestor": {
+                        "ContextFreeName": "Video Games",
+                        "DisplayName": "Video Games",
+                        "Id": "468642"
+                      },
+                      "ContextFreeName": "Videogames",
+                      "DisplayName": "Categories",
+                      "Id": "11846801"
+                    },
+                    "ContextFreeName": "PlayStation 4 Games, Consoles & Accessories",
+                    "DisplayName": "PlayStation 4",
+                    "Id": "6427814011"
+                  },
+                  "ContextFreeName": "PlayStation 4 Accessories",
+                  "DisplayName": "Accessories",
+                  "Id": "6427815011"
+                },
+                "ContextFreeName": "PlayStation 4 Controllers",
+                "DisplayName": "Controllers",
+                "Id": "6427824011"
+              },
+              "ContextFreeName": "PlayStation 4 Gamepads & Standard Controllers",
+              "DisplayName": "Gamepads & Standard Controllers",
+              "Id": "10111036011",
+              "IsRoot": false,
+              "SalesRank": 6
+            }
+          ],
+          "WebsiteSalesRank": {
+            "ContextFreeName": "Video Games",
+            "DisplayName": "Video Games",
+            "SalesRank": 115
+          }
+        },
         "DetailPageURL": "https://www.amazon.com/dp/B07GQ6NN9M?tag=associateTag-20&linkCode=ogv&th=1&psc=1",
         "Images": {
           "Primary": {
@@ -218,27 +1913,1405 @@
               "Height": 319,
               "URL": "https://m.media-amazon.com/images/I/41MDo0XJIJL.jpg",
               "Width": 500
+            },
+            "Medium": {
+              "Height": 102,
+              "URL": "https://m.media-amazon.com/images/I/41MDo0XJIJL._SL160_.jpg",
+              "Width": 160
+            },
+            "Small": {
+              "Height": 48,
+              "URL": "https://m.media-amazon.com/images/I/41MDo0XJIJL._SL75_.jpg",
+              "Width": 75
             }
-          }
+          },
+          "Variants": [
+            {
+              "Large": {
+                "Height": 217,
+                "URL": "https://m.media-amazon.com/images/I/315-kOCKO7L.jpg",
+                "Width": 500
+              },
+              "Medium": {
+                "Height": 69,
+                "URL": "https://m.media-amazon.com/images/I/315-kOCKO7L._SL160_.jpg",
+                "Width": 160
+              },
+              "Small": {
+                "Height": 33,
+                "URL": "https://m.media-amazon.com/images/I/315-kOCKO7L._SL75_.jpg",
+                "Width": 75
+              }
+            },
+            {
+              "Large": {
+                "Height": 334,
+                "URL": "https://m.media-amazon.com/images/I/31s4ZDaOYkL.jpg",
+                "Width": 500
+              },
+              "Medium": {
+                "Height": 107,
+                "URL": "https://m.media-amazon.com/images/I/31s4ZDaOYkL._SL160_.jpg",
+                "Width": 160
+              },
+              "Small": {
+                "Height": 50,
+                "URL": "https://m.media-amazon.com/images/I/31s4ZDaOYkL._SL75_.jpg",
+                "Width": 75
+              }
+            },
+            {
+              "Large": {
+                "Height": 500,
+                "URL": "https://m.media-amazon.com/images/I/41uDaqxJIfL.jpg",
+                "Width": 443
+              },
+              "Medium": {
+                "Height": 160,
+                "URL": "https://m.media-amazon.com/images/I/41uDaqxJIfL._SL160_.jpg",
+                "Width": 142
+              },
+              "Small": {
+                "Height": 75,
+                "URL": "https://m.media-amazon.com/images/I/41uDaqxJIfL._SL75_.jpg",
+                "Width": 66
+              }
+            }
+          ]
         },
         "ItemInfo": {
+          "ByLineInfo": {
+            "Brand": {
+              "DisplayValue": "Playstation",
+              "Label": "Brand",
+              "Locale": "en_US"
+            },
+            "Manufacturer": {
+              "DisplayValue": "Sony Interactive Entertainment LLC",
+              "Label": "Manufacturer",
+              "Locale": "en_US"
+            }
+          },
+          "Classifications": {
+            "Binding": {
+              "DisplayValue": "Video Game",
+              "Label": "Binding",
+              "Locale": "en_US"
+            },
+            "ProductGroup": {
+              "DisplayValue": "Video Games",
+              "Label": "ProductGroup",
+              "Locale": "en_US"
+            }
+          },
+          "ContentInfo": {
+            "Languages": {
+              "DisplayValues": [
+                {
+                  "DisplayValue": "English",
+                  "Type": "Unknown"
+                }
+              ],
+              "Label": "Language",
+              "Locale": "en_US"
+            }
+          },
+          "ExternalIds": {
+            "EANs": {
+              "DisplayValues": [
+                "0711719519225"
+              ],
+              "Label": "EAN",
+              "Locale": "en_US"
+            },
+            "UPCs": {
+              "DisplayValues": [
+                "711719519225"
+              ],
+              "Label": "UPC",
+              "Locale": "en_US"
+            }
+          },
+          "Features": {
+            "DisplayValues": [
+              "Precision control - The enhanced feel, shape, and sensitivity of the Dualshock 4 wireless Controller offers players absolute control over all games on the PlayStation 4 system",
+              "Sharing at your fingertips - The addition of the share button makes sharing your greatest gaming moments as Easy as a press of a button. Upload gameplay videos and screenshots directly from your system",
+              "New ways to play - Revolutionary features like the touch pad, integrated light bar, and built in speaker offer exciting new ways to experience and interact with your games",
+              "Charge Efficiently - The DUALSHOCK 4 wireless controller can be easily recharged by plugging it into your PlayStation 4 system, even when in rest mode, or with any standard charger using a USB cable (type-A to Micro-B Sold Separately)"
+            ],
+            "Label": "Features",
+            "Locale": "en_US"
+          },
+          "ManufactureInfo": {
+            "ItemPartNumber": {
+              "DisplayValue": "3003241",
+              "Label": "PartNumber",
+              "Locale": "en_US"
+            },
+            "Model": {
+              "DisplayValue": "3003241",
+              "Label": "Model",
+              "Locale": "en_US"
+            }
+          },
+          "ProductInfo": {
+            "Color": {
+              "DisplayValue": "Sunset Orange",
+              "Label": "Color",
+              "Locale": "en_US"
+            },
+            "IsAdultProduct": {
+              "DisplayValue": false,
+              "Label": "IsAdultProduct",
+              "Locale": "en_US"
+            },
+            "ItemDimensions": {
+              "Height": {
+                "DisplayValue": 8,
+                "Label": "Height",
+                "Locale": "en_US",
+                "Unit": "Inches"
+              },
+              "Length": {
+                "DisplayValue": 7,
+                "Label": "Length",
+                "Locale": "en_US",
+                "Unit": "Inches"
+              },
+              "Weight": {
+                "DisplayValue": 0.75,
+                "Label": "Weight",
+                "Locale": "en_US",
+                "Unit": "Pounds"
+              },
+              "Width": {
+                "DisplayValue": 3,
+                "Label": "Width",
+                "Locale": "en_US",
+                "Unit": "Inches"
+              }
+            },
+            "ReleaseDate": {
+              "DisplayValue": "2018-09-24T00:00:01Z",
+              "Label": "ReleaseDate",
+              "Locale": "en_US"
+            }
+          },
           "Title": {
             "DisplayValue": "DualShock 4 Wireless Controller for PlayStation 4 - Sunset Orange",
             "Label": "Title",
             "Locale": "en_US"
+          },
+          "TradeInInfo": {
+            "IsEligibleForTradeIn": true,
+            "Price": {
+              "Amount": 26.43,
+              "Currency": "USD",
+              "DisplayAmount": "$26.43"
+            }
           }
         },
+        "Offers": {
+          "Listings": [
+            {
+              "Availability": {
+                "Message": "In Stock.",
+                "MinOrderQuantity": 1,
+                "Type": "Now"
+              },
+              "Condition": {
+                "SubCondition": {
+                  "Value": "New"
+                },
+                "Value": "New"
+              },
+              "DeliveryInfo": {
+                "IsAmazonFulfilled": true,
+                "IsFreeShippingEligible": true,
+                "IsPrimeEligible": true
+              },
+              "Id": "UoKpqMH5FRDcrKV3fuU7l7BeqvMIqlB8YJjd3St67tbdUuY2FhBiVEJ9sKuzP%2F8xOq3Ozkeagw1B3i8ILSIJMHAwuwISSamlrc3rk9%2Bil7pqglEJ4fUN8Q%3D%3D",
+              "IsBuyBoxWinner": true,
+              "MerchantInfo": {
+                "Id": "ATVPDKIKX0DER",
+                "Name": "Amazon.com"
+              },
+              "Price": {
+                "Amount": 59.97,
+                "Currency": "USD",
+                "DisplayAmount": "$59.97",
+                "Savings": {
+                  "Amount": 5.02,
+                  "Currency": "USD",
+                  "DisplayAmount": "$5.02 (8%)",
+                  "Percentage": 8
+                }
+              },
+              "ProgramEligibility": {
+                "IsPrimeExclusive": false,
+                "IsPrimePantry": false
+              },
+              "SavingBasis": {
+                "Amount": 64.99,
+                "Currency": "USD",
+                "DisplayAmount": "$64.99"
+              },
+              "ViolatesMAP": false
+            }
+          ],
+          "Summaries": [
+            {
+              "Condition": {
+                "Value": "New"
+              },
+              "HighestPrice": {
+                "Amount": 83.05,
+                "Currency": "USD",
+                "DisplayAmount": "$83.05"
+              },
+              "LowestPrice": {
+                "Amount": 59.95,
+                "Currency": "USD",
+                "DisplayAmount": "$59.95"
+              },
+              "OfferCount": 14
+            },
+            {
+              "Condition": {
+                "Value": "Used"
+              },
+              "HighestPrice": {
+                "Amount": 54.99,
+                "Currency": "USD",
+                "DisplayAmount": "$54.99"
+              },
+              "LowestPrice": {
+                "Amount": 54.99,
+                "Currency": "USD",
+                "DisplayAmount": "$54.99"
+              },
+              "OfferCount": 1
+            }
+          ]
+        },
+        "ParentASIN": "B077GG9D5D",
         "VariationAttributes": [
           {
             "Name": "color_name",
             "Value": "Sunset Orange"
           }
         ]
+      },
+      {
+        "ASIN": "B0799CLFYQ",
+        "BrowseNodeInfo": {
+          "BrowseNodes": [
+            {
+              "Ancestor": {
+                "Ancestor": {
+                  "Ancestor": {
+                    "Ancestor": {
+                      "Ancestor": {
+                        "ContextFreeName": "Video Games",
+                        "DisplayName": "Video Games",
+                        "Id": "468642"
+                      },
+                      "ContextFreeName": "Videogames",
+                      "DisplayName": "Categories",
+                      "Id": "11846801"
+                    },
+                    "ContextFreeName": "PlayStation 4 Games, Consoles & Accessories",
+                    "DisplayName": "PlayStation 4",
+                    "Id": "6427814011"
+                  },
+                  "ContextFreeName": "PlayStation 4 Accessories",
+                  "DisplayName": "Accessories",
+                  "Id": "6427815011"
+                },
+                "ContextFreeName": "PlayStation 4 Controllers",
+                "DisplayName": "Controllers",
+                "Id": "6427824011"
+              },
+              "ContextFreeName": "PlayStation 4 Gamepads & Standard Controllers",
+              "DisplayName": "Gamepads & Standard Controllers",
+              "Id": "10111036011",
+              "IsRoot": false,
+              "SalesRank": 16
+            }
+          ],
+          "WebsiteSalesRank": {
+            "ContextFreeName": "Video Games",
+            "DisplayName": "Video Games",
+            "SalesRank": 579
+          }
+        },
+        "DetailPageURL": "https://www.amazon.com/dp/B0799CLFYQ?tag=associateTag-20&linkCode=ogv&th=1&psc=1",
+        "Images": {
+          "Primary": {
+            "Large": {
+              "Height": 321,
+              "URL": "https://m.media-amazon.com/images/I/41rJye82jNL.jpg",
+              "Width": 500
+            },
+            "Medium": {
+              "Height": 103,
+              "URL": "https://m.media-amazon.com/images/I/41rJye82jNL._SL160_.jpg",
+              "Width": 160
+            },
+            "Small": {
+              "Height": 48,
+              "URL": "https://m.media-amazon.com/images/I/41rJye82jNL._SL75_.jpg",
+              "Width": 75
+            }
+          },
+          "Variants": [
+            {
+              "Large": {
+                "Height": 333,
+                "URL": "https://m.media-amazon.com/images/I/31wCwK0qCNL.jpg",
+                "Width": 500
+              },
+              "Medium": {
+                "Height": 107,
+                "URL": "https://m.media-amazon.com/images/I/31wCwK0qCNL._SL160_.jpg",
+                "Width": 160
+              },
+              "Small": {
+                "Height": 50,
+                "URL": "https://m.media-amazon.com/images/I/31wCwK0qCNL._SL75_.jpg",
+                "Width": 75
+              }
+            },
+            {
+              "Large": {
+                "Height": 333,
+                "URL": "https://m.media-amazon.com/images/I/31mWaCfE-KL.jpg",
+                "Width": 500
+              },
+              "Medium": {
+                "Height": 107,
+                "URL": "https://m.media-amazon.com/images/I/31mWaCfE-KL._SL160_.jpg",
+                "Width": 160
+              },
+              "Small": {
+                "Height": 50,
+                "URL": "https://m.media-amazon.com/images/I/31mWaCfE-KL._SL75_.jpg",
+                "Width": 75
+              }
+            },
+            {
+              "Large": {
+                "Height": 333,
+                "URL": "https://m.media-amazon.com/images/I/310zm1asB4L.jpg",
+                "Width": 500
+              },
+              "Medium": {
+                "Height": 107,
+                "URL": "https://m.media-amazon.com/images/I/310zm1asB4L._SL160_.jpg",
+                "Width": 160
+              },
+              "Small": {
+                "Height": 50,
+                "URL": "https://m.media-amazon.com/images/I/310zm1asB4L._SL75_.jpg",
+                "Width": 75
+              }
+            }
+          ]
+        },
+        "ItemInfo": {
+          "ByLineInfo": {
+            "Brand": {
+              "DisplayValue": "Playstation",
+              "Label": "Brand",
+              "Locale": "en_US"
+            },
+            "Manufacturer": {
+              "DisplayValue": "Sony Computer Entertainment",
+              "Label": "Manufacturer",
+              "Locale": "en_US"
+            }
+          },
+          "Classifications": {
+            "Binding": {
+              "DisplayValue": "Video Game",
+              "Label": "Binding",
+              "Locale": "en_US"
+            },
+            "ProductGroup": {
+              "DisplayValue": "Video Games",
+              "Label": "ProductGroup",
+              "Locale": "en_US"
+            }
+          },
+          "ContentInfo": {
+            "Languages": {
+              "DisplayValues": [
+                {
+                  "DisplayValue": "English",
+                  "Type": "Unknown"
+                }
+              ],
+              "Label": "Language",
+              "Locale": "en_US"
+            }
+          },
+          "ExternalIds": {
+            "EANs": {
+              "DisplayValues": [
+                "4548736068445",
+                "0711719516941",
+                "4948872414081"
+              ],
+              "Label": "EAN",
+              "Locale": "en_US"
+            },
+            "UPCs": {
+              "DisplayValues": [
+                "711719516941"
+              ],
+              "Label": "UPC",
+              "Locale": "en_US"
+            }
+          },
+          "Features": {
+            "DisplayValues": [
+              "Precision control: The feel, shape, and sensitivity of the Dualshock 4's analog sticks and trigger buttons have been enhanced to offer players absolute control for all games on PlayStation 4",
+              "Sharing at your fingertips: The addition of the share button makes sharing your greatest gaming moments as easy as a push of a button",
+              "New ways to Play: Revolutionary features like the touch pad, integrated light bar, and built-in speaker offer exciting new ways to experience and interact with your games",
+              "Charge Efficiently: The Dualshock 4 wireless controller can be easily be recharged by plugging it into your PS4 system, even when on standby, or with any standard charger with a micro-USB port"
+            ],
+            "Label": "Features",
+            "Locale": "en_US"
+          },
+          "ManufactureInfo": {
+            "ItemPartNumber": {
+              "DisplayValue": "3002837",
+              "Label": "PartNumber",
+              "Locale": "en_US"
+            },
+            "Model": {
+              "DisplayValue": "3002837",
+              "Label": "Model",
+              "Locale": "en_US"
+            },
+            "Warranty": {
+              "DisplayValue": "Limited Warranty",
+              "Label": "Warranty",
+              "Locale": "en_US"
+            }
+          },
+          "ProductInfo": {
+            "Color": {
+              "DisplayValue": "Steel Black",
+              "Label": "Color",
+              "Locale": "en_US"
+            },
+            "IsAdultProduct": {
+              "DisplayValue": false,
+              "Label": "IsAdultProduct",
+              "Locale": "en_US"
+            },
+            "ItemDimensions": {
+              "Height": {
+                "DisplayValue": 2.95,
+                "Label": "Height",
+                "Locale": "en_US",
+                "Unit": "Inches"
+              },
+              "Length": {
+                "DisplayValue": 6.81,
+                "Label": "Length",
+                "Locale": "en_US",
+                "Unit": "Inches"
+              },
+              "Weight": {
+                "DisplayValue": 0.75,
+                "Label": "Weight",
+                "Locale": "en_US",
+                "Unit": "Pounds"
+              },
+              "Width": {
+                "DisplayValue": 4.61,
+                "Label": "Width",
+                "Locale": "en_US",
+                "Unit": "Inches"
+              }
+            },
+            "ReleaseDate": {
+              "DisplayValue": "2018-02-26T00:00:01Z",
+              "Label": "ReleaseDate",
+              "Locale": "en_US"
+            },
+            "Size": {
+              "DisplayValue": "8x7x3",
+              "Label": "Size",
+              "Locale": "en_US"
+            },
+            "UnitCount": {
+              "DisplayValue": 1,
+              "Label": "NumberOfItems",
+              "Locale": "en_US"
+            }
+          },
+          "Title": {
+            "DisplayValue": "DualShock 4 Wireless Controller for PlayStation 4 - Steel Black",
+            "Label": "Title",
+            "Locale": "en_US"
+          },
+          "TradeInInfo": {
+            "IsEligibleForTradeIn": true,
+            "Price": {
+              "Amount": 13.41,
+              "Currency": "USD",
+              "DisplayAmount": "$13.41"
+            }
+          }
+        },
+        "Offers": {
+          "Listings": [
+            {
+              "Availability": {
+                "Message": "In Stock.",
+                "MinOrderQuantity": 1,
+                "Type": "Now"
+              },
+              "Condition": {
+                "SubCondition": {
+                  "Value": "New"
+                },
+                "Value": "New"
+              },
+              "DeliveryInfo": {
+                "IsAmazonFulfilled": false,
+                "IsFreeShippingEligible": false,
+                "IsPrimeEligible": false
+              },
+              "Id": "UoKpqMH5FRDcrKV3fuU7l5w6ngQblxP5wr6XZVqrA98VE1HFUW5dQHfHE8ZLVE4h2r6sGRO0qqdagxMGb0rQoVCpMQCZA95xqoiUKVR5rxjhHYAB9iXS5KCn4idQzStN0bZwsC7QicfAayffGKoHMcE0Xb5HXGF2",
+              "IsBuyBoxWinner": false,
+              "MerchantInfo": {
+                "DefaultShippingCountry": "US",
+                "Id": "APDOT21OU1V8X",
+                "Name": "RushHourWholesalers"
+              },
+              "Price": {
+                "Amount": 53.99,
+                "Currency": "USD",
+                "DisplayAmount": "$53.99",
+                "Savings": {
+                  "Amount": 11,
+                  "Currency": "USD",
+                  "DisplayAmount": "$11.00 (17%)",
+                  "Percentage": 17
+                }
+              },
+              "ProgramEligibility": {
+                "IsPrimeExclusive": false,
+                "IsPrimePantry": false
+              },
+              "SavingBasis": {
+                "Amount": 64.99,
+                "Currency": "USD",
+                "DisplayAmount": "$64.99"
+              },
+              "ViolatesMAP": false
+            }
+          ],
+          "Summaries": [
+            {
+              "Condition": {
+                "Value": "New"
+              },
+              "HighestPrice": {
+                "Amount": 124.48,
+                "Currency": "USD",
+                "DisplayAmount": "$124.48"
+              },
+              "LowestPrice": {
+                "Amount": 53.99,
+                "Currency": "USD",
+                "DisplayAmount": "$53.99"
+              },
+              "OfferCount": 20
+            },
+            {
+              "Condition": {
+                "Value": "Used"
+              },
+              "HighestPrice": {
+                "Amount": 142.85,
+                "Currency": "USD",
+                "DisplayAmount": "$142.85"
+              },
+              "LowestPrice": {
+                "Amount": 125.79,
+                "Currency": "USD",
+                "DisplayAmount": "$125.79"
+              },
+              "OfferCount": 3
+            }
+          ]
+        },
+        "ParentASIN": "B077GG9D5D",
+        "VariationAttributes": [
+          {
+            "Name": "color_name",
+            "Value": "Steel Black"
+          }
+        ]
+      },
+      {
+        "ASIN": "B07GQ61M42",
+        "BrowseNodeInfo": {
+          "BrowseNodes": [
+            {
+              "Ancestor": {
+                "Ancestor": {
+                  "Ancestor": {
+                    "Ancestor": {
+                      "Ancestor": {
+                        "ContextFreeName": "Video Games",
+                        "DisplayName": "Video Games",
+                        "Id": "468642"
+                      },
+                      "ContextFreeName": "Videogames",
+                      "DisplayName": "Categories",
+                      "Id": "11846801"
+                    },
+                    "ContextFreeName": "PlayStation 4 Games, Consoles & Accessories",
+                    "DisplayName": "PlayStation 4",
+                    "Id": "6427814011"
+                  },
+                  "ContextFreeName": "PlayStation 4 Accessories",
+                  "DisplayName": "Accessories",
+                  "Id": "6427815011"
+                },
+                "ContextFreeName": "PlayStation 4 Controllers",
+                "DisplayName": "Controllers",
+                "Id": "6427824011"
+              },
+              "ContextFreeName": "PlayStation 4 Gamepads & Standard Controllers",
+              "DisplayName": "Gamepads & Standard Controllers",
+              "Id": "10111036011",
+              "IsRoot": false,
+              "SalesRank": 10
+            }
+          ],
+          "WebsiteSalesRank": {
+            "ContextFreeName": "Video Games",
+            "DisplayName": "Video Games",
+            "SalesRank": 257
+          }
+        },
+        "DetailPageURL": "https://www.amazon.com/dp/B07GQ61M42?tag=associateTag-20&linkCode=ogv&th=1&psc=1",
+        "Images": {
+          "Primary": {
+            "Large": {
+              "Height": 319,
+              "URL": "https://m.media-amazon.com/images/I/41LUWLoojOL.jpg",
+              "Width": 500
+            },
+            "Medium": {
+              "Height": 102,
+              "URL": "https://m.media-amazon.com/images/I/41LUWLoojOL._SL160_.jpg",
+              "Width": 160
+            },
+            "Small": {
+              "Height": 48,
+              "URL": "https://m.media-amazon.com/images/I/41LUWLoojOL._SL75_.jpg",
+              "Width": 75
+            }
+          },
+          "Variants": [
+            {
+              "Large": {
+                "Height": 217,
+                "URL": "https://m.media-amazon.com/images/I/31+dWj8pZiL.jpg",
+                "Width": 500
+              },
+              "Medium": {
+                "Height": 69,
+                "URL": "https://m.media-amazon.com/images/I/31+dWj8pZiL._SL160_.jpg",
+                "Width": 160
+              },
+              "Small": {
+                "Height": 33,
+                "URL": "https://m.media-amazon.com/images/I/31+dWj8pZiL._SL75_.jpg",
+                "Width": 75
+              }
+            },
+            {
+              "Large": {
+                "Height": 194,
+                "URL": "https://m.media-amazon.com/images/I/318PhVRqDhL.jpg",
+                "Width": 500
+              },
+              "Medium": {
+                "Height": 62,
+                "URL": "https://m.media-amazon.com/images/I/318PhVRqDhL._SL160_.jpg",
+                "Width": 160
+              },
+              "Small": {
+                "Height": 29,
+                "URL": "https://m.media-amazon.com/images/I/318PhVRqDhL._SL75_.jpg",
+                "Width": 75
+              }
+            },
+            {
+              "Large": {
+                "Height": 500,
+                "URL": "https://m.media-amazon.com/images/I/419x+LmMgVL.jpg",
+                "Width": 443
+              },
+              "Medium": {
+                "Height": 160,
+                "URL": "https://m.media-amazon.com/images/I/419x+LmMgVL._SL160_.jpg",
+                "Width": 142
+              },
+              "Small": {
+                "Height": 75,
+                "URL": "https://m.media-amazon.com/images/I/419x+LmMgVL._SL75_.jpg",
+                "Width": 66
+              }
+            }
+          ]
+        },
+        "ItemInfo": {
+          "ByLineInfo": {
+            "Brand": {
+              "DisplayValue": "Playstation",
+              "Label": "Brand",
+              "Locale": "en_US"
+            },
+            "Manufacturer": {
+              "DisplayValue": "Sony Interactive Entertainment LLC",
+              "Label": "Manufacturer",
+              "Locale": "en_US"
+            }
+          },
+          "Classifications": {
+            "Binding": {
+              "DisplayValue": "Video Game",
+              "Label": "Binding",
+              "Locale": "en_US"
+            },
+            "ProductGroup": {
+              "DisplayValue": "Video Games",
+              "Label": "ProductGroup",
+              "Locale": "en_US"
+            }
+          },
+          "ContentInfo": {
+            "Languages": {
+              "DisplayValues": [
+                {
+                  "DisplayValue": "English",
+                  "Type": "Unknown"
+                }
+              ],
+              "Label": "Language",
+              "Locale": "en_US"
+            }
+          },
+          "ExternalIds": {
+            "EANs": {
+              "DisplayValues": [
+                "0711719519164"
+              ],
+              "Label": "EAN",
+              "Locale": "en_US"
+            },
+            "UPCs": {
+              "DisplayValues": [
+                "711719519164"
+              ],
+              "Label": "UPC",
+              "Locale": "en_US"
+            }
+          },
+          "Features": {
+            "DisplayValues": [
+              "Precision control   The enhanced feel, shape, and sensitivity of the Dualshock 4 wireless Controller offers players absolute control over all games on the PlayStation 4 system",
+              "Sharing at your fingertips   The addition of the share button makes sharing your greatest gaming moments as Easy as a press of a button. Upload gameplay videos and screenshots directly from your system",
+              "New ways to play   Revolutionary features like the touch pad, integrated light bar, and built in speaker offer exciting new ways to experience and interact with your games",
+              "Charge Efficiently   The DUALSHOCK 4 wireless controller can be easily recharged by plugging it into your PlayStation 4 system, even when in rest mode, or with any standard charger using a USB cable (type A to Micro B Sold Separately)"
+            ],
+            "Label": "Features",
+            "Locale": "en_US"
+          },
+          "ManufactureInfo": {
+            "ItemPartNumber": {
+              "DisplayValue": "3003235",
+              "Label": "PartNumber",
+              "Locale": "en_US"
+            },
+            "Model": {
+              "DisplayValue": "3003235",
+              "Label": "Model",
+              "Locale": "en_US"
+            },
+            "Warranty": {
+              "DisplayValue": "Limited Warranty",
+              "Label": "Warranty",
+              "Locale": "en_US"
+            }
+          },
+          "ProductInfo": {
+            "Color": {
+              "DisplayValue": "Blue Camouflage",
+              "Label": "Color",
+              "Locale": "en_US"
+            },
+            "IsAdultProduct": {
+              "DisplayValue": false,
+              "Label": "IsAdultProduct",
+              "Locale": "en_US"
+            },
+            "ItemDimensions": {
+              "Height": {
+                "DisplayValue": 2.5,
+                "Label": "Height",
+                "Locale": "en_US",
+                "Unit": "Inches"
+              },
+              "Length": {
+                "DisplayValue": 7.3,
+                "Label": "Length",
+                "Locale": "en_US",
+                "Unit": "Inches"
+              },
+              "Weight": {
+                "DisplayValue": 0.75,
+                "Label": "Weight",
+                "Locale": "en_US",
+                "Unit": "Pounds"
+              },
+              "Width": {
+                "DisplayValue": 6.7,
+                "Label": "Width",
+                "Locale": "en_US",
+                "Unit": "Inches"
+              }
+            },
+            "ReleaseDate": {
+              "DisplayValue": "2018-09-24T00:00:01Z",
+              "Label": "ReleaseDate",
+              "Locale": "en_US"
+            },
+            "Size": {
+              "DisplayValue": "8x7x3",
+              "Label": "Size",
+              "Locale": "en_US"
+            },
+            "UnitCount": {
+              "DisplayValue": 1,
+              "Label": "NumberOfItems",
+              "Locale": "en_US"
+            }
+          },
+          "Title": {
+            "DisplayValue": "DualShock 4 Wireless Controller for PlayStation 4 - Blue Camouflage",
+            "Label": "Title",
+            "Locale": "en_US"
+          },
+          "TradeInInfo": {
+            "IsEligibleForTradeIn": true,
+            "Price": {
+              "Amount": 11.24,
+              "Currency": "USD",
+              "DisplayAmount": "$11.24"
+            }
+          }
+        },
+        "Offers": {
+          "Listings": [
+            {
+              "Availability": {
+                "Message": "In Stock.",
+                "MinOrderQuantity": 1,
+                "Type": "Now"
+              },
+              "Condition": {
+                "SubCondition": {
+                  "Value": "VeryGood"
+                },
+                "Value": "Used"
+              },
+              "DeliveryInfo": {
+                "IsAmazonFulfilled": false,
+                "IsFreeShippingEligible": false,
+                "IsPrimeEligible": false
+              },
+              "Id": "UoKpqMH5FRDcrKV3fuU7lztBLLr52t6FBjD3Ep%2B1PZ2r1CM3vcxeIdj2a9S4zcbkZj1F06CVrcgZ3igO3Wvntd8Y50U5rVaffFp12N0yOEXNIQ53HLbuIqPf81A3b5r7%2Fgmkv4vxPfA%2FXJ66z6qIC6gGQUuSP7Af",
+              "IsBuyBoxWinner": false,
+              "MerchantInfo": {
+                "DefaultShippingCountry": "US",
+                "Id": "ARJ9CR5IBXBH3",
+                "Name": "Goldstar Tech"
+              },
+              "Price": {
+                "Amount": 44.99,
+                "Currency": "USD",
+                "DisplayAmount": "$44.99",
+                "Savings": {
+                  "Amount": 20,
+                  "Currency": "USD",
+                  "DisplayAmount": "$20.00 (31%)",
+                  "Percentage": 31
+                }
+              },
+              "ProgramEligibility": {
+                "IsPrimeExclusive": false,
+                "IsPrimePantry": false
+              },
+              "SavingBasis": {
+                "Amount": 64.99,
+                "Currency": "USD",
+                "DisplayAmount": "$64.99"
+              },
+              "ViolatesMAP": false
+            }
+          ],
+          "Summaries": [
+            {
+              "Condition": {
+                "Value": "New"
+              },
+              "HighestPrice": {
+                "Amount": 104.87,
+                "Currency": "USD",
+                "DisplayAmount": "$104.87"
+              },
+              "LowestPrice": {
+                "Amount": 51.99,
+                "Currency": "USD",
+                "DisplayAmount": "$51.99"
+              },
+              "OfferCount": 31
+            },
+            {
+              "Condition": {
+                "Value": "Used"
+              },
+              "HighestPrice": {
+                "Amount": 59.5,
+                "Currency": "USD",
+                "DisplayAmount": "$59.50"
+              },
+              "LowestPrice": {
+                "Amount": 44.99,
+                "Currency": "USD",
+                "DisplayAmount": "$44.99"
+              },
+              "OfferCount": 5
+            }
+          ]
+        },
+        "ParentASIN": "B077GG9D5D",
+        "VariationAttributes": [
+          {
+            "Name": "color_name",
+            "Value": "Blue Camouflage"
+          }
+        ]
+      },
+      {
+        "ASIN": "B07GQ6R2LR",
+        "BrowseNodeInfo": {
+          "BrowseNodes": [
+            {
+              "Ancestor": {
+                "Ancestor": {
+                  "Ancestor": {
+                    "Ancestor": {
+                      "Ancestor": {
+                        "ContextFreeName": "Video Games",
+                        "DisplayName": "Video Games",
+                        "Id": "468642"
+                      },
+                      "ContextFreeName": "Videogames",
+                      "DisplayName": "Categories",
+                      "Id": "11846801"
+                    },
+                    "ContextFreeName": "PlayStation 4 Games, Consoles & Accessories",
+                    "DisplayName": "PlayStation 4",
+                    "Id": "6427814011"
+                  },
+                  "ContextFreeName": "PlayStation 4 Accessories",
+                  "DisplayName": "Accessories",
+                  "Id": "6427815011"
+                },
+                "ContextFreeName": "PlayStation 4 Controllers",
+                "DisplayName": "Controllers",
+                "Id": "6427824011"
+              },
+              "ContextFreeName": "PlayStation 4 Gamepads & Standard Controllers",
+              "DisplayName": "Gamepads & Standard Controllers",
+              "Id": "10111036011",
+              "IsRoot": false,
+              "SalesRank": 5
+            }
+          ],
+          "WebsiteSalesRank": {
+            "ContextFreeName": "Video Games",
+            "DisplayName": "Video Games",
+            "SalesRank": 109
+          }
+        },
+        "DetailPageURL": "https://www.amazon.com/dp/B07GQ6R2LR?tag=associateTag-20&linkCode=ogv&th=1&psc=1",
+        "Images": {
+          "Primary": {
+            "Large": {
+              "Height": 321,
+              "URL": "https://m.media-amazon.com/images/I/41HLFDcZo3L.jpg",
+              "Width": 500
+            },
+            "Medium": {
+              "Height": 103,
+              "URL": "https://m.media-amazon.com/images/I/41HLFDcZo3L._SL160_.jpg",
+              "Width": 160
+            },
+            "Small": {
+              "Height": 48,
+              "URL": "https://m.media-amazon.com/images/I/41HLFDcZo3L._SL75_.jpg",
+              "Width": 75
+            }
+          },
+          "Variants": [
+            {
+              "Large": {
+                "Height": 218,
+                "URL": "https://m.media-amazon.com/images/I/31FutLKdUDL.jpg",
+                "Width": 500
+              },
+              "Medium": {
+                "Height": 70,
+                "URL": "https://m.media-amazon.com/images/I/31FutLKdUDL._SL160_.jpg",
+                "Width": 160
+              },
+              "Small": {
+                "Height": 33,
+                "URL": "https://m.media-amazon.com/images/I/31FutLKdUDL._SL75_.jpg",
+                "Width": 75
+              }
+            },
+            {
+              "Large": {
+                "Height": 195,
+                "URL": "https://m.media-amazon.com/images/I/31MPbJS0-jL.jpg",
+                "Width": 500
+              },
+              "Medium": {
+                "Height": 62,
+                "URL": "https://m.media-amazon.com/images/I/31MPbJS0-jL._SL160_.jpg",
+                "Width": 160
+              },
+              "Small": {
+                "Height": 29,
+                "URL": "https://m.media-amazon.com/images/I/31MPbJS0-jL._SL75_.jpg",
+                "Width": 75
+              }
+            },
+            {
+              "Large": {
+                "Height": 500,
+                "URL": "https://m.media-amazon.com/images/I/41hZ7+oMCYL.jpg",
+                "Width": 443
+              },
+              "Medium": {
+                "Height": 160,
+                "URL": "https://m.media-amazon.com/images/I/41hZ7+oMCYL._SL160_.jpg",
+                "Width": 142
+              },
+              "Small": {
+                "Height": 75,
+                "URL": "https://m.media-amazon.com/images/I/41hZ7+oMCYL._SL75_.jpg",
+                "Width": 66
+              }
+            }
+          ]
+        },
+        "ItemInfo": {
+          "ByLineInfo": {
+            "Brand": {
+              "DisplayValue": "Playstation",
+              "Label": "Brand",
+              "Locale": "en_US"
+            },
+            "Manufacturer": {
+              "DisplayValue": "Sony Computer Entertainment",
+              "Label": "Manufacturer",
+              "Locale": "en_US"
+            }
+          },
+          "Classifications": {
+            "Binding": {
+              "DisplayValue": "Video Game",
+              "Label": "Binding",
+              "Locale": "en_US"
+            },
+            "ProductGroup": {
+              "DisplayValue": "Video Games",
+              "Label": "ProductGroup",
+              "Locale": "en_US"
+            }
+          },
+          "ContentInfo": {
+            "Languages": {
+              "DisplayValues": [
+                {
+                  "DisplayValue": "English",
+                  "Type": "Unknown"
+                }
+              ],
+              "Label": "Language",
+              "Locale": "en_US"
+            }
+          },
+          "ExternalIds": {
+            "EANs": {
+              "DisplayValues": [
+                "0711719519195"
+              ],
+              "Label": "EAN",
+              "Locale": "en_US"
+            },
+            "UPCs": {
+              "DisplayValues": [
+                "711719519195"
+              ],
+              "Label": "UPC",
+              "Locale": "en_US"
+            }
+          },
+          "Features": {
+            "DisplayValues": [
+              "Bright, playful, and fun, the new Berry Blue Edition brings new flavor to the dualshock 4 wireless Controller line",
+              "Precision control - the enhanced feel, shape, and sensitivity of the dualshock 4 wireless Controller offers players absolute control over all games on the PlayStation 4 system",
+              "Wireless connectivity : bluetooth 2.1+EDR. Sharing at your fingertips - the addition of the share button makes sharing your greatest gaming moments as Easy as a press of a button",
+              "New ways to play - revolutionary features like the touch pad, integrated light bar, and built in speaker offer exciting new ways to experience and interact with your games",
+              "Charge efficiently - the dualshock 4 wireless Controller can be easily recharged by plugging it into your PlayStation 4 system, even when in rest mode, or with any standard charger using a USB cable"
+            ],
+            "Label": "Features",
+            "Locale": "en_US"
+          },
+          "ManufactureInfo": {
+            "ItemPartNumber": {
+              "DisplayValue": "3003238",
+              "Label": "PartNumber",
+              "Locale": "en_US"
+            },
+            "Model": {
+              "DisplayValue": "3003238",
+              "Label": "Model",
+              "Locale": "en_US"
+            }
+          },
+          "ProductInfo": {
+            "Color": {
+              "DisplayValue": "Berry Blue",
+              "Label": "Color",
+              "Locale": "en_US"
+            },
+            "IsAdultProduct": {
+              "DisplayValue": false,
+              "Label": "IsAdultProduct",
+              "Locale": "en_US"
+            },
+            "ItemDimensions": {
+              "Height": {
+                "DisplayValue": 2,
+                "Label": "Height",
+                "Locale": "en_US",
+                "Unit": "Inches"
+              },
+              "Length": {
+                "DisplayValue": 6,
+                "Label": "Length",
+                "Locale": "en_US",
+                "Unit": "Inches"
+              },
+              "Weight": {
+                "DisplayValue": 0.75,
+                "Label": "Weight",
+                "Locale": "en_US",
+                "Unit": "Pounds"
+              },
+              "Width": {
+                "DisplayValue": 8,
+                "Label": "Width",
+                "Locale": "en_US",
+                "Unit": "Inches"
+              }
+            },
+            "ReleaseDate": {
+              "DisplayValue": "2018-09-24T00:00:01Z",
+              "Label": "ReleaseDate",
+              "Locale": "en_US"
+            }
+          },
+          "Title": {
+            "DisplayValue": "DualShock 4 Wireless Controller for PlayStation 4 - Berry Blue",
+            "Label": "Title",
+            "Locale": "en_US"
+          },
+          "TradeInInfo": {
+            "IsEligibleForTradeIn": true,
+            "Price": {
+              "Amount": 24.11,
+              "Currency": "USD",
+              "DisplayAmount": "$24.11"
+            }
+          }
+        },
+        "Offers": {
+          "Listings": [
+            {
+              "Availability": {
+                "Message": "In Stock.",
+                "MinOrderQuantity": 1,
+                "Type": "Now"
+              },
+              "Condition": {
+                "SubCondition": {
+                  "Value": "New"
+                },
+                "Value": "New"
+              },
+              "DeliveryInfo": {
+                "IsAmazonFulfilled": true,
+                "IsFreeShippingEligible": true,
+                "IsPrimeEligible": true
+              },
+              "Id": "UoKpqMH5FRDcrKV3fuU7l84OE3T87fF26f7TLpdv3lLqHY23Wp4yZOAyjDsr%2FV%2FFYkYtEzGsACwSTYRozj9%2BlG0gt7DmPCBh8pWuN36iNSF8LeYf9swH6w%3D%3D",
+              "IsBuyBoxWinner": true,
+              "MerchantInfo": {
+                "Id": "ATVPDKIKX0DER",
+                "Name": "Amazon.com"
+              },
+              "Price": {
+                "Amount": 58.99,
+                "Currency": "USD",
+                "DisplayAmount": "$58.99",
+                "Savings": {
+                  "Amount": 6,
+                  "Currency": "USD",
+                  "DisplayAmount": "$6.00 (9%)",
+                  "Percentage": 9
+                }
+              },
+              "ProgramEligibility": {
+                "IsPrimeExclusive": false,
+                "IsPrimePantry": false
+              },
+              "SavingBasis": {
+                "Amount": 64.99,
+                "Currency": "USD",
+                "DisplayAmount": "$64.99"
+              },
+              "ViolatesMAP": false
+            }
+          ],
+          "Summaries": [
+            {
+              "Condition": {
+                "Value": "New"
+              },
+              "HighestPrice": {
+                "Amount": 129.03,
+                "Currency": "USD",
+                "DisplayAmount": "$129.03"
+              },
+              "LowestPrice": {
+                "Amount": 58.99,
+                "Currency": "USD",
+                "DisplayAmount": "$58.99"
+              },
+              "OfferCount": 22
+            },
+            {
+              "Condition": {
+                "Value": "Used"
+              },
+              "HighestPrice": {
+                "Amount": 57.99,
+                "Currency": "USD",
+                "DisplayAmount": "$57.99"
+              },
+              "LowestPrice": {
+                "Amount": 51.49,
+                "Currency": "USD",
+                "DisplayAmount": "$51.49"
+              },
+              "OfferCount": 6
+            },
+            {
+              "Condition": {
+                "Value": "Collectible"
+              },
+              "HighestPrice": {
+                "Amount": 69.98,
+                "Currency": "USD",
+                "DisplayAmount": "$69.98"
+              },
+              "LowestPrice": {
+                "Amount": 69.98,
+                "Currency": "USD",
+                "DisplayAmount": "$69.98"
+              },
+              "OfferCount": 1
+            }
+          ]
+        },
+        "ParentASIN": "B077GG9D5D",
+        "VariationAttributes": [
+          {
+            "Name": "color_name",
+            "Value": "Berry Blue"
+          }
+        ]
       }
     ],
     "VariationSummary": {
       "PageCount": 2,
-      "VariationCount": 18
+      "Price": {
+        "HighestPrice": {
+          "Amount": 129.95,
+          "Currency": "USD",
+          "DisplayAmount": "$129.95"
+        },
+        "LowestPrice": {
+          "Amount": 38.88,
+          "Currency": "USD",
+          "DisplayAmount": "$38.88"
+        }
+      },
+      "VariationCount": 18,
+      "VariationDimensions": [
+        {
+          "DisplayName": "Color",
+          "Name": "color_name",
+          "Values": [
+            "Alpine Green",
+            "Berry Blue",
+            "Blue Camouflage",
+            "Copper",
+            "Crystal",
+            "Electric Purple",
+            "Fortnite Jet Black",
+            "Glacier White",
+            "Gold",
+            "Green Camouflage",
+            "Jet Black",
+            "Magma Red",
+            "Midnight Blue",
+            "Red Camo",
+            "Rose Gold",
+            "Steel Black",
+            "Sunset Orange",
+            "Titanium Blue"
+          ]
+        }
+      ]
     }
   }
 }
