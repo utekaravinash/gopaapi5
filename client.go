@@ -5,6 +5,7 @@ import (
 	"errors"
 	"io/ioutil"
 	"net/http"
+	"time"
 
 	"github.com/utekaravinash/gopaapi5/api"
 )
@@ -68,6 +69,11 @@ func NewClient(accessKey, secretKey, associateTag string, locale api.Locale) (*C
 	}
 
 	return client, nil
+}
+
+// SetTimeout sets a time limit for the operations made by the Client.
+func (c *Client) SetTimeout(duration time.Duration) {
+	c.httpClient.Timeout = duration
 }
 
 // send sends a http request to Amazon Product Advertising service and returns response or error
