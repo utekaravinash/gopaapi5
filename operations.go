@@ -20,7 +20,7 @@ func (c *Client) GetBrowseNodes(params *api.GetBrowseNodesParams) (*api.GetBrows
 	return &response, nil
 }
 
-// GetBrowseNodes gets item information for items
+// GetItems gets item information for items
 func (c *Client) GetItems(params *api.GetItemsParams) (*api.GetItemsResponse, error) {
 	response := api.GetItemsResponse{}
 

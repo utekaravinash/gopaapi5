@@ -79,6 +79,7 @@ This client library exposes these operations for Amazon Product Advertising API 
 - [GetVariations](https://github.com/utekaravinash/gopaapi5/blob/master/_examples/get_variations/main.go)
 - [SearchItems](https://github.com/utekaravinash/gopaapi5/blob/master/_examples/search_items/main.go)
 
+Use Client instance's SetTimeout() method to set a time limit for the above operations. If not used, the operations wait until API service either completes or times out.
 
 ## Author ##
 

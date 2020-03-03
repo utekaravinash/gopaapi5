@@ -1,5 +1,6 @@
 package api
 
+// Resource determine what information will be returned in the API response
 type Resource string
 
 const (
