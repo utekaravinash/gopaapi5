@@ -4,7 +4,6 @@ import (
 	"io/ioutil"
 	"net/http"
 	"os"
-	"strings"
 	"testing"
 	"time"
 
@@ -93,19 +92,26 @@ func TestSetTimeout(t *testing.T) {
 
 	client.httpClient = httpClient
 
+	// First Request
 	client.SetTimeout(time.Nanosecond * 1)
 	_, err1 := client.GetItems(&params)
 
+	firstRequestTimedOut := false
+	if e, ok := err1.(interface{ Timeout() bool }); ok {
+		firstRequestTimedOut = e.Timeout()
+	}
+
+	// Second Request
 	client.SetTimeout(time.Hour * 1)
-	response, _ := client.GetItems(&params)
+	response, err2 := client.GetItems(&params)
 
 	tests := []struct {
 		name     string
 		expected interface{}
 		actual   interface{}
 	}{
-		{"Request Timeout", true, strings.Contains(err1.Error(), "Client.Timeout exceeded while awaiting headers")},
-		{"Request Completed", 2, len(response.ItemsResult.Items)},
+		{"1st Request Timeout", true, firstRequestTimedOut},
+		{"2nd Request Completed", true, err2 == nil && len(response.ItemsResult.Items) == 2},
 	}
 
 	for _, test := range tests {
