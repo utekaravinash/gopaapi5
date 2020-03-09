@@ -8,6 +8,7 @@ import (
 	"net/http/httptest"
 	"os"
 	"testing"
+	"time"
 
 	"github.com/utekaravinash/gopaapi5/api"
 )
@@ -47,12 +48,23 @@ func TestGetBrowseNodes(t *testing.T) {
 		t.Fatalf("Error in client.GetBrowseNodes: %s", err)
 	}
 
+	// Test Ctx Method
+	ctx, cancel := context.WithTimeout(context.Background(), 1*time.Nanosecond)
+	defer cancel()
+	_, errCtx := client.GetBrowseNodesCtx(ctx, &params)
+
+	requestTimedOut := false
+	if e, ok := errCtx.(interface{ Timeout() bool }); ok {
+		requestTimedOut = e.Timeout()
+	}
+
 	tests := []struct {
 		name     string
 		expected interface{}
 		actual   interface{}
 	}{
 		{"Count BrowseNodes", 2, len(response.BrowseNodesResult.BrowseNodes)},
+		{"WithContextRequestTimeout", true, requestTimedOut},
 	}
 
 	for _, test := range tests {
@@ -99,12 +111,23 @@ func TestGetItems(t *testing.T) {
 		t.Fatalf("Error in client.GetItems: %s", err)
 	}
 
+	// Test Ctx Method
+	ctx, cancel := context.WithTimeout(context.Background(), 1*time.Nanosecond)
+	defer cancel()
+	_, errCtx := client.GetItemsCtx(ctx, &params)
+
+	requestTimedOut := false
+	if e, ok := errCtx.(interface{ Timeout() bool }); ok {
+		requestTimedOut = e.Timeout()
+	}
+
 	tests := []struct {
 		name     string
 		expected interface{}
 		actual   interface{}
 	}{
 		{"Count Items", 2, len(response.ItemsResult.Items)},
+		{"WithContextRequestTimeout", true, requestTimedOut},
 	}
 
 	for _, test := range tests {
@@ -149,12 +172,23 @@ func TestGetVariations(t *testing.T) {
 		t.Fatalf("Error in client.GetVariations: %s", err)
 	}
 
+	// Test Ctx Method
+	ctx, cancel := context.WithTimeout(context.Background(), 1*time.Nanosecond)
+	defer cancel()
+	_, errCtx := client.GetVariationsCtx(ctx, &params)
+
+	requestTimedOut := false
+	if e, ok := errCtx.(interface{ Timeout() bool }); ok {
+		requestTimedOut = e.Timeout()
+	}
+
 	tests := []struct {
 		name     string
 		expected interface{}
 		actual   interface{}
 	}{
 		{"Count Items", 9, len(response.VariationsResult.Items)},
+		{"WithContextRequestTimeout", true, requestTimedOut},
 	}
 
 	for _, test := range tests {
@@ -199,12 +233,23 @@ func TestSearchItems(t *testing.T) {
 		t.Fatalf("Error in client.SearchItems: %s", err)
 	}
 
+	// Test Ctx Method
+	ctx, cancel := context.WithTimeout(context.Background(), 1*time.Nanosecond)
+	defer cancel()
+	_, errCtx := client.SearchItemsCtx(ctx, &params)
+
+	requestTimedOut := false
+	if e, ok := errCtx.(interface{ Timeout() bool }); ok {
+		requestTimedOut = e.Timeout()
+	}
+
 	tests := []struct {
 		name     string
 		expected interface{}
 		actual   interface{}
 	}{
 		{"Count Items", 3, len(response.SearchResult.Items)},
+		{"WithContextRequestTimeout", true, requestTimedOut},
 	}
 
 	for _, test := range tests {

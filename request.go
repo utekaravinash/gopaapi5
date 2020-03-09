@@ -2,6 +2,7 @@ package gopaapi5
 
 import (
 	"bytes"
+	"context"
 	"crypto/hmac"
 	"crypto/sha256"
 	"encoding/hex"
@@ -34,6 +35,7 @@ type request struct {
 	httpReq   *http.Request
 	path      string
 	dateTime  time.Time
+	ctx       context.Context
 }
 
 // build builds http request and returns error if any
@@ -57,6 +59,10 @@ func (r *request) build() error {
 	r.httpReq, err = http.NewRequest("POST", endpoint, bytes.NewBuffer(jsonBody))
 	if err != nil {
 		return err
+	}
+
+	if r.ctx != nil {
+		r.httpReq = r.httpReq.WithContext(r.ctx)
 	}
 
 	// Set HTTP request headers

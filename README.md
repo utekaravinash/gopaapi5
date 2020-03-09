@@ -81,6 +81,8 @@ This client library exposes these operations for Amazon Product Advertising API 
 
 Use Client instance's SetTimeout() method to set a time limit for the above operations. If not used, the operations wait until API service either completes or times out.
 
+_Note: You can also pass context to the Ctx suffixed methods mentioned above. viz. GetBrowseNodesCtx, GetItemsCtx, GetVariationsCtx, and SearchItemsCtx_
+
 ## Author ##
 
 [Avinash Utekar](https://www.utekar.com/author/avinash/)

@@ -1,6 +1,7 @@
 package gopaapi5
 
 import (
+	"context"
 	"errors"
 	"fmt"
 	"strings"
@@ -11,8 +12,28 @@ import (
 
 // GetBrowseNodes gets information for Browse Nodes
 func (c *Client) GetBrowseNodes(params *api.GetBrowseNodesParams) (*api.GetBrowseNodesResponse, error) {
+	return c.GetBrowseNodesCtx(context.Background(), params)
+}
+
+// GetItemsCtx gets information for items
+func (c *Client) GetItems(params *api.GetItemsParams) (*api.GetItemsResponse, error) {
+	return c.GetItemsCtx(context.Background(), params)
+}
+
+// GetVariationsCtx gets information for variations
+func (c *Client) GetVariations(params *api.GetVariationsParams) (*api.GetVariationsResponse, error) {
+	return c.GetVariationsCtx(context.Background(), params)
+}
+
+// SearchItemsCtx searches for items on Amazon
+func (c *Client) SearchItems(params *api.SearchItemsParams) (*api.SearchItemsResponse, error) {
+	return c.SearchItemsCtx(context.Background(), params)
+}
+
+// GetBrowseNodesCtx gets information for Browse Nodes, also accepts context.Context
+func (c *Client) GetBrowseNodesCtx(ctx context.Context, params *api.GetBrowseNodesParams) (*api.GetBrowseNodesResponse, error) {
 	response := api.GetBrowseNodesResponse{}
-	err := c.executeOperation(api.GetBrowseNodes, params, &response)
+	err := c.executeOperation(ctx, api.GetBrowseNodes, params, &response)
 	if err != nil {
 		return nil, err
 	}
@@ -20,11 +41,11 @@ func (c *Client) GetBrowseNodes(params *api.GetBrowseNodesParams) (*api.GetBrows
 	return &response, nil
 }
 
-// GetItems gets item information for items
-func (c *Client) GetItems(params *api.GetItemsParams) (*api.GetItemsResponse, error) {
+// GetItemsCtx gets information for items, also accepts context.Context
+func (c *Client) GetItemsCtx(ctx context.Context, params *api.GetItemsParams) (*api.GetItemsResponse, error) {
 	response := api.GetItemsResponse{}
 
-	err := c.executeOperation(api.GetItems, params, &response)
+	err := c.executeOperation(ctx, api.GetItems, params, &response)
 	if err != nil {
 		return nil, err
 	}
@@ -32,11 +53,11 @@ func (c *Client) GetItems(params *api.GetItemsParams) (*api.GetItemsResponse, er
 	return &response, nil
 }
 
-// GetVariations gets information for variations
-func (c *Client) GetVariations(params *api.GetVariationsParams) (*api.GetVariationsResponse, error) {
+// GetVariationsCtx gets information for variations, also accepts context.Context
+func (c *Client) GetVariationsCtx(ctx context.Context, params *api.GetVariationsParams) (*api.GetVariationsResponse, error) {
 	response := api.GetVariationsResponse{}
 
-	err := c.executeOperation(api.GetVariations, params, &response)
+	err := c.executeOperation(ctx, api.GetVariations, params, &response)
 	if err != nil {
 		return nil, err
 	}
@@ -44,11 +65,11 @@ func (c *Client) GetVariations(params *api.GetVariationsParams) (*api.GetVariati
 	return &response, nil
 }
 
-// SearchItems searches for items on Amazon
-func (c *Client) SearchItems(params *api.SearchItemsParams) (*api.SearchItemsResponse, error) {
+// SearchItemsCtx searches for items on Amazon, also accepts context.Context
+func (c *Client) SearchItemsCtx(ctx context.Context, params *api.SearchItemsParams) (*api.SearchItemsResponse, error) {
 	response := api.SearchItemsResponse{}
 
-	err := c.executeOperation(api.SearchItems, params, &response)
+	err := c.executeOperation(ctx, api.SearchItems, params, &response)
 	if err != nil {
 		return nil, err
 	}
@@ -63,7 +84,7 @@ type payloadResourceListGetter interface {
 }
 
 // executeOperation validates request parameters and builds request payload
-func (c *Client) executeOperation(operation api.Operation, params payloadResourceListGetter, v interface{}) error {
+func (c *Client) executeOperation(ctx context.Context, operation api.Operation, params payloadResourceListGetter, v interface{}) error {
 
 	if params == nil {
 		return errors.New("Nil parameters")
@@ -87,6 +108,7 @@ func (c *Client) executeOperation(operation api.Operation, params payloadResourc
 		client:    c,
 		path:      path,
 		dateTime:  time.Now().UTC(),
+		ctx:       ctx,
 	}
 
 	err = c.send(req, v)

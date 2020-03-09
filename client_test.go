@@ -1,6 +1,7 @@
 package gopaapi5
 
 import (
+	"context"
 	"io/ioutil"
 	"net/http"
 	"os"
@@ -21,9 +22,11 @@ func TestNewClient(t *testing.T) {
 	_, err3 := NewClient("accessKey", "secretKey", "", api.UnitedStates)
 	_, err4 := NewClient("accessKey", "secretKey", "associateTag", api.Locale("Fake Locale"))
 
-	err5 := client.executeOperation(api.GetItems, api.GetItemsParams{}, nil)
-	err6 := client.executeOperation(api.GetItems, nil, nil)
-	err7 := client.executeOperation(api.GetItems, api.GetItemsParams{Resources: []api.Resource{api.VariationSummaryVariationDimension}}, nil)
+	ctx := context.Background()
+
+	err5 := client.executeOperation(ctx, api.GetItems, api.GetItemsParams{}, nil)
+	err6 := client.executeOperation(ctx, api.GetItems, nil, nil)
+	err7 := client.executeOperation(ctx, api.GetItems, api.GetItemsParams{Resources: []api.Resource{api.VariationSummaryVariationDimension}}, nil)
 
 	req := &request{
 		operation: api.GetItems,
