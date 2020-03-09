@@ -15,17 +15,17 @@ func (c *Client) GetBrowseNodes(params *api.GetBrowseNodesParams) (*api.GetBrows
 	return c.GetBrowseNodesCtx(context.Background(), params)
 }
 
-// GetItemsCtx gets information for items
+// GetItems gets information for items
 func (c *Client) GetItems(params *api.GetItemsParams) (*api.GetItemsResponse, error) {
 	return c.GetItemsCtx(context.Background(), params)
 }
 
-// GetVariationsCtx gets information for variations
+// GetVariations gets information for variations
 func (c *Client) GetVariations(params *api.GetVariationsParams) (*api.GetVariationsResponse, error) {
 	return c.GetVariationsCtx(context.Background(), params)
 }
 
-// SearchItemsCtx searches for items on Amazon
+// SearchItems searches for items on Amazon
 func (c *Client) SearchItems(params *api.SearchItemsParams) (*api.SearchItemsResponse, error) {
 	return c.SearchItemsCtx(context.Background(), params)
 }
