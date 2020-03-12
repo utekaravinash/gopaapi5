@@ -60,7 +60,7 @@ func main() {
 	}
 
 	// Call GetBrowseNodes operation
-	response, err := client.GetBrowseNodes(&params)
+	response, err := client.GetBrowseNodes(context.Background(), &params)
 	if err != nil {
 		panic(err)
 	}
@@ -79,9 +79,7 @@ This client library exposes these operations for Amazon Product Advertising API 
 - [GetVariations](https://github.com/utekaravinash/gopaapi5/blob/master/_examples/get_variations/main.go)
 - [SearchItems](https://github.com/utekaravinash/gopaapi5/blob/master/_examples/search_items/main.go)
 
-Use Client instance's SetTimeout() method to set a time limit for the above operations. If not used, the operations wait until API service either completes or times out.
-
-_Note: You can also pass context to the Ctx suffixed methods mentioned above. viz. GetBrowseNodesCtx, GetItemsCtx, GetVariationsCtx, and SearchItemsCtx_
+_Use SetHttpClient() method of Client struct to set a custom HTTP client._
 
 ## Author ##
 

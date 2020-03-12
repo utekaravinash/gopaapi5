@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"fmt"
 	"os"
 
@@ -40,7 +41,7 @@ func main() {
 	}
 
 	// Call GetBrowseNodes operation
-	response, err := client.GetBrowseNodes(&params)
+	response, err := client.GetBrowseNodes(context.Background(), &params)
 	if err != nil {
 		panic(err)
 	}

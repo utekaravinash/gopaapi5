@@ -1,13 +1,15 @@
 package gopaapi5
 
 import (
+	"context"
 	"fmt"
-	"github.com/utekaravinash/gopaapi5/api"
 	"io/ioutil"
 	"net/url"
 	"strings"
 	"testing"
 	"time"
+
+	"github.com/utekaravinash/gopaapi5/api"
 )
 
 var (
@@ -185,6 +187,42 @@ func TestGetURIPath(t *testing.T) {
 		{"URL1", "/wiki/URL", getURIPath(url1)},
 		{"URL2", "/abc", getURIPath(url2)},
 		{"URL3", "/", getURIPath(url3)},
+	}
+
+	for _, test := range tests {
+		t.Run(test.name, func(t *testing.T) {
+			if test.expected != test.actual {
+				t.Errorf("Expected: %v, Actual: %v", test.expected, test.actual)
+			}
+		})
+	}
+}
+
+func TestSend(t *testing.T) {
+	client, _ := NewClient("accessKey", "secretKey", "associateTag", api.UnitedStates)
+	client.testing = true
+
+	req := &request{
+		operation: api.GetItems,
+		payload:   map[string]interface{}{"Test": &struct{}{}},
+		client:    client,
+		path:      fmt.Sprintf("paapi5/%s", strings.ToLower(string(api.GetItems))),
+		dateTime:  time.Now().UTC(),
+		ctx:       context.Background(),
+	}
+
+	err := req.build()
+	if err != nil {
+		t.Fail()
+	}
+
+	tests := []struct {
+		name     string
+		expected interface{}
+		actual   interface{}
+	}{
+		// {"Check Err", nil, err},
+		// {"Nil HTTP Client", ErrNilHttpClient, err},
 	}
 
 	for _, test := range tests {

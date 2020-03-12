@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"fmt"
 	"os"
 
@@ -98,7 +99,7 @@ func main() {
 	}
 
 	// Call GetItems operation
-	response, err := client.GetItems(&params)
+	response, err := client.GetItems(context.Background(), &params)
 	if err != nil {
 		panic(err)
 	}

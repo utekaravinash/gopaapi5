@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"fmt"
 	"os"
 
@@ -94,7 +95,7 @@ func main() {
 	}
 
 	// Call GetVariations operation
-	response, err := client.GetVariations(&params)
+	response, err := client.GetVariations(context.Background(), &params)
 	if err != nil {
 		panic(err)
 	}

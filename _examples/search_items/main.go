@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"fmt"
 	"os"
 
@@ -92,7 +93,7 @@ func main() {
 	}
 
 	// Call SearchItems operation
-	response, err := client.SearchItems(&params)
+	response, err := client.SearchItems(context.Background(), &params)
 	if err != nil {
 		panic(err)
 	}

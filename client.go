@@ -5,7 +5,6 @@ import (
 	"errors"
 	"io/ioutil"
 	"net/http"
-	"time"
 
 	"github.com/utekaravinash/gopaapi5/api"
 )
@@ -19,6 +18,8 @@ var (
 	ErrEmptyAssociateTag = errors.New("Empty associate tag")
 	// ErrInvalidLocale is thrown when locale is invalid
 	ErrInvalidLocale = errors.New("Invalid locale")
+	// ErrInvalidLocale is thrown when locale is invalid
+	ErrNilHttpClient = errors.New("Nil http client")
 )
 
 // Client stores AccessKey, SecretKey, and, AssociateTag; and exposes GetBrowseNodes, GetItems, GetVariations, and SearchItems operations.
@@ -71,9 +72,14 @@ func NewClient(accessKey, secretKey, associateTag string, locale api.Locale) (*C
 	return client, nil
 }
 
-// SetTimeout sets a time limit for the operations made by the Client.
-func (c *Client) SetTimeout(duration time.Duration) {
-	c.httpClient.Timeout = duration
+// SetHttpClient allows you to change the default http client used by gopaapi5 client
+func (c *Client) SetHttpClient(httpClient *http.Client) error {
+	if httpClient == nil {
+		return ErrNilHttpClient
+	}
+	c.httpClient = httpClient
+
+	return nil
 }
 
 // send sends a http request to Amazon Product Advertising service and returns response or error

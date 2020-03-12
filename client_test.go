@@ -2,9 +2,7 @@ package gopaapi5
 
 import (
 	"context"
-	"io/ioutil"
 	"net/http"
-	"os"
 	"testing"
 	"time"
 
@@ -67,54 +65,21 @@ func TestNewClient(t *testing.T) {
 	}
 }
 
-func TestSetTimeout(t *testing.T) {
-	params := api.GetItemsParams{
-		ItemIds: []string{"0892131349"},
-	}
+func TestSetHttpClient(t *testing.T) {
 
 	client, _ := NewClient("accessKey", "secretKey", "associateTag", api.UnitedStates)
-	client.testing = true
 
-	h := http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		time.Sleep(time.Nanosecond * 10)
-		file, err := os.Open("_response/get_items.json")
-		if err != nil {
-			t.Errorf("Cannot open _response/get_items.json")
-		}
+	client.SetHttpClient(&http.Client{Timeout: time.Hour * 1})
 
-		jo, err := ioutil.ReadAll(file)
-		if err != nil {
-			t.Errorf("Cannot read _response/get_items.json")
-		}
-
-		w.Write(jo)
-	})
-
-	httpClient, teardown := testingHTTPClient(h)
-	defer teardown()
-
-	client.httpClient = httpClient
-
-	// First Request
-	client.SetTimeout(time.Nanosecond * 1)
-	_, err1 := client.GetItems(&params)
-
-	firstRequestTimedOut := false
-	if e, ok := err1.(interface{ Timeout() bool }); ok {
-		firstRequestTimedOut = e.Timeout()
-	}
-
-	// Second Request
-	client.SetTimeout(time.Hour * 1)
-	response, err2 := client.GetItems(&params)
+	err := client.SetHttpClient(nil)
 
 	tests := []struct {
 		name     string
 		expected interface{}
 		actual   interface{}
 	}{
-		{"1st Request Timeout", true, firstRequestTimedOut},
-		{"2nd Request Completed", true, err2 == nil && len(response.ItemsResult.Items) == 2},
+		{"Custom Client", time.Hour * 1, client.httpClient.Timeout},
+		{"Nil HTTP Client", ErrNilHttpClient, err},
 	}
 
 	for _, test := range tests {

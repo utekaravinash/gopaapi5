@@ -43,18 +43,18 @@ func TestGetBrowseNodes(t *testing.T) {
 
 	client.httpClient = httpClient
 
-	response, err := client.GetBrowseNodes(&params)
+	response, err := client.GetBrowseNodes(context.Background(), &params)
 	if err != nil {
 		t.Fatalf("Error in client.GetBrowseNodes: %s", err)
 	}
 
-	// Test Ctx Method
+	// Test Context
 	ctx, cancel := context.WithTimeout(context.Background(), 1*time.Nanosecond)
 	defer cancel()
-	_, errCtx := client.GetBrowseNodesCtx(ctx, &params)
+	_, err = client.GetBrowseNodes(ctx, &params)
 
 	requestTimedOut := false
-	if e, ok := errCtx.(interface{ Timeout() bool }); ok {
+	if e, ok := err.(interface{ Timeout() bool }); ok {
 		requestTimedOut = e.Timeout()
 	}
 
@@ -106,18 +106,18 @@ func TestGetItems(t *testing.T) {
 
 	client.httpClient = httpClient
 
-	response, err := client.GetItems(&params)
+	response, err := client.GetItems(context.Background(), &params)
 	if err != nil {
 		t.Fatalf("Error in client.GetItems: %s", err)
 	}
 
-	// Test Ctx Method
+	// Test Context
 	ctx, cancel := context.WithTimeout(context.Background(), 1*time.Nanosecond)
 	defer cancel()
-	_, errCtx := client.GetItemsCtx(ctx, &params)
+	_, err = client.GetItems(ctx, &params)
 
 	requestTimedOut := false
-	if e, ok := errCtx.(interface{ Timeout() bool }); ok {
+	if e, ok := err.(interface{ Timeout() bool }); ok {
 		requestTimedOut = e.Timeout()
 	}
 
@@ -167,18 +167,18 @@ func TestGetVariations(t *testing.T) {
 
 	client.httpClient = httpClient
 
-	response, err := client.GetVariations(&params)
+	response, err := client.GetVariations(context.Background(), &params)
 	if err != nil {
 		t.Fatalf("Error in client.GetVariations: %s", err)
 	}
 
-	// Test Ctx Method
+	// Test Context
 	ctx, cancel := context.WithTimeout(context.Background(), 1*time.Nanosecond)
 	defer cancel()
-	_, errCtx := client.GetVariationsCtx(ctx, &params)
+	_, err = client.GetVariations(ctx, &params)
 
 	requestTimedOut := false
-	if e, ok := errCtx.(interface{ Timeout() bool }); ok {
+	if e, ok := err.(interface{ Timeout() bool }); ok {
 		requestTimedOut = e.Timeout()
 	}
 
@@ -228,18 +228,18 @@ func TestSearchItems(t *testing.T) {
 
 	client.httpClient = httpClient
 
-	response, err := client.SearchItems(&params)
+	response, err := client.SearchItems(context.Background(), &params)
 	if err != nil {
 		t.Fatalf("Error in client.SearchItems: %s", err)
 	}
 
-	// Test Ctx Method
+	// Test Context
 	ctx, cancel := context.WithTimeout(context.Background(), 1*time.Nanosecond)
 	defer cancel()
-	_, errCtx := client.SearchItemsCtx(ctx, &params)
+	_, err = client.SearchItems(ctx, &params)
 
 	requestTimedOut := false
-	if e, ok := errCtx.(interface{ Timeout() bool }); ok {
+	if e, ok := err.(interface{ Timeout() bool }); ok {
 		requestTimedOut = e.Timeout()
 	}
 
