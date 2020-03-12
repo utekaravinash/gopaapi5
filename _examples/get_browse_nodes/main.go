@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/utekaravinash/gopaapi5"
 	"github.com/utekaravinash/gopaapi5/api"
+	"github.com/utekaravinash/gopaapi5/v2"
 )
 
 const tmpl = `Id: %s
