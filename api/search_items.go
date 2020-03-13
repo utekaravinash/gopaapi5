@@ -1,5 +1,9 @@
 package api
 
+import (
+	"encoding/json"
+)
+
 // SearchItemsResponse holds response from SearchItems operation
 type SearchItemsResponse struct {
 	Errors       []Error      `json:"Errors,omitempty"`
@@ -8,30 +12,30 @@ type SearchItemsResponse struct {
 
 // SearchItemsParams holds parameters to be passed to SearchItems operation
 type SearchItemsParams struct {
-	Actor                 string
-	Artist                string
-	Author                string
-	Availability          Availability
-	Brand                 string
-	BrowseNodeId          string
-	Condition             Condition
-	CurrencyOfPreference  Currency
-	DeliveryFlags         []DeliveryFlag
-	ItemCount             int
-	ItemPage              int
-	Keywords              string
-	LanguagesOfPreference []Language
-	MaxPrice              int
-	Merchant              Merchant
-	MinPrice              int
-	MinReviewsRating      int
-	MinSavingPercent      int
-	OfferCount            int
-	Properties            Properties
-	Resources             []Resource
-	SearchIndex           string
-	SortBy                SortBy
-	Title                 string
+	Actor                 string         `json:"Actor,omitempty"`
+	Artist                string         `json:"Artist,omitempty"`
+	Author                string         `json:"Author,omitempty"`
+	Availability          Availability   `json:"Availability,omitempty"`
+	Brand                 string         `json:"Brand,omitempty"`
+	BrowseNodeId          string         `json:"BrowseNodeId,omitempty"`
+	Condition             Condition      `json:"Condition,omitempty"`
+	CurrencyOfPreference  Currency       `json:"CurrencyOfPreference,omitempty"`
+	DeliveryFlags         []DeliveryFlag `json:"DeliveryFlags,omitempty"`
+	ItemCount             int            `json:"ItemCount,omitempty"`
+	ItemPage              int            `json:"ItemPage,omitempty"`
+	Keywords              string         `json:"Keywords,omitempty"`
+	LanguagesOfPreference []Language     `json:"LanguagesOfPreference,omitempty"`
+	MaxPrice              int            `json:"MaxPrice,omitempty"`
+	Merchant              Merchant       `json:"Merchant,omitempty"`
+	MinPrice              int            `json:"MinPrice,omitempty"`
+	MinReviewsRating      int            `json:"MinReviewsRating,omitempty"`
+	MinSavingPercent      int            `json:"MinSavingPercent,omitempty"`
+	OfferCount            int            `json:"OfferCount,omitempty"`
+	Properties            Properties     `json:"Properties,omitempty"`
+	Resources             []Resource     `json:"Resources,omitempty"`
+	SearchIndex           string         `json:"SearchIndex,omitempty"`
+	SortBy                SortBy         `json:"SortBy,omitempty"`
+	Title                 string         `json:"Title,omitempty"`
 }
 
 // ResourceList returns the list of resources in SearchItemsParams
@@ -43,100 +47,14 @@ func (p SearchItemsParams) ResourceList() []Resource {
 func (p SearchItemsParams) Payload() (map[string]interface{}, error) {
 	kv := map[string]interface{}{}
 
-	if p.Actor != "" {
-		kv["Actor"] = p.Actor
+	pj, err := json.Marshal(p)
+	if err != nil {
+		return nil, err
 	}
 
-	if p.Artist != "" {
-		kv["Artist"] = p.Artist
-	}
-
-	if p.Author != "" {
-		kv["Author"] = p.Author
-	}
-
-	if p.Availability != "" {
-		kv["Availability"] = p.Availability
-	}
-
-	if p.Brand != "" {
-		kv["Brand"] = p.Brand
-	}
-
-	if p.BrowseNodeId != "" {
-		kv["BrowseNodeId"] = p.BrowseNodeId
-	}
-
-	if p.Condition != "" {
-		kv["Condition"] = p.Condition
-	}
-
-	if p.CurrencyOfPreference != "" {
-		kv["CurrencyOfPreference"] = p.CurrencyOfPreference
-	}
-
-	if p.Keywords != "" {
-		kv["Keywords"] = p.Keywords
-	}
-
-	if p.Merchant != "" {
-		kv["Merchant"] = p.Merchant
-	}
-
-	if p.Properties.Length() > 0 {
-		kv["Properties"] = p.Properties
-	}
-
-	if p.SearchIndex != "" {
-		kv["SearchIndex"] = p.SearchIndex
-	}
-
-	if p.SortBy != "" {
-		kv["SortBy"] = p.SortBy
-	}
-
-	if p.Title != "" {
-		kv["Title"] = p.Title
-	}
-
-	if p.ItemCount > 0 {
-		kv["ItemCount"] = p.ItemCount
-	}
-
-	if p.ItemPage > 0 {
-		kv["ItemPage"] = p.ItemPage
-	}
-
-	if p.MaxPrice > 0 {
-		kv["MaxPrice"] = p.MaxPrice
-	}
-
-	if p.MinPrice > 0 {
-		kv["MinPrice"] = p.MinPrice
-	}
-
-	if p.MinReviewsRating > 0 {
-		kv["MinReviewsRating"] = p.MinReviewsRating
-	}
-
-	if p.MinSavingPercent > 0 {
-		kv["MinSavingPercent"] = p.MinSavingPercent
-	}
-
-	if p.OfferCount > 0 {
-		kv["OfferCount"] = p.OfferCount
-	}
-
-	if len(p.DeliveryFlags) > 0 {
-		kv["DeliveryFlags"] = p.DeliveryFlags
-	}
-
-	if len(p.LanguagesOfPreference) > 0 {
-		kv["LanguagesOfPreference"] = p.LanguagesOfPreference
-	}
-
-	if len(p.Resources) > 0 {
-		kv["Resources"] = p.Resources
+	err = json.Unmarshal(pj, &kv)
+	if err != nil {
+		return nil, err
 	}
 
 	return kv, nil
