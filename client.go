@@ -18,7 +18,7 @@ var (
 	ErrEmptyAssociateTag = errors.New("Empty associate tag")
 	// ErrInvalidLocale is thrown when locale is invalid
 	ErrInvalidLocale = errors.New("Invalid locale")
-	// ErrInvalidLocale is thrown when locale is invalid
+	// ErrNilHttpClient is thrown when locale is invalid
 	ErrNilHttpClient = errors.New("Nil http client")
 )
 
