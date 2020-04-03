@@ -12,6 +12,7 @@ func TestLocale(t *testing.T) {
 	itLocale := Italy
 	jpLocale := Japan
 	mxLocale := Mexico
+	nlLocale := Netherlands
 	sgLocale := Singapore
 	esLocale := Spain
 	trLocale := Turkey
@@ -52,6 +53,9 @@ func TestLocale(t *testing.T) {
 		{"MX Host", "webservices.amazon.com.mx", mxLocale.Host()},
 		{"MX Region", "us-east-1", mxLocale.Region()},
 		{"MX Marketplace", "www.amazon.com.mx", mxLocale.Marketplace()},
+		{"NL Host", "webservices.amazon.nl", nlLocale.Host()},
+		{"NL Region", "eu-west-1", nlLocale.Region()},
+		{"NL Marketplace", "www.amazon.nl", nlLocale.Marketplace()},
 		{"SG Host", "webservices.amazon.sg", sgLocale.Host()},
 		{"SG Region", "us-west-2", sgLocale.Region()},
 		{"SG Marketplace", "www.amazon.sg", sgLocale.Marketplace()},

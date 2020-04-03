@@ -22,6 +22,8 @@ const (
 	Japan Locale = "JP"
 	// Mexico Locale for Mexico
 	Mexico Locale = "MX"
+	// Netherlands Locale for Netherlands
+	Netherlands Locale = "NL"
 	// Singapore Locale for Singapore
 	Singapore Locale = "SG"
 	// Spain Locale for Spain
@@ -54,6 +56,7 @@ var localeHostRegionMarketplaceMap = map[Locale]hostRegionMarketplace{
 	Italy:              {"webservices.amazon.it", "eu-west-1", "www.amazon.it"},
 	Japan:              {"webservices.amazon.co.jp", "us-west-2", "www.amazon.co.jp"},
 	Mexico:             {"webservices.amazon.com.mx", "us-east-1", "www.amazon.com.mx"},
+	Netherlands:        {"webservices.amazon.nl", "eu-west-1", "www.amazon.nl"},
 	Singapore:          {"webservices.amazon.sg", "us-west-2", "www.amazon.sg"},
 	Spain:              {"webservices.amazon.es", "eu-west-1", "www.amazon.es"},
 	Turkey:             {"webservices.amazon.com.tr", "eu-west-1", "www.amazon.com.tr"},
